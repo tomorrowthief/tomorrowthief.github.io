@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tomorrowthief.github.io/sitemap.xml
