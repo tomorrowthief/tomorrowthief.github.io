@@ -2,6 +2,7 @@ baseURL: "https://tomorrowthief.github.io/" # if your site is in 'https', then m
 title: TomorrowThief
 paginate: 5
 theme: hugo-blog
+publishDir: docs
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
