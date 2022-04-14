@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>TomorrowThief</title>
-    <link>https://tomorrowthief.github.io/zh/</link>
-    <description>Recent content on TomorrowThief</description>
+    <title>Posts on TomorrowThief</title>
+    <link>https://tomorrowthief.github.io/zh/posts/</link>
+    <description>Recent content in Posts on TomorrowThief</description>
     <image>
       <url>https://tomorrowthief.github.io/zhongling.png</url>
       <link>https://tomorrowthief.github.io/zhongling.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Apr 2022 21:00:46 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Apr 2022 21:00:46 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
       <link>https://tomorrowthief.github.io/zh/posts/test/</link>
@@ -27,16 +27,6 @@
       <guid>https://tomorrowthief.github.io/zh/posts/kaishila/</guid>
       <description>开始把之前的文章搬运到这里来 </description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://tomorrowthief.github.io/zh/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/zh/search/</guid>
-      <description></description>
-    </item>
-    
     
   </channel>
 </rss>

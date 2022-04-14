@@ -2,6 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tomorrowthief.github.io/posts/</loc>
+    <lastmod>2022-04-14T21:00:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/test/</loc>
+    <lastmod>2022-04-14T21:00:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/test/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/</loc>
+    <lastmod>2022-04-14T21:00:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/kaishila/</loc>
+    <lastmod>2022-04-14T20:21:59+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/kaishila/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/kaishila/"
+                />
+  </url><url>
     <loc>https://tomorrowthief.github.io/categories/</loc>
     <lastmod>2022-04-14T18:15:50+08:00</lastmod>
     <xhtml:link
@@ -14,9 +66,6 @@
                 hreflang="en"
                 href="https://tomorrowthief.github.io/categories/"
                 />
-  </url><url>
-    <loc>https://tomorrowthief.github.io/posts/</loc>
-    <lastmod>2022-04-14T18:15:50+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/series/</loc>
     <lastmod>2022-04-14T18:15:50+08:00</lastmod>
@@ -55,19 +104,6 @@
   </url><url>
     <loc>https://tomorrowthief.github.io/series/themes-guide/</loc>
     <lastmod>2022-04-14T18:15:50+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.github.io/</loc>
-    <lastmod>2022-04-14T18:15:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.github.io/"
-                />
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/my-first-post.zh-copy-3/</loc>
     <lastmod>2022-04-14T18:15:50+08:00</lastmod>

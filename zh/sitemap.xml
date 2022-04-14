@@ -2,6 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tomorrowthief.github.io/zh/posts/</loc>
+    <lastmod>2022-04-14T21:00:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/zh/posts/test/</loc>
+    <lastmod>2022-04-14T21:00:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/test/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/zh/</loc>
+    <lastmod>2022-04-14T21:00:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/zh/posts/kaishila/</loc>
+    <lastmod>2022-04-14T20:21:59+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/posts/kaishila/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/zh/posts/kaishila/"
+                />
+  </url><url>
     <loc>https://tomorrowthief.github.io/zh/search/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -49,18 +101,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://tomorrowthief.github.io/zh/tags/"
-                />
-  </url><url>
-    <loc>https://tomorrowthief.github.io/zh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.github.io/zh/"
                 />
   </url><url>
     <loc>https://tomorrowthief.github.io/zh/archives/</loc>
