@@ -1,0 +1,9 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/papermo"]
+	path = themes/papermo
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/hugo-blog"]
+	path = themes/hugo-blog
+	url = git@github.com:tomorrowthief/hugo-blog.git
