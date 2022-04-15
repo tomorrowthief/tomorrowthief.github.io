@@ -79,9 +79,9 @@ params:
     # displayFullLangName: true
     ShowPostNavLinks: true
     # ShowBreadCrumbs: true
-    # ShowCodeCopyButtons: true
+    ShowCodeCopyButtons: true
     ShowToc: true
-    comments: false
+    comments: true
     images: ["cover.png"]
 
     profileMode:
@@ -111,10 +111,10 @@ params:
         - name: zhihu
           url: "https://www.zhihu.com/people/chu-ren-yu-14"
 
-    editPost:
-        URL: "https://github.com/tomorrowthief/tomorrowthief.github.io"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+    # editPost:
+    #     URL: "https://github.com/tomorrowthief/tomorrowthief.github.io/"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
 
     # label:
     #     text: "Home"
