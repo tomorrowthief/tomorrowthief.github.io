@@ -1,0 +1,16 @@
+{{- define "main" }}
+
+<header class="page-about">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}</h1>
+
+
+    <section class="about-content">{{ .Content }}</section>
+
+    <div class="about-divider"></div>
+
+    <h4 class="about-contact">社交</h4>
+    {{- partial "social_icons.html" site.Params.socialIcons -}}
+</header>
+
+
+{{- end }}{{/* end main */}}

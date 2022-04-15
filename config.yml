@@ -1,9 +1,11 @@
 baseURL: "https://tomorrowthief.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-title: TomorrowThief
+title: 钟灵毓秀
 paginate: 5
 theme: hugo-blog
 publishDir: docs
 
+languageCode: zh
+DefaultContentLanguage: zh
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -24,18 +26,21 @@ languages:
         weight: 1
         menu:
             main:
-                - name: Archive
+                - name: 归档
                   url: archives
                   weight: 5
-                - name: Search
+                - name: 查找
                   url: search/
-                  weight: 10
-                - name: Tags
+                  weight: 8
+                - name: 标签
                   url: tags/
-                  weight: 10
-                - name: Categories
+                  weight: 7
+                - name: 分类
                   url: categories/
-                  weight: 10
+                  weight: 6
+                - name: 关于
+                  url: about/
+                  weight: 9
     en:
         languageName: "English"
         weight: 1
@@ -65,69 +70,72 @@ params:
     author: zhongling
     # author: ["Me", "You"] # multiple authors
 
+    # disableScrollToTop: true
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    # ShowShareButtons: true
     ShowReadingTime: true
     # disableSpecial1stPost: true
-    displayFullLangName: true
+    # displayFullLangName: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
+    # ShowBreadCrumbs: true
+    # ShowCodeCopyButtons: true
     ShowToc: true
-    # comments: false
-    images: ["zhongling.png"]
+    comments: false
+    images: ["cover.png"]
 
     profileMode:
         enabled: false
-        title: 钟灵
-        imageUrl: "#"
+        title: 钟灵毓秀
+        imageUrl: "cover.png"
         imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
+        imageWidth: 120
+        imageHeight: 120
         buttons:
-            - name: Archives
-              url: archives
-            - name: Tags
-              url: tags
+            - name: 归档
+              url: archives/
+            - name: 分类
+              url: categories/
+            - name: 标签
+              url: tags/
 
     homeInfoParams:
-        Title: "钟灵"
+        Title: "钟灵毓秀"
         Content: >
-            钟灵的文字财富
+            - 探索Web技术，深入关注大前端方向……
+
+            - 记录生活，工作，学习等相关文章。非常欢迎讨论交流~
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: RsS
-          url: "index.xml"
+          url: "https://github.com/tomorrowthief"
+        - name: zhihu
+          url: "https://www.zhihu.com/people/chu-ren-yu-14"
 
     editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        URL: "https://github.com/tomorrowthief/tomorrowthief.github.io"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
     # label:
     #     text: "Home"
-    #     icon: icon.png
+    #     icon: cover.png
     #     iconHeight: 35
 
     # analytics:
     #     google:
     #         SiteVerificationTag: "XYZabc"
 
-    # assets:
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+    assets:
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
 
-    # cover:
-    #     hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
-    #     hiddenInSingle: true # hide on single page
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
 
     # fuseOpts:
     #     isCaseSensitive: false

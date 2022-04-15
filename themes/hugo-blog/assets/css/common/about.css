@@ -1,0 +1,15 @@
+.about-content {
+  padding: 30px 0;
+}
+
+.about-contact {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.about-divider {
+  background: var(--tertiary);
+  height: 1px;
+  width: 100%;
+}
+

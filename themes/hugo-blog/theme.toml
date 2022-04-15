@@ -1,11 +1,11 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "PaperMod"
+name = "hugoBlog"
 license = "MIT"
-licenselink = "https://github.com/adityatelange/hugo-PaperMod/blob/master/LICENSE"
+licenselink = "https://github.com/tomorrowthief/hugo-blog/blob/master/LICENSE"
 description = "A fast, clean, responsive Hugo theme"
-homepage = "https://adityatelange.github.io/hugo-PaperMod/"
+homepage = "https://github.com/tomorrowthief/hugo-blog"
 tags = [
   "responsive",
   "simple",
@@ -40,8 +40,8 @@ features = [
 min_version = "0.83.0"
 
 [author]
-  name = "Aditya Telange"
-  homepage = "https://github.com/adityatelange/"
+  name = "钟灵"
+  homepage = "https://github.com/tomorrowthief/"
 
 # If porting an existing theme
 [original]
