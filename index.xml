@@ -1,52 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>TomorrowThief</title>
+    <title>钟灵毓秀</title>
     <link>https://tomorrowthief.github.io/</link>
-    <description>Recent content on TomorrowThief</description>
+    <description>Recent content on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/zhongling.png</url>
-      <link>https://tomorrowthief.github.io/zhongling.png</link>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Apr 2022 21:00:55 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <lastBuildDate>Thu, 14 Apr 2022 20:21:59 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://tomorrowthief.github.io/posts/test/</link>
-      <pubDate>Thu, 14 Apr 2022 21:00:55 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/posts/test/</guid>
-      <description>test 测试一下</description>
-    </item>
-    
-    <item>
-      <title>Kaishila</title>
+      <title>文章搬运开始啦</title>
       <link>https://tomorrowthief.github.io/posts/kaishila/</link>
       <pubDate>Thu, 14 Apr 2022 20:21:59 +0800</pubDate>
       
       <guid>https://tomorrowthief.github.io/posts/kaishila/</guid>
-      <description>move to here 怎么不变化呢 </description>
+      <description>背景 最近比较空余，基于hugo上发现的一个主题搭建下自己的在线博客，部署使用github pages
+为什么要自己搭建博客  主题定制方便：博客类型的东西喜欢简约的 个人的部署环境，浏览体验也好  后面计划 新的博客，可能还是先本地写，然后发布到几个账号里
+ 菩提本无树，明镜亦非台
+ </description>
     </item>
+    
+    
     
     <item>
-      <title>第一篇博客</title>
-      <link>https://tomorrowthief.github.io/posts/my-first-post.zh-copy-3/</link>
-      <pubDate>Thu, 14 Apr 2022 18:15:50 +0800</pubDate>
+      <title>信息</title>
+      <link>https://tomorrowthief.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/my-first-post.zh-copy-3/</guid>
-      <description></description>
+      <guid>https://tomorrowthief.github.io/about/</guid>
+      <description>about</description>
     </item>
-    
-    <item>
-      <title>第一篇博客</title>
-      <link>https://tomorrowthief.github.io/posts/my-first-post.zh-copy-4/</link>
-      <pubDate>Thu, 14 Apr 2022 18:15:50 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/posts/my-first-post.zh-copy-4/</guid>
-      <description></description>
-    </item>
-    
-    
     
   </channel>
 </rss>
