@@ -18,7 +18,10 @@
       
       <guid>https://tomorrowthief.github.io/posts/extend-design/</guid>
       <description>前言 之前在公司内部做过「扩展性设计」的分享。后面重新整理形成博客形式记录自己的学习。
-扩展性是软件架构设计里的重要的因素之一。</description>
+其实日常中很多地方都有涉及：在业务层面，工具层面，框架层面，甚至是产品需求上都会做考虑。
+本文主要讨论下其概念，然后指出有哪些理论的支持，然后分析一波案例(webpack，vscode等)，最后做出总结
+什么是扩展性设计 软件架构设计里比较关注的几个要素：扩展性，稳定性，可维护性。
+总结 </description>
     </item>
     
   </channel>
