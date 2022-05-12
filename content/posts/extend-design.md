@@ -61,7 +61,7 @@ categories: '架构'
 针对特定的文件类型来做处理的，有点类似上一节提到的`管道化中间件模型`。针对特定类型文件可以提供多个，按照顺序管道化的处理转换。
 
 #### 插件体系
-webpack 内部主要的两个概念是 `complier`主要负责构建整体流程等，`compliton`主要负责构建里的具体编译工作。这两者都是通过 `Tapable` 库来完成内部生命周期暴露，`Tapable` 大体上是一种 `sub-pub` 模式的实现, 其核心概念 hook 可以与 event系统里的某个 event 等价。所以插件可以指定某个hook下做自己的逻辑。在同一个hook下可以绑定很多handler的注册，有点像AOP编程思想。
+webpack 内部主要的两个概念是 `complier`主要负责构建整体流程等，`compliton`主要负责构建里的具体编译工作。这两者都是通过 `Tapable` 库来完成内部生命周期暴露，`Tapable` 大体上是一种 `sub-pub` 模式的实现, 其核心概念 hook 可以与 event系统里的某个 event 等价。在同一个hook下可以绑定很多handler的注册，有点像AOP编程思想。
 
 一个插件的`demo`
 
@@ -79,7 +79,7 @@ HelloWorldPlugin.prototype.apply = function(compiler) {
 module.exports = HelloWorldPlugin;
 ```
 
-解释: 约定实现带有 apply 方法的类(demo中通过构造函数和原型的方式实现)。apply 方法是 webpack 内部使用的。webpack 暴露了 complier 对象给插件，可以使用构建生命周期里暴露的钩子来处理所要逻辑
+解释: 插件是约定实现带有 apply 方法的类(demo中通过构造函数和原型的方式实现)。apply 方法是 webpack 内部使用的。webpack 暴露了 complier 对象给插件，可以使用构建生命周期里暴露的钩子来处理所要逻辑
 
 ### babel
 
