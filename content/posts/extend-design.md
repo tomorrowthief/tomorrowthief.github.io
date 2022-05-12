@@ -80,7 +80,7 @@ HelloWorldPlugin.prototype.apply = function(compiler) {
 module.exports = HelloWorldPlugin;
 ```
 
-解释: 插件是约定实现带有 apply 方法的类(demo中通过构造函数和原型的方式实现)。apply 方法是 webpack 内部使用的。webpack 暴露了 complier 对象给插件，可以使用构建生命周期里暴露的钩子来处理所要逻辑
+解释: 插件是约定实现带有 `apply` 方法的类(demo中通过构造函数和原型的方式实现)。`apply` 方法是 `webpack` 内部使用的。`webpack` 暴露了 `complier` 对象给 `apply`，可以使用其暴露的生命周期钩子来处理所要逻辑，完整的钩子列表可以在官网上找
 
 ### babel
 
