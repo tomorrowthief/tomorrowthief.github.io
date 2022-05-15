@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 11 May 2022 10:38:36 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 May 2022 10:21:59 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工作合作沟通方式</title>
+      <link>https://tomorrowthief.github.io/posts/%E5%B7%A5%E4%BD%9C%E5%90%88%E4%BD%9C/</link>
+      <pubDate>Sun, 15 May 2022 10:21:59 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/%E5%B7%A5%E4%BD%9C%E5%90%88%E4%BD%9C/</guid>
+      <description>公司合作沟通 前段时间入职了新公司，说下合作上的感受
+这家公司比较传统，人员沟通也特别传统</description>
+    </item>
+    
     <item>
       <title>扩展性设计</title>
       <link>https://tomorrowthief.github.io/posts/extend-design/</link>
