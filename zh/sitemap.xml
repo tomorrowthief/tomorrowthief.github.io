@@ -2,6 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tomorrowthief.github.io/posts/</loc>
+    <lastmod>2023-01-16T10:43:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/liuguolun/</loc>
+    <lastmod>2023-01-16T10:43:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/</loc>
+    <lastmod>2023-01-16T10:43:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/"
+                />
+  </url><url>
     <loc>https://tomorrowthief.github.io/categories/</loc>
     <lastmod>2022-06-17T10:08:36+08:00</lastmod>
     <xhtml:link
@@ -15,27 +34,11 @@
                 href="https://tomorrowthief.github.io/categories/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.github.io/posts/</loc>
-    <lastmod>2022-06-17T10:08:36+08:00</lastmod>
-  </url><url>
     <loc>https://tomorrowthief.github.io/posts/art-of-war/</loc>
     <lastmod>2022-06-17T10:08:36+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
     <lastmod>2022-06-17T10:08:36+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.github.io/</loc>
-    <lastmod>2022-06-17T10:08:36+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.github.io/"
-                />
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/%E5%B7%A5%E4%BD%9C%E5%90%88%E4%BD%9C/</loc>
     <lastmod>2022-05-15T10:21:59+08:00</lastmod>
