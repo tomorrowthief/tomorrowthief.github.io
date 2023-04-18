@@ -102,9 +102,7 @@ params:
     homeInfoParams:
         Title: "钟灵毓秀"
         Content: >
-            - 探索Web技术，深入关注大前端方向……
-
-            - 记录生活，工作，学习等相关文章。非常欢迎讨论交流~
+            - 记录生活，工作，学习的地方
     socialIcons:
         - name: github
           url: "https://github.com/tomorrowthief"
