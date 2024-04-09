@@ -5,7 +5,7 @@ url: "/about"
 summary: "about"
 ---
 
-* 工作: 在杭州，有大小厂经历的程序员
-* 技术: Web开发，大前端，JavaScript，Nodejs
+* 工作: Software Engineer based in HangZhou
+* 技术: Web Developer，JavaScript，Nodejs, AI Application, LLM, LangChain
 * 生活: 运动(游泳，快走)，游戏(Dota2)，偶尔做饭
 * 努力生活，开心工作中～

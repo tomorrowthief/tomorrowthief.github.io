@@ -102,7 +102,7 @@ params:
     homeInfoParams:
         Title: "钟灵毓秀"
         Content: >
-            - 记录生活，工作，学习的地方
+            - Software Architect & Problem Solver
     socialIcons:
         - name: github
           url: "https://github.com/tomorrowthief"
