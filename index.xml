@@ -17,7 +17,8 @@
       <pubDate>Sat, 22 Jun 2024 10:47:41 +0800</pubDate>
       
       <guid>https://tomorrowthief.github.io/posts/ai-python/</guid>
-      <description>为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，技术栈变化比较迅速，大模型日新月异，应用层思路也跟随变化较多。根据特点选择脚本类型语言，待选语言很多有 nodejs python。 个人虽熟悉 nodejs，但鉴于 python 生态性能等，最后决定 python。
+      <description>为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。
+根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 Nodejs python。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。
 Python 综述 Python 第一版本发布于 2000年，目前在 Tiobe 排行榜里人数排名第一，社区热度也升为第一。
 定位：高级语言，通用能力编程语言 特性：动态语言，基于解释器，gc 等 范式：函数编程，面向对象，面向过程 主要在 数据处理，计算，Web等发挥作用，AI 领域使用很多， Web 开发也有很多场景
 运行模式支持 多进程，多线程，协程
@@ -32,8 +33,9 @@ Python 综述 Python 第一版本发布于 2000年，目前在 Tiobe 排行榜�
 异常处理：在程序执行过程中，如果发生异常，Python会查找合适的异常处理程序。如果找不到合适的处理程序，程序会中止并打印错误信息。
 程序结束：当程序执行完所有的代码或遇到显式的退出语句（如return或sys.exit()）时，程序结束执行。
 语法 跟我熟悉的 JS 差别很大，总体感受很灵活。基础的比如：变量 循环，函数的定义参数。可以直接看官方文档
-这里只提下我印象比较深刻的函数部分： 基础demo 通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo 如下
-def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 这里函数参数可以用 * *key_yars 来动态接收</description>
+个人感觉 1-2 周左右时间，即可上手基础开发。
+这里只提下我印象比较深刻的函数部分： 通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo如下
+def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 函数参数可以用 * *key_yars 来动态接收</description>
     </item>
     
     <item>
