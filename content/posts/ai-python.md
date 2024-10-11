@@ -174,6 +174,9 @@ Python 的 `asyncio` 模块提供了强大的工具来编写高效的异步 I/O 
 
 * Web服务开发： Flask FastAPI
 * 任务队列： Celery 
+* 数据开发相关: Panda Numpy
+* 深度学习： PyTorch Tenserflow
+* 图数据库： Neo4j
 
 
 ## 总结
