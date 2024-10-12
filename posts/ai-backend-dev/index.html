@@ -1,150 +1,152 @@
-<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>后端开发经验总结 | 钟灵毓秀</title>
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>后端开发经验-阶段性总结思考 | 钟灵毓秀</title>
 <meta name=keywords content><meta name=description content="背景
 做了大半年左右的后端开发后，总结下相关感受。
 技术栈：Python/Nodejs + React
 行业背景：LLM 应用， RAG， Agent
 后端开发思路
-后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。
+后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。
 其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。
 
-功能设计上主要关注：数据结构，类包，工作流等。
+功能设计上主要关注：数据结构，类包，业务模块，工作流等
 非功能性关注：性能，并发，安全，稳定等
 
 玩的是数据
-这个算是核心中的核心了。
+数据算是核心中的核心了。所有的业务基础都是按照这个来的
 关系型业务
-mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。
+mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂
 这里主要考虑：表结构设计，索引设计。
 如果到一定规模考虑 分区，分表，分库
-实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。
-如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。
+实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。
+如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。
 非关系
-redis，es，mongodb
-日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。
-redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
+Redis，Es，Mongodb，图数据库
+日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。
+Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
 图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多
-总结
-这块也是一个非常大的技术体系，深度的话需要专题讨论。
-我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）
+在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多
+小结
+这块也是一个非常大的技术体系，往深走的话需要专题讨论。
+我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）
+由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。
 一些中间件
 
 消息中间件
 几乎是必须的，做异步，服务结构等
 任务队列
 做性能，并发等
-日志
+日志，错误处理等
 
+微服务体系
+很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理
+得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里
+我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大
 计算机基础
-计算机组成：cpu，gpu，硬盘，内存，
+
+计算机组成：cpu，gpu，硬盘，内存
 操作系统：进程线程协程等，资源管理，IO管理：网络/文件
 编译：前端：分词，语法分析，语法树，后端：机器平台生成
+
 分布式-时间空间互换
-这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。
-核心竞争力
-做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。
-总结
-在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力
-最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。"><meta name=author content="zhongling"><link rel=canonical href=https://tomorrowthief.github.io/posts/ai-backend-dev/><link crossorigin=anonymous href=/assets/css/stylesheet.min.63a977388f59c67668ee225d0f9dd2605b70ac8d24a582d553a3580d80b50f33.css integrity="sha256-Y6l3OI9ZxnZo7iJdD53SYFtwrI0kpYLVU6NYDYC1DzM=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY=" onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://tomorrowthief.github.io/posts/ai-backend-dev/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="后端开发经验总结"><meta property="og:description" content="背景
+这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。"><meta name=author content="zhongling"><link rel=canonical href=https://tomorrowthief.github.io/posts/ai-backend-dev/><link crossorigin=anonymous href=/assets/css/stylesheet.min.63a977388f59c67668ee225d0f9dd2605b70ac8d24a582d553a3580d80b50f33.css integrity="sha256-Y6l3OI9ZxnZo7iJdD53SYFtwrI0kpYLVU6NYDYC1DzM=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY=" onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://tomorrowthief.github.io/posts/ai-backend-dev/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="后端开发经验-阶段性总结思考"><meta property="og:description" content="背景
 做了大半年左右的后端开发后，总结下相关感受。
 技术栈：Python/Nodejs + React
 行业背景：LLM 应用， RAG， Agent
 后端开发思路
-后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。
+后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。
 其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。
 
-功能设计上主要关注：数据结构，类包，工作流等。
+功能设计上主要关注：数据结构，类包，业务模块，工作流等
 非功能性关注：性能，并发，安全，稳定等
 
 玩的是数据
-这个算是核心中的核心了。
+数据算是核心中的核心了。所有的业务基础都是按照这个来的
 关系型业务
-mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。
+mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂
 这里主要考虑：表结构设计，索引设计。
 如果到一定规模考虑 分区，分表，分库
-实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。
-如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。
+实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。
+如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。
 非关系
-redis，es，mongodb
-日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。
-redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
+Redis，Es，Mongodb，图数据库
+日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。
+Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
 图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多
-总结
-这块也是一个非常大的技术体系，深度的话需要专题讨论。
-我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）
+在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多
+小结
+这块也是一个非常大的技术体系，往深走的话需要专题讨论。
+我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）
+由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。
 一些中间件
 
 消息中间件
 几乎是必须的，做异步，服务结构等
 任务队列
 做性能，并发等
-日志
+日志，错误处理等
 
+微服务体系
+很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理
+得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里
+我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大
 计算机基础
-计算机组成：cpu，gpu，硬盘，内存，
+
+计算机组成：cpu，gpu，硬盘，内存
 操作系统：进程线程协程等，资源管理，IO管理：网络/文件
 编译：前端：分词，语法分析，语法树，后端：机器平台生成
+
 分布式-时间空间互换
-这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。
-核心竞争力
-做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。
-总结
-在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力
-最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。"><meta property="og:type" content="article"><meta property="og:url" content="https://tomorrowthief.github.io/posts/ai-backend-dev/"><meta property="og:image" content="https://tomorrowthief.github.io/cover.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-09-22T10:48:00+08:00"><meta property="article:modified_time" content="2024-09-22T10:48:00+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://tomorrowthief.github.io/cover.png"><meta name=twitter:title content="后端开发经验总结"><meta name=twitter:description content="背景
+这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。"><meta property="og:type" content="article"><meta property="og:url" content="https://tomorrowthief.github.io/posts/ai-backend-dev/"><meta property="og:image" content="https://tomorrowthief.github.io/cover.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-09-22T10:48:00+08:00"><meta property="article:modified_time" content="2024-09-22T10:48:00+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://tomorrowthief.github.io/cover.png"><meta name=twitter:title content="后端开发经验-阶段性总结思考"><meta name=twitter:description content="背景
 做了大半年左右的后端开发后，总结下相关感受。
 技术栈：Python/Nodejs + React
 行业背景：LLM 应用， RAG， Agent
 后端开发思路
-后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。
+后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。
 其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。
 
-功能设计上主要关注：数据结构，类包，工作流等。
+功能设计上主要关注：数据结构，类包，业务模块，工作流等
 非功能性关注：性能，并发，安全，稳定等
 
 玩的是数据
-这个算是核心中的核心了。
+数据算是核心中的核心了。所有的业务基础都是按照这个来的
 关系型业务
-mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。
+mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂
 这里主要考虑：表结构设计，索引设计。
 如果到一定规模考虑 分区，分表，分库
-实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。
-如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。
+实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。
+如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。
 非关系
-redis，es，mongodb
-日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。
-redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
+Redis，Es，Mongodb，图数据库
+日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。
+Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
 图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多
-总结
-这块也是一个非常大的技术体系，深度的话需要专题讨论。
-我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）
+在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多
+小结
+这块也是一个非常大的技术体系，往深走的话需要专题讨论。
+我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）
+由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。
 一些中间件
 
 消息中间件
 几乎是必须的，做异步，服务结构等
 任务队列
 做性能，并发等
-日志
+日志，错误处理等
 
+微服务体系
+很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理
+得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里
+我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大
 计算机基础
-计算机组成：cpu，gpu，硬盘，内存，
+
+计算机组成：cpu，gpu，硬盘，内存
 操作系统：进程线程协程等，资源管理，IO管理：网络/文件
 编译：前端：分词，语法分析，语法树，后端：机器平台生成
+
 分布式-时间空间互换
-这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。
-核心竞争力
-做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。
-总结
-在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力
-最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://tomorrowthief.github.io/posts/"},{"@type":"ListItem","position":2,"name":"后端开发经验总结","item":"https://tomorrowthief.github.io/posts/ai-backend-dev/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"后端开发经验总结","name":"后端开发经验总结","description":"背景 做了大半年左右的后端开发后，总结下相关感受。\n技术栈：Python/Nodejs + React 行业背景：LLM 应用， RAG， Agent\n后端开发思路 后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。\n其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。\n功能设计上主要关注：数据结构，类包，工作流等。 非功能性关注：性能，并发，安全，稳定等 玩的是数据 这个算是核心中的核心了。\n关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。\n这里主要考虑：表结构设计，索引设计。\n如果到一定规模考虑 分区，分表，分库\n实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。\n如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。\n非关系 redis，es，mongodb\n日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。\nredis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等\n图数据库 在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多\n总结 这块也是一个非常大的技术体系，深度的话需要专题讨论。\n我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）\n一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志 计算机基础 计算机组成：cpu，gpu，硬盘，内存， 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成\n分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。\n核心竞争力 做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。\n总结 在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力\n最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。\n","keywords":[],"articleBody":"背景 做了大半年左右的后端开发后，总结下相关感受。\n技术栈：Python/Nodejs + React 行业背景：LLM 应用， RAG， Agent\n后端开发思路 后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。\n其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。\n功能设计上主要关注：数据结构，类包，工作流等。 非功能性关注：性能，并发，安全，稳定等 玩的是数据 这个算是核心中的核心了。\n关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。\n这里主要考虑：表结构设计，索引设计。\n如果到一定规模考虑 分区，分表，分库\n实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。\n如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。\n非关系 redis，es，mongodb\n日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。\nredis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等\n图数据库 在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多\n总结 这块也是一个非常大的技术体系，深度的话需要专题讨论。\n我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）\n一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志 计算机基础 计算机组成：cpu，gpu，硬盘，内存， 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成\n分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。\n核心竞争力 做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。\n总结 在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力\n最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。\n","wordCount":"67","inLanguage":"zh","datePublished":"2024-09-22T10:48:00+08:00","dateModified":"2024-09-22T10:48:00+08:00","author":{"@type":"Person","name":"zhongling"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tomorrowthief.github.io/posts/ai-backend-dev/"},"publisher":{"@type":"Organization","name":"钟灵毓秀","logo":{"@type":"ImageObject","url":"https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://tomorrowthief.github.io/ accesskey=h title="钟灵毓秀 (Alt + H)">钟灵毓秀</a>
-<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>后端开发经验总结</h1><div class=post-meta>&lt;span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;1 分钟&amp;nbsp;·&amp;nbsp;zhongling</div></header><main class=post-main id=post-main><div class=post-content><h1 id=背景>背景<a hidden class=anchor aria-hidden=true href=#背景>#</a></h1><p>做了大半年左右的后端开发后，总结下相关感受。</p><p>技术栈：Python/Nodejs + React
-行业背景：LLM 应用， RAG， Agent</p><h2 id=后端开发思路>后端开发思路<a hidden class=anchor aria-hidden=true href=#后端开发思路>#</a></h2><p>后端关注面更关，几乎要关注整个软件系统里所有的环节： 运维，应用，业务，服务，UI 等。</p><p>其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。</p><ul><li>功能设计上主要关注：数据结构，类包，工作流等。</li><li>非功能性关注：性能，并发，安全，稳定等</li></ul><h2 id=玩的是数据>玩的是数据<a hidden class=anchor aria-hidden=true href=#玩的是数据>#</a></h2><p>这个算是核心中的核心了。</p><h3 id=关系型业务>关系型业务<a hidden class=anchor aria-hidden=true href=#关系型业务>#</a></h3><p>mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方。</p><p>这里主要考虑：表结构设计，索引设计。</p><p>如果到一定规模考虑 分区，分表，分库</p><p>实际业务中大多需要找一个 orm 库来完成在应用里方便的操作。</p><p>如果有redis 或者其他异步，复杂的事务处理，需要考虑数据一致性。</p><h3 id=非关系>非关系<a hidden class=anchor aria-hidden=true href=#非关系>#</a></h3><p>redis，es，mongodb</p><p>日志相关的一般存放到 mongodb 或者es，方便快速查询，海量存储。</p><p>redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等</p><p>图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，三元组信息变得简单很多</p><h3 id=总结>总结<a hidden class=anchor aria-hidden=true href=#总结>#</a></h3><p>这块也是一个非常大的技术体系，深度的话需要专题讨论。</p><p>我这边是入门不久，着重看了 mysql 执行引擎的内容，B+索引的来由。练习了常用sql语法（leetcode 50高频sql）</p><h2 id=一些中间件>一些中间件<a hidden class=anchor aria-hidden=true href=#一些中间件>#</a></h2><ul><li>消息中间件
+这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://tomorrowthief.github.io/posts/"},{"@type":"ListItem","position":2,"name":"后端开发经验-阶段性总结思考","item":"https://tomorrowthief.github.io/posts/ai-backend-dev/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"后端开发经验-阶段性总结思考","name":"后端开发经验-阶段性总结思考","description":"背景 做了大半年左右的后端开发后，总结下相关感受。\n技术栈：Python/Nodejs + React\n行业背景：LLM 应用， RAG， Agent\n后端开发思路 后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。\n其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。\n功能设计上主要关注：数据结构，类包，业务模块，工作流等 非功能性关注：性能，并发，安全，稳定等 玩的是数据 数据算是核心中的核心了。所有的业务基础都是按照这个来的\n关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂\n这里主要考虑：表结构设计，索引设计。\n如果到一定规模考虑 分区，分表，分库\n实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。\n如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。\n非关系 Redis，Es，Mongodb，图数据库\n日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。\nRedis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等\n图数据库\n在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多\n小结 这块也是一个非常大的技术体系，往深走的话需要专题讨论。\n我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）\n由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。\n一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志，错误处理等 微服务体系 很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理\n得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里\n我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大\n计算机基础 计算机组成：cpu，gpu，硬盘，内存 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成 分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。\n","keywords":[],"articleBody":"背景 做了大半年左右的后端开发后，总结下相关感受。\n技术栈：Python/Nodejs + React\n行业背景：LLM 应用， RAG， Agent\n后端开发思路 后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。\n其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。\n功能设计上主要关注：数据结构，类包，业务模块，工作流等 非功能性关注：性能，并发，安全，稳定等 玩的是数据 数据算是核心中的核心了。所有的业务基础都是按照这个来的\n关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂\n这里主要考虑：表结构设计，索引设计。\n如果到一定规模考虑 分区，分表，分库\n实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。\n如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。\n非关系 Redis，Es，Mongodb，图数据库\n日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。\nRedis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等\n图数据库\n在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多\n小结 这块也是一个非常大的技术体系，往深走的话需要专题讨论。\n我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）\n由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。\n一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志，错误处理等 微服务体系 很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理\n得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里\n我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大\n计算机基础 计算机组成：cpu，gpu，硬盘，内存 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成 分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。\n核心竞争力 以前端为主要工作内容体系下，为什么要突破下后端开发的能力？\n生存需要：前端技术发展到一定程度，除非是往某个领域特定发展，但是很容易变成屠龙之术。 我认为市场上需求大多还是后端 即便作为独立开发者也需要后端更多 本来技术上就不存在什么前端，后端，或者其他端。本来的角色应该是软件开发者，问题解决者存在 一切都在变，你敢不变？ 当前AI大背景下，学习新知识，突破边界变得非常简单 所以当前这个环境，我的核心竞争力在于：强悍的工程能力，基于此的问题解决能力，基于此的产品运营的敏锐度\n总结 在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力\n最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。\n可以不屠龙，但是不能不掌握屠龙术\n","wordCount":"91","inLanguage":"zh","datePublished":"2024-09-22T10:48:00+08:00","dateModified":"2024-09-22T10:48:00+08:00","author":{"@type":"Person","name":"zhongling"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tomorrowthief.github.io/posts/ai-backend-dev/"},"publisher":{"@type":"Organization","name":"钟灵毓秀","logo":{"@type":"ImageObject","url":"https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://tomorrowthief.github.io/ accesskey=h title="钟灵毓秀 (Alt + H)">钟灵毓秀</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>后端开发经验-阶段性总结思考</h1><div class=post-meta>&lt;span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;1 分钟&amp;nbsp;·&amp;nbsp;zhongling</div></header><main class=post-main id=post-main><div class=post-content><h1 id=背景>背景<a hidden class=anchor aria-hidden=true href=#背景>#</a></h1><p>做了大半年左右的后端开发后，总结下相关感受。</p><p>技术栈：Python/Nodejs + React</p><p>行业背景：LLM 应用， RAG， Agent</p><h2 id=后端开发思路>后端开发思路<a hidden class=anchor aria-hidden=true href=#后端开发思路>#</a></h2><p>后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。</p><p>其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。</p><ul><li>功能设计上主要关注：数据结构，类包，业务模块，工作流等</li><li>非功能性关注：性能，并发，安全，稳定等</li></ul><h2 id=玩的是数据>玩的是数据<a hidden class=anchor aria-hidden=true href=#玩的是数据>#</a></h2><p>数据算是核心中的核心了。所有的业务基础都是按照这个来的</p><h3 id=关系型业务>关系型业务<a hidden class=anchor aria-hidden=true href=#关系型业务>#</a></h3><p>mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂</p><p>这里主要考虑：表结构设计，索引设计。</p><p>如果到一定规模考虑 分区，分表，分库</p><p>实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。</p><p>如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。</p><h3 id=非关系>非关系<a hidden class=anchor aria-hidden=true href=#非关系>#</a></h3><p>Redis，Es，Mongodb，图数据库</p><p>日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。</p><p>Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等</p><p>图数据库</p><p>在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多</p><h3 id=小结>小结<a hidden class=anchor aria-hidden=true href=#小结>#</a></h3><p>这块也是一个非常大的技术体系，往深走的话需要专题讨论。</p><p>我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）</p><p>由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。</p><h2 id=一些中间件>一些中间件<a hidden class=anchor aria-hidden=true href=#一些中间件>#</a></h2><ul><li>消息中间件
 几乎是必须的，做异步，服务结构等</li><li>任务队列
-做性能，并发等</li><li>日志</li></ul><h2 id=计算机基础>计算机基础<a hidden class=anchor aria-hidden=true href=#计算机基础>#</a></h2><p>计算机组成：cpu，gpu，硬盘，内存，
-操作系统：进程线程协程等，资源管理，IO管理：网络/文件
-编译：前端：分词，语法分析，语法树，后端：机器平台生成</p><h2 id=分布式-时间空间互换>分布式-时间空间互换<a hidden class=anchor aria-hidden=true href=#分布式-时间空间互换>#</a></h2><p>这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。</p><h2 id=核心竞争力>核心竞争力<a hidden class=anchor aria-hidden=true href=#核心竞争力>#</a></h2><p>做了后端技术体系实践后，对整个软件体系架构有更多理解了，所以我觉得做业务，做工程核心竞争力就是体系架构能力了。也就是业界里说的架构师的能力。</p><h1 id=总结-1>总结<a hidden class=anchor aria-hidden=true href=#总结-1>#</a></h1><p>在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力</p><p>最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。</p></div><div class=post-toc id=post-toc><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>目录</span></summary><div class=inner><ul><li><a href=#%e8%83%8c%e6%99%af aria-label=背景>背景</a><ul><li><a href=#%e5%90%8e%e7%ab%af%e5%bc%80%e5%8f%91%e6%80%9d%e8%b7%af aria-label=后端开发思路>后端开发思路</a></li><li><a href=#%e7%8e%a9%e7%9a%84%e6%98%af%e6%95%b0%e6%8d%ae aria-label=玩的是数据>玩的是数据</a><ul><li><a href=#%e5%85%b3%e7%b3%bb%e5%9e%8b%e4%b8%9a%e5%8a%a1 aria-label=关系型业务>关系型业务</a></li><li><a href=#%e9%9d%9e%e5%85%b3%e7%b3%bb aria-label=非关系>非关系</a></li><li><a href=#%e6%80%bb%e7%bb%93 aria-label=总结>总结</a></li></ul></li><li><a href=#%e4%b8%80%e4%ba%9b%e4%b8%ad%e9%97%b4%e4%bb%b6 aria-label=一些中间件>一些中间件</a></li><li><a href=#%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%9f%ba%e7%a1%80 aria-label=计算机基础>计算机基础</a></li><li><a href=#%e5%88%86%e5%b8%83%e5%bc%8f-%e6%97%b6%e9%97%b4%e7%a9%ba%e9%97%b4%e4%ba%92%e6%8d%a2 aria-label=分布式-时间空间互换>分布式-时间空间互换</a></li><li><a href=#%e6%a0%b8%e5%bf%83%e7%ab%9e%e4%ba%89%e5%8a%9b aria-label=核心竞争力>核心竞争力</a></li></ul></li><li><a href=#%e6%80%bb%e7%bb%93-1 aria-label=总结>总结</a></li></ul></div></details></div></div></main><script type=text/javascript>function compute(){const t=document.getElementById("post-main"),e=document.getElementById("post-toc");if(t.getBoundingClientRect().top<=0){if(e.style.position==="fixed")return;e.style.position="fixed";const n=document.body.getBoundingClientRect().right,s=t.getBoundingClientRect().right-t.getBoundingClientRect().left;e.style.left=`${(n+s)/2+3}px`}else e.style.position="absolute",e.style.left="calc(100% + 3px)"}window.addEventListener("scroll",compute)</script><footer class=post-footer><nav class=paginav><a class=prev href=https://tomorrowthief.github.io/posts/ai-agent/><span class=title>« 上一页</span><br><span>LLM 长记忆工具总结</span>
+做性能，并发等</li><li>日志，错误处理等</li></ul><h2 id=微服务体系>微服务体系<a hidden class=anchor aria-hidden=true href=#微服务体系>#</a></h2><p>很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理</p><p>得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里</p><p>我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大</p><h2 id=计算机基础>计算机基础<a hidden class=anchor aria-hidden=true href=#计算机基础>#</a></h2><ul><li>计算机组成：cpu，gpu，硬盘，内存</li><li>操作系统：进程线程协程等，资源管理，IO管理：网络/文件</li><li>编译：前端：分词，语法分析，语法树，后端：机器平台生成</li></ul><h2 id=分布式-时间空间互换>分布式-时间空间互换<a hidden class=anchor aria-hidden=true href=#分布式-时间空间互换>#</a></h2><p>这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。</p><h2 id=核心竞争力>核心竞争力<a hidden class=anchor aria-hidden=true href=#核心竞争力>#</a></h2><p>以前端为主要工作内容体系下，为什么要突破下后端开发的能力？</p><ol><li>生存需要：前端技术发展到一定程度，除非是往某个领域特定发展，但是很容易变成屠龙之术。<ul><li>我认为市场上需求大多还是后端</li><li>即便作为独立开发者也需要后端更多</li><li>本来技术上就不存在什么前端，后端，或者其他端。本来的角色应该是软件开发者，问题解决者存在</li><li>一切都在变，你敢不变？</li></ul></li><li>当前AI大背景下，学习新知识，突破边界变得非常简单</li></ol><p>所以当前这个环境，我的核心竞争力在于：强悍的工程能力，基于此的问题解决能力，基于此的产品运营的敏锐度</p><h1 id=总结>总结<a hidden class=anchor aria-hidden=true href=#总结>#</a></h1><p>在 AI 时代软件开发者可以很高效切换一些技术栈，但是一些基础的理论一定要掌握好，否则 ai 可能会把我们带歪。这些基础理论包括：计算机组成，计算机运行原理，现代操作系统，算法。还有就是上文里提出来的工程能力</p><p>最后我的观点是：不要过分在某个点上较真，能够达到自己的目标就是好的。</p><blockquote><p>可以不屠龙，但是不能不掌握屠龙术</p></blockquote></div><div class=post-toc id=post-toc><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>目录</span></summary><div class=inner><ul><li><a href=#%e8%83%8c%e6%99%af aria-label=背景>背景</a><ul><li><a href=#%e5%90%8e%e7%ab%af%e5%bc%80%e5%8f%91%e6%80%9d%e8%b7%af aria-label=后端开发思路>后端开发思路</a></li><li><a href=#%e7%8e%a9%e7%9a%84%e6%98%af%e6%95%b0%e6%8d%ae aria-label=玩的是数据>玩的是数据</a><ul><li><a href=#%e5%85%b3%e7%b3%bb%e5%9e%8b%e4%b8%9a%e5%8a%a1 aria-label=关系型业务>关系型业务</a></li><li><a href=#%e9%9d%9e%e5%85%b3%e7%b3%bb aria-label=非关系>非关系</a></li><li><a href=#%e5%b0%8f%e7%bb%93 aria-label=小结>小结</a></li></ul></li><li><a href=#%e4%b8%80%e4%ba%9b%e4%b8%ad%e9%97%b4%e4%bb%b6 aria-label=一些中间件>一些中间件</a></li><li><a href=#%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%bd%93%e7%b3%bb aria-label=微服务体系>微服务体系</a></li><li><a href=#%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%9f%ba%e7%a1%80 aria-label=计算机基础>计算机基础</a></li><li><a href=#%e5%88%86%e5%b8%83%e5%bc%8f-%e6%97%b6%e9%97%b4%e7%a9%ba%e9%97%b4%e4%ba%92%e6%8d%a2 aria-label=分布式-时间空间互换>分布式-时间空间互换</a></li><li><a href=#%e6%a0%b8%e5%bf%83%e7%ab%9e%e4%ba%89%e5%8a%9b aria-label=核心竞争力>核心竞争力</a></li></ul></li><li><a href=#%e6%80%bb%e7%bb%93 aria-label=总结>总结</a></li></ul></div></details></div></div></main><script type=text/javascript>function compute(){const t=document.getElementById("post-main"),e=document.getElementById("post-toc");if(t.getBoundingClientRect().top<=0){if(e.style.position==="fixed")return;e.style.position="fixed";const n=document.body.getBoundingClientRect().right,s=t.getBoundingClientRect().right-t.getBoundingClientRect().left;e.style.left=`${(n+s)/2+3}px`}else e.style.position="absolute",e.style.left="calc(100% + 3px)"}window.addEventListener("scroll",compute)</script><footer class=post-footer><nav class=paginav><a class=prev href=https://tomorrowthief.github.io/posts/ai-agent/><span class=title>« 上一页</span><br><span>LLM 长记忆工具总结</span>
 </a><a class=next href=https://tomorrowthief.github.io/posts/sudongpo/><span class=title>下一页 »</span><br><span>苏东坡</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
