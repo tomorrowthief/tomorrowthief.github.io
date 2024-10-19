@@ -65,6 +65,7 @@ outputs:
         - JSON
 
 params:
+    social: true
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "zhongling blog"
     author: zhongling
@@ -103,11 +104,6 @@ params:
         Title: "钟灵毓秀"
         Content: >
             - Software Architect & Problem Solver
-    socialIcons:
-        - name: github
-          url: "https://github.com/tomorrowthief"
-        - name: zhihu
-          url: "https://www.zhihu.com/people/chu-ren-yu-14"
 
     # editPost:
     #     URL: "https://github.com/tomorrowthief/tomorrowthief.github.io/"
