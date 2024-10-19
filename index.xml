@@ -10,24 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 22 Sep 2024 10:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>LLM 长记忆工具总结</title>
-      <link>https://tomorrowthief.github.io/posts/ai-agent/</link>
-      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/posts/ai-agent/</guid>
-      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
-&lt;p&gt;近期工作中做了个 LLM 长记忆功能，对此中的思路，技术坐下总结&lt;/p&gt;
-&lt;h2 id=&#34;功能及分析&#34;&gt;功能及分析&lt;/h2&gt;
-&lt;h2 id=&#34;方案演进&#34;&gt;方案演进&lt;/h2&gt;
-&lt;h3 id=&#34;社区方案&#34;&gt;社区方案&lt;/h3&gt;
-&lt;h3 id=&#34;v1-版本&#34;&gt;v1 版本&lt;/h3&gt;
-&lt;h3 id=&#34;v2-版本&#34;&gt;v2 版本&lt;/h3&gt;
-&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
-&lt;p&gt;在实际中体验下来，最终方案已经基本能用。提交给产品后，收获到了。方案还是会演进的。最后完成的长记忆版本，并写了一篇相关的专利。&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 22 Oct 2024 10:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>后端开发经验-阶段性总结思考</title>
       <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
@@ -387,22 +370,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>工作合作沟通方式</title>
-      <link>https://tomorrowthief.github.io/posts/%E5%B7%A5%E4%BD%9C%E5%90%88%E4%BD%9C/</link>
-      <pubDate>Sun, 15 May 2022 10:21:59 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/posts/%E5%B7%A5%E4%BD%9C%E5%90%88%E4%BD%9C/</guid>
-      <description>&lt;h2 id=&#34;公司合作沟通&#34;&gt;公司合作沟通&lt;/h2&gt;
-&lt;p&gt;前段时间入职了新公司，说下合作上的感受&lt;/p&gt;
-&lt;p&gt;这家公司比较传统，人员沟通也特别传统。&lt;/p&gt;
-&lt;p&gt;传统公司典型的问题&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;不开放，不分享&lt;/li&gt;
-&lt;li&gt;爱理不理&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
     <item>
