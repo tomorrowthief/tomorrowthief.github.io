@@ -34,7 +34,7 @@ draft: false
 ## 方案
 工作流程图
 
-![Alt text](image.png)
+![Alt text](long-term-memory.png)
 
 如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。
 
