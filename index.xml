@@ -10,7 +10,77 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 22 Oct 2024 10:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Oct 2024 11:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM 长记忆工具总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
+      <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;近期工作中做了个 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
+&lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
+&lt;p&gt;简单来说就是让大模型具备记忆功能，记住某个人。其实就是为了打造一个长期个人助手。不同于某次会话上下文记忆，长记忆具备的特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;跟随个人的：我们目前常见的短期记忆只是跟随某次会话&lt;/li&gt;
+&lt;li&gt;时间长：1年，5年，10年，…… 终生&lt;/li&gt;
+&lt;li&gt;个人信息相关的：比如个人爱好，心情变化，健康，工作，生活等这些属于个人记忆，还有一些客观信息事实信息，比如：美国在北美洲，地球是圆的。这些不需要作为记忆信息。&lt;/li&gt;
+&lt;li&gt;多种类型的：如上条，有不同类型的记忆，不同类型的记忆里处理方式有很大差异，比如：日程相关的需要处理时间，绝对时间的转换，个人爱好相关的，比较简单，人员关系型的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;功能点及非功能点梳理&#34;&gt;功能点及非功能点梳理&lt;/h2&gt;
+&lt;p&gt;总体其实为了实现一个个人助手的功能。这个助手系统的具备的功能及非功能点需求大致如下：&lt;/p&gt;
+&lt;h3 id=&#34;功能点&#34;&gt;功能点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;登录，因为是私人助手嘛，得知道你是谁。&lt;/li&gt;
+&lt;li&gt;会话过程：这个不用说了，主题功能&lt;/li&gt;
+&lt;li&gt;配置功能，因为记忆有很多种类型，在助手里最好有配置，比如我想主要是工作，那日程安排比较重要，生活。如果多有记忆都要配置，那就是一个超级个人助手&lt;/li&gt;
+&lt;li&gt;记忆生产：根据配置信息，做不同类型的记忆提取存储&lt;/li&gt;
+&lt;li&gt;记忆消费：是指根据记忆：做下健康管理，饮食管理，工作学习计划，日程计划，等等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;非功能点&#34;&gt;非功能点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;短期能同时处理 1w+ 人数的并发，长期的话人数可能扩充到 10W+，甚至更多。每天可能有 50W 的请求&lt;/li&gt;
+&lt;li&gt;响应时间：在记忆消费时能做到 3s - 5s 内有响应，3s-30s 内响应完成。&lt;/li&gt;
+&lt;li&gt;数据规模，根据每个人的配置，记忆长短不同，数据规模有不同要求&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;方案&#34;&gt;方案&lt;/h2&gt;
+&lt;p&gt;工作流程图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image.png&#34; alt=&#34;Alt text&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。&lt;/p&gt;
+&lt;h2 id=&#34;记忆引擎&#34;&gt;记忆引擎&lt;/h2&gt;
+&lt;p&gt;记忆引擎里完成的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;记忆生产
+根据配置信息生产一些垂类记忆&lt;/li&gt;
+&lt;li&gt;记忆存储
+把记忆抽出来后&lt;/li&gt;
+&lt;li&gt;记忆消费
+根据用户的问题，召回相关的记忆，并做简单推理规划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;记忆生产&#34;&gt;记忆生产&lt;/h3&gt;
+&lt;p&gt;这里输入是会话信息，需要做的是从会话信息里提取记忆实体。主要涉及到自然语言处理的部分。
+知识图谱，我们使用知识图谱来完成记忆的载体。&lt;/p&gt;
+&lt;p&gt;知识图谱的实体抽取，以及图数据库语法都是用额外的大模型来推理完成&lt;/p&gt;
+&lt;h4 id=&#34;提示词设计&#34;&gt;提示词设计&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 信息抽取
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;sb&#34;&gt;`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        你是一个信息提取专家
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        用户的输入如下：{query}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        实体信息：
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;    `&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 记忆更新
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;sb&#34;&gt;`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        你是一个图数据专家，请生成neo4j的sql语句
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        历史记忆如下：{memories}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        新的记忆如下：{memory}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        sql:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;    `&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里只给出部分，因为其他一些垂类的内容。其他还有很多，也算是核心。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>后端开发经验-阶段性总结思考</title>
       <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
