@@ -8,11 +8,12 @@ summary: "about"
 I am now a web developer, software developer, based in 杭州 / 郑州.
 
 
-## Skills & Languages
 
+
+### Skills & Languages
 * Web Develope，JavaScript，Nodejs, Python
 * AI Application, LLM, LangChain
 
-## Learning
+### Learning
 * Something about Web3
 * Neurons Networks & Transformer
