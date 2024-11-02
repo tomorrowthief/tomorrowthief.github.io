@@ -13,21 +13,25 @@
     <lastBuildDate>Fri, 22 Mar 2024 09:16:11 +0000</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI应用实践的思考</title>
-      <link>https://tomorrowthief.github.io/posts/work-thought/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-work-thought/</link>
       <pubDate>Fri, 22 Mar 2024 09:16:11 +0000</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/work-thought/</guid>
-      <description>&lt;p&gt;近两年AI太火了，认真体验及分析后，不得不跟上。最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之。&lt;/p&gt;
+      <guid>https://tomorrowthief.github.io/posts/ai-work-thought/</guid>
+      <description>&lt;p&gt;近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;生成式ai的爆发&#34;&gt;生成式AI的爆发&lt;/h2&gt;
 &lt;p&gt;AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;技术突破&lt;/strong&gt;: 大模型的底层推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术突破&lt;/strong&gt;: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;基础设施发展&lt;/strong&gt;: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;数据的积累&lt;/strong&gt;: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;简单说下-transformer&#34;&gt;简单说下 Transformer&lt;/h3&gt;
+&lt;p&gt;最早是在论文 &lt;code&gt;Attention is all you need&lt;/code&gt; 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。&lt;/p&gt;
+&lt;p&gt;现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。&lt;/p&gt;
+&lt;p&gt;总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础&lt;/p&gt;
 &lt;h2 id=&#34;能改变什么&#34;&gt;能改变什么&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;有人说任何行业都可以重新再做一遍&lt;/p&gt;
@@ -64,10 +68,7 @@
 &lt;p&gt;大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。&lt;/p&gt;
 &lt;p&gt;所以 AI 应用，或则 Agent 的概念，可以如此类比。&lt;/p&gt;
 &lt;h2 id=&#34;技术工具&#34;&gt;技术工具&lt;/h2&gt;
-&lt;p&gt;开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具&lt;/p&gt;
-&lt;h2 id=&#34;我在做什么&#34;&gt;我在做什么&lt;/h2&gt;
-&lt;p&gt;我在做 AI 应用， AI Agent。让大模型这个最强大脑扩展一些外围设备，让他更像人类一样，某种意义上来说也是一种AGI的探索。&lt;/p&gt;
-&lt;p&gt;生活上，要考虑这些新的东西，能不能给自己带来切身收获，直白一点怎么变现，怎么让他提升自己的核心竞争力，在这承平已久，开始出现混乱的年代里，怎么用这个活下去。&lt;/p&gt;</description>
+&lt;p&gt;开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具&lt;/p&gt;</description>
     </item>
     
     <item>

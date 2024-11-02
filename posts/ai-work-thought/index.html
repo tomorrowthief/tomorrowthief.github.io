@@ -1,0 +1,163 @@
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>AI应用实践的思考 | 钟灵毓秀</title>
+<meta name=keywords content><meta name=description content="近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
+
+打败马车夫的不是汽车本身，而是会开车的司机
+
+生成式AI的爆发
+AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：
+
+技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃
+基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现
+数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。
+
+简单说下 Transformer
+最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。
+现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。
+总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础
+能改变什么
+
+有人说任何行业都可以重新再做一遍
+
+人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。
+总结下来当前影响最大的几个面：
+广告/自媒体行业的商业模式
+剪辑，修图，这种体力活完全可以用AI帮忙做了
+教育教培，学习方式
+对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。
+工作效率提升
+有些细节直接用AI生成即可，员工负责更高一层的控制
+软件开发程序员
+我本身就在程序员行当里，对这个提效深有体会
+局限性
+正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。
+所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
+当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。
+
+一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去
+
+模型
+百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。
+要谈的是：
+
+深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。
+向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界
+
+基于这两个重要的底层知识，模型的发展，飞起来了。
+
+菩提本无树，明镜亦非台，本来无一物，何处惹尘埃
+
+AI应用
+大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。
+所以 AI 应用，或则 Agent 的概念，可以如此类比。
+技术工具
+开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具"><meta name=author content="zhongling"><link rel=canonical href=https://tomorrowthief.github.io/posts/ai-work-thought/><link crossorigin=anonymous href=/assets/css/stylesheet.min.63a977388f59c67668ee225d0f9dd2605b70ac8d24a582d553a3580d80b50f33.css integrity="sha256-Y6l3OI9ZxnZo7iJdD53SYFtwrI0kpYLVU6NYDYC1DzM=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY=" onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://tomorrowthief.github.io/posts/ai-work-thought/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="AI应用实践的思考"><meta property="og:description" content="近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
+
+打败马车夫的不是汽车本身，而是会开车的司机
+
+生成式AI的爆发
+AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：
+
+技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃
+基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现
+数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。
+
+简单说下 Transformer
+最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。
+现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。
+总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础
+能改变什么
+
+有人说任何行业都可以重新再做一遍
+
+人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。
+总结下来当前影响最大的几个面：
+广告/自媒体行业的商业模式
+剪辑，修图，这种体力活完全可以用AI帮忙做了
+教育教培，学习方式
+对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。
+工作效率提升
+有些细节直接用AI生成即可，员工负责更高一层的控制
+软件开发程序员
+我本身就在程序员行当里，对这个提效深有体会
+局限性
+正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。
+所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
+当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。
+
+一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去
+
+模型
+百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。
+要谈的是：
+
+深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。
+向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界
+
+基于这两个重要的底层知识，模型的发展，飞起来了。
+
+菩提本无树，明镜亦非台，本来无一物，何处惹尘埃
+
+AI应用
+大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。
+所以 AI 应用，或则 Agent 的概念，可以如此类比。
+技术工具
+开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具"><meta property="og:type" content="article"><meta property="og:url" content="https://tomorrowthief.github.io/posts/ai-work-thought/"><meta property="og:image" content="https://tomorrowthief.github.io/cover.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-03-22T09:16:11+00:00"><meta property="article:modified_time" content="2024-03-22T09:16:11+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://tomorrowthief.github.io/cover.png"><meta name=twitter:title content="AI应用实践的思考"><meta name=twitter:description content="近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
+
+打败马车夫的不是汽车本身，而是会开车的司机
+
+生成式AI的爆发
+AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：
+
+技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃
+基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现
+数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。
+
+简单说下 Transformer
+最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。
+现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。
+总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础
+能改变什么
+
+有人说任何行业都可以重新再做一遍
+
+人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。
+总结下来当前影响最大的几个面：
+广告/自媒体行业的商业模式
+剪辑，修图，这种体力活完全可以用AI帮忙做了
+教育教培，学习方式
+对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。
+工作效率提升
+有些细节直接用AI生成即可，员工负责更高一层的控制
+软件开发程序员
+我本身就在程序员行当里，对这个提效深有体会
+局限性
+正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。
+所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
+当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。
+
+一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去
+
+模型
+百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。
+要谈的是：
+
+深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。
+向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界
+
+基于这两个重要的底层知识，模型的发展，飞起来了。
+
+菩提本无树，明镜亦非台，本来无一物，何处惹尘埃
+
+AI应用
+大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。
+所以 AI 应用，或则 Agent 的概念，可以如此类比。
+技术工具
+开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://tomorrowthief.github.io/posts/"},{"@type":"ListItem","position":2,"name":"AI应用实践的思考","item":"https://tomorrowthief.github.io/posts/ai-work-thought/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI应用实践的思考","name":"AI应用实践的思考","description":"近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。\n打败马车夫的不是汽车本身，而是会开车的司机\n生成式AI的爆发 AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：\n技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃 基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现 数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。 简单说下 Transformer 最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。\n现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。\n总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础\n能改变什么 有人说任何行业都可以重新再做一遍\n人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。\n总结下来当前影响最大的几个面：\n广告/自媒体行业的商业模式 剪辑，修图，这种体力活完全可以用AI帮忙做了\n教育教培，学习方式 对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。\n工作效率提升 有些细节直接用AI生成即可，员工负责更高一层的控制\n软件开发程序员 我本身就在程序员行当里，对这个提效深有体会\n局限性 正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。 所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。 当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。\n一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去\n模型 百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。\n要谈的是：\n深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。 向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界 基于这两个重要的底层知识，模型的发展，飞起来了。\n菩提本无树，明镜亦非台，本来无一物，何处惹尘埃\nAI应用 大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。\n所以 AI 应用，或则 Agent 的概念，可以如此类比。\n技术工具 开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具\n","keywords":[],"articleBody":"近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。\n打败马车夫的不是汽车本身，而是会开车的司机\n生成式AI的爆发 AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：\n技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃 基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现 数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。 简单说下 Transformer 最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。\n现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。\n总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础\n能改变什么 有人说任何行业都可以重新再做一遍\n人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。\n总结下来当前影响最大的几个面：\n广告/自媒体行业的商业模式 剪辑，修图，这种体力活完全可以用AI帮忙做了\n教育教培，学习方式 对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。\n工作效率提升 有些细节直接用AI生成即可，员工负责更高一层的控制\n软件开发程序员 我本身就在程序员行当里，对这个提效深有体会\n局限性 正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。 所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。 当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。\n一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去\n模型 百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。\n要谈的是：\n深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。 向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界 基于这两个重要的底层知识，模型的发展，飞起来了。\n菩提本无树，明镜亦非台，本来无一物，何处惹尘埃\nAI应用 大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。\n所以 AI 应用，或则 Agent 的概念，可以如此类比。\n技术工具 开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具\n他是一把双刃剑 一把剑在高手手中，就是如虎添翼，在一个低手里，甚至可能会伤害到自己。\n截止目前，AI 工具依然如此。自身素质的提升，才能将这个工具发挥到巨大的价值，否则可能被带入的错误的方向。\n我在做什么 我在做 AI 应用， AI Agent。让大模型这个最强大脑扩展一些外围设备，让他更像人类一样，某种意义上来说也是一种AGI的探索。\n生活上，要考虑这些新的东西，能不能给自己带来切身收获，直白一点怎么变现，怎么让他提升自己的核心竞争力，在这承平已久，开始出现混乱的年代里，怎么用这个活下去。\n","wordCount":"82","inLanguage":"zh","datePublished":"2024-03-22T09:16:11.373Z","dateModified":"2024-03-22T09:16:11.373Z","author":{"@type":"Person","name":"zhongling"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://tomorrowthief.github.io/posts/ai-work-thought/"},"publisher":{"@type":"Organization","name":"钟灵毓秀","logo":{"@type":"ImageObject","url":"https://tomorrowthief.github.io/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://tomorrowthief.github.io/ accesskey=h title="钟灵毓秀 (Alt + H)">钟灵毓秀</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>AI应用实践的思考</h1><div class=post-meta>&lt;span title='2024-03-22 09:16:11.373 +0000 UTC'>三月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;1 分钟&amp;nbsp;·&amp;nbsp;zhongling</div></header><main class=post-main id=post-main><div class=post-content><p>近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。</p><blockquote><p>打败马车夫的不是汽车本身，而是会开车的司机</p></blockquote><h2 id=生成式ai的爆发>生成式AI的爆发<a hidden class=anchor aria-hidden=true href=#生成式ai的爆发>#</a></h2><p>AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：</p><ul><li><strong>技术突破</strong>: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃</li><li><strong>基础设施发展</strong>: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现</li><li><strong>数据的积累</strong>: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。</li></ul><h3 id=简单说下-transformer>简单说下 Transformer<a hidden class=anchor aria-hidden=true href=#简单说下-transformer>#</a></h3><p>最早是在论文 <code>Attention is all you need</code> 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。</p><p>现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。</p><p>总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础</p><h2 id=能改变什么>能改变什么<a hidden class=anchor aria-hidden=true href=#能改变什么>#</a></h2><blockquote><p>有人说任何行业都可以重新再做一遍</p></blockquote><p>人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。</p><p>总结下来当前影响最大的几个面：</p><h3 id=广告自媒体行业的商业模式>广告/自媒体行业的商业模式<a hidden class=anchor aria-hidden=true href=#广告自媒体行业的商业模式>#</a></h3><p>剪辑，修图，这种体力活完全可以用AI帮忙做了</p><h3 id=教育教培学习方式>教育教培，学习方式<a hidden class=anchor aria-hidden=true href=#教育教培学习方式>#</a></h3><p>对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。</p><h3 id=工作效率提升>工作效率提升<a hidden class=anchor aria-hidden=true href=#工作效率提升>#</a></h3><p>有些细节直接用AI生成即可，员工负责更高一层的控制</p><h3 id=软件开发程序员>软件开发程序员<a hidden class=anchor aria-hidden=true href=#软件开发程序员>#</a></h3><p>我本身就在程序员行当里，对这个提效深有体会</p><h2 id=局限性>局限性<a hidden class=anchor aria-hidden=true href=#局限性>#</a></h2><p>正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。
+所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
+当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。</p><blockquote><p>一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去</p></blockquote><h2 id=模型>模型<a hidden class=anchor aria-hidden=true href=#模型>#</a></h2><p>百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。</p><p>要谈的是：</p><ul><li>深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。</li><li>向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界</li></ul><p>基于这两个重要的底层知识，模型的发展，飞起来了。</p><blockquote><p>菩提本无树，明镜亦非台，本来无一物，何处惹尘埃</p></blockquote><h2 id=ai应用>AI应用<a hidden class=anchor aria-hidden=true href=#ai应用>#</a></h2><p>大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。</p><p>所以 AI 应用，或则 Agent 的概念，可以如此类比。</p><h2 id=技术工具>技术工具<a hidden class=anchor aria-hidden=true href=#技术工具>#</a></h2><p>开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具</p><h2 id=他是一把双刃剑>他是一把双刃剑<a hidden class=anchor aria-hidden=true href=#他是一把双刃剑>#</a></h2><p>一把剑在高手手中，就是如虎添翼，在一个低手里，甚至可能会伤害到自己。</p><p>截止目前，AI 工具依然如此。自身素质的提升，才能将这个工具发挥到巨大的价值，否则可能被带入的错误的方向。</p><h2 id=我在做什么>我在做什么<a hidden class=anchor aria-hidden=true href=#我在做什么>#</a></h2><p>我在做 AI 应用， AI Agent。让大模型这个最强大脑扩展一些外围设备，让他更像人类一样，某种意义上来说也是一种AGI的探索。</p><p>生活上，要考虑这些新的东西，能不能给自己带来切身收获，直白一点怎么变现，怎么让他提升自己的核心竞争力，在这承平已久，开始出现混乱的年代里，怎么用这个活下去。</p></div><div class=post-toc id=post-toc><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>目录</span></summary><div class=inner><ul><li><a href=#%e7%94%9f%e6%88%90%e5%bc%8fai%e7%9a%84%e7%88%86%e5%8f%91 aria-label=生成式AI的爆发>生成式AI的爆发</a><ul><li><a href=#%e7%ae%80%e5%8d%95%e8%af%b4%e4%b8%8b-transformer aria-label="简单说下 Transformer">简单说下 Transformer</a></li></ul></li><li><a href=#%e8%83%bd%e6%94%b9%e5%8f%98%e4%bb%80%e4%b9%88 aria-label=能改变什么>能改变什么</a><ul><li><a href=#%e5%b9%bf%e5%91%8a%e8%87%aa%e5%aa%92%e4%bd%93%e8%a1%8c%e4%b8%9a%e7%9a%84%e5%95%86%e4%b8%9a%e6%a8%a1%e5%bc%8f aria-label=广告/自媒体行业的商业模式>广告/自媒体行业的商业模式</a></li><li><a href=#%e6%95%99%e8%82%b2%e6%95%99%e5%9f%b9%e5%ad%a6%e4%b9%a0%e6%96%b9%e5%bc%8f aria-label=教育教培，学习方式>教育教培，学习方式</a></li><li><a href=#%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%e6%8f%90%e5%8d%87 aria-label=工作效率提升>工作效率提升</a></li><li><a href=#%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e7%a8%8b%e5%ba%8f%e5%91%98 aria-label=软件开发程序员>软件开发程序员</a></li></ul></li><li><a href=#%e5%b1%80%e9%99%90%e6%80%a7 aria-label=局限性>局限性</a></li><li><a href=#%e6%a8%a1%e5%9e%8b aria-label=模型>模型</a></li><li><a href=#ai%e5%ba%94%e7%94%a8 aria-label=AI应用>AI应用</a></li><li><a href=#%e6%8a%80%e6%9c%af%e5%b7%a5%e5%85%b7 aria-label=技术工具>技术工具</a></li><li><a href=#%e4%bb%96%e6%98%af%e4%b8%80%e6%8a%8a%e5%8f%8c%e5%88%83%e5%89%91 aria-label=他是一把双刃剑>他是一把双刃剑</a></li><li><a href=#%e6%88%91%e5%9c%a8%e5%81%9a%e4%bb%80%e4%b9%88 aria-label=我在做什么>我在做什么</a></li></ul></div></details></div></div></main><script type=text/javascript>function compute(){const t=document.getElementById("post-main"),e=document.getElementById("post-toc");if(t.getBoundingClientRect().top<=0){if(e.style.position==="fixed")return;e.style.position="fixed";const n=document.body.getBoundingClientRect().right,s=t.getBoundingClientRect().right-t.getBoundingClientRect().left;e.style.left=`${(n+s)/2+3}px`}else e.style.position="absolute",e.style.left="calc(100% + 3px)"}window.addEventListener("scroll",compute)</script><footer class=post-footer><nav class=paginav><a class=prev href=https://tomorrowthief.github.io/posts/ai-python/><span class=title>« 上一页</span><br><span>Python 学习总结</span>
+</a><a class=next href=https://tomorrowthief.github.io/posts/liaofansixun/><span class=title>下一页 »</span><br><span>了凡四训</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/tomorrowthief/hugo-blog rel=noopener target=_blank>Hugo-blog</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");console.log(document.body.clientHeight),window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerText="复制";function s(){t.innerText="已复制！",setTimeout(()=>{t.innerText="复制"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

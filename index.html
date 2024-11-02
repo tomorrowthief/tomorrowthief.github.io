@@ -66,10 +66,13 @@ Python 综述 Python 第一版本发布于 2000年，目前在 Tiobe 排行榜�
 个人感觉 1-2 周左右时间，即可上手基础开发。
 这里只提下我印象比较深刻的函数部分： 通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo如下
 def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 函数参数可以用 * *key_yars 来动态接收
-...</p></section><footer class=entry-footer>&lt;span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;2 分钟&amp;nbsp;·&amp;nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><article class=post-entry><header class=entry-header><h2>AI应用实践的思考</h2></header><section class=entry-content><p>近两年AI太火了，认真体验及分析后，不得不跟上。最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之。
+...</p></section><footer class=entry-footer>&lt;span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;2 分钟&amp;nbsp;·&amp;nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><article class=post-entry><header class=entry-header><h2>AI应用实践的思考</h2></header><section class=entry-content><p>近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
 打败马车夫的不是汽车本身，而是会开车的司机
 生成式AI的爆发 AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：
-技术突破: 大模型的底层推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃 基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现 数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。 能改变什么 有人说任何行业都可以重新再做一遍
+技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃 基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现 数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。 简单说下 Transformer 最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。
+现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。
+总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础
+能改变什么 有人说任何行业都可以重新再做一遍
 人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。
 总结下来当前影响最大的几个面：
 广告/自媒体行业的商业模式 剪辑，修图，这种体力活完全可以用AI帮忙做了
@@ -85,8 +88,7 @@ def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 函数参数�
 AI应用 大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。
 所以 AI 应用，或则 Agent 的概念，可以如此类比。
 技术工具 开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具
-我在做什么 我在做 AI 应用， AI Agent。让大模型这个最强大脑扩展一些外围设备，让他更像人类一样，某种意义上来说也是一种AGI的探索。
-生活上，要考虑这些新的东西，能不能给自己带来切身收获，直白一点怎么变现，怎么让他提升自己的核心竞争力，在这承平已久，开始出现混乱的年代里，怎么用这个活下去。</p></section><footer class=entry-footer>&lt;span title='2024-03-22 09:16:11.373 +0000 UTC'>三月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;1 分钟&amp;nbsp;·&amp;nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI应用实践的思考" href=https://tomorrowthief.github.io/posts/work-thought/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://tomorrowthief.github.io/page/2/>下一页 »</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
+...</p></section><footer class=entry-footer>&lt;span title='2024-03-22 09:16:11.373 +0000 UTC'>三月 22, 2024&lt;/span>&amp;nbsp;·&amp;nbsp;1 分钟&amp;nbsp;·&amp;nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI应用实践的思考" href=https://tomorrowthief.github.io/posts/ai-work-thought/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://tomorrowthief.github.io/page/2/>下一页 »</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/tomorrowthief/hugo-blog rel=noopener target=_blank>Hugo-blog</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
