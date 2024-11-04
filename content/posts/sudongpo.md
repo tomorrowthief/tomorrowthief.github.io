@@ -2,6 +2,7 @@
 title: "苏东坡"
 date: 2024-06-30T09:13:27+08:00
 draft: false
+categories: '札记'
 ---
 
 > 林语堂苏东坡读后感
