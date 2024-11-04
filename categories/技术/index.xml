@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术 on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 19 Oct 2024 11:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM 长记忆工具总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
+      <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
+&lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
+&lt;p&gt;简单来说就是让大模型具备记忆功能，记住某个人。产品形态上可以是个人助手。不同于某次会话上下文记忆，长记忆具备的特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;跟随个人的：我们目前常见的短期记忆只是跟随某次会话&lt;/li&gt;
+&lt;li&gt;时间长：1年，5年，10年，……，终生&lt;/li&gt;
+&lt;li&gt;个人信息相关的：比如个人爱好，心情变化，健康，工作，生活等这些属于个人记忆。客观信息事实信息比如：美国在北美洲，地球是圆的等这些不需要作为记忆信息。&lt;/li&gt;
+&lt;li&gt;多种类型的：如上条有不同类型的记忆，不同类型的记忆里处理方式有很大差异，比如：日程相关的需要处理时间，绝对时间的转换，个人爱好相关的，比较简单，直接用类似图谱的三元组信息即可，办公工作内容型的记忆类似。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;功能点及非功能点梳理&#34;&gt;功能点及非功能点梳理&lt;/h2&gt;
+&lt;p&gt;总体其实为了实现个人助手的产品功能。这个助手在产品形态上是一个普通对话机器人，系统的具备的功能及非功能点需求大致如下：&lt;/p&gt;
+&lt;h3 id=&#34;功能点&#34;&gt;功能点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;登录，因为是私人助手嘛，得知道用户是谁。&lt;/li&gt;
+&lt;li&gt;对话：这个不用说了，是助手的主题功能&lt;/li&gt;
+&lt;li&gt;配置功能，因为记忆有很多种类型，在助手里最好有配置，比如我想主要是工作，那日程安排比较重要，生活。如果多有记忆都要配置，那就是一个超级个人助手&lt;/li&gt;
+&lt;li&gt;记忆生产：根据配置信息，做不同类型的记忆提取存储&lt;/li&gt;
+&lt;li&gt;记忆消费：是指根据记忆：做下健康管理，饮食管理，工作学习计划，日程计划，等等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;非功能点&#34;&gt;非功能点&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;短期能同时处理 1w+ 人数的并发，长期的话人数可能扩充到 10W+，甚至更多。每天可能有 50W 的请求&lt;/li&gt;
+&lt;li&gt;响应时间：在记忆消费时能做到 3s - 5s 内有响应，3s-30s 内响应完成。&lt;/li&gt;
+&lt;li&gt;数据规模，根据每个人的配置，记忆长短不同，数据规模有不同要求&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;方案&#34;&gt;方案&lt;/h2&gt;
+&lt;p&gt;工作流程图&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://tomorrowthief.github.io/long-term-memory.png&#34; alt=&#34;Alt text&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。&lt;/p&gt;
+&lt;h2 id=&#34;记忆引擎&#34;&gt;记忆引擎&lt;/h2&gt;
+&lt;p&gt;记忆引擎里完成的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;记忆生产
+根据配置信息生产一些垂类记忆&lt;/li&gt;
+&lt;li&gt;记忆存储
+把记忆抽出来后&lt;/li&gt;
+&lt;li&gt;记忆消费
+根据用户的问题，召回相关的记忆，并做简单推理规划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;记忆生产&#34;&gt;记忆生产&lt;/h3&gt;
+&lt;p&gt;这里输入是会话信息，需要做的是从会话信息里提取记忆实体。主要涉及到自然语言处理的部分。
+知识图谱，我们使用知识图谱来完成记忆的载体。&lt;/p&gt;
+&lt;p&gt;知识图谱的实体抽取，以及图数据库语法都是用额外的大模型来推理完成&lt;/p&gt;
+&lt;h4 id=&#34;提示词设计&#34;&gt;提示词设计&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 信息抽取
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;sb&#34;&gt;`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        你是一个信息提取专家
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        用户的输入如下：{query}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        实体信息：
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;    `&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 记忆更新
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;sb&#34;&gt;`
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        你是一个图数据专家，请生成neo4j的sql语句
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        历史记忆如下：{memories}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        新的记忆如下：{memory}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;        sql:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;    `&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这里只给出部分，因为其他一些垂类的内容。其他还有很多，也算是核心。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>后端开发经验-阶段性总结思考</title>
+      <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
+      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-backend-dev/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;做了大半年左右的后端开发后，总结下相关感受。&lt;/p&gt;
+&lt;p&gt;技术栈：Python/Nodejs + React&lt;/p&gt;
+&lt;p&gt;行业背景：LLM 应用， RAG， Agent&lt;/p&gt;
+&lt;h2 id=&#34;后端开发思路&#34;&gt;后端开发思路&lt;/h2&gt;
+&lt;p&gt;后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。&lt;/p&gt;
+&lt;p&gt;其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;功能设计上主要关注：数据结构，类包，业务模块，工作流等&lt;/li&gt;
+&lt;li&gt;非功能性关注：性能，并发，安全，稳定等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;玩的是数据&#34;&gt;玩的是数据&lt;/h2&gt;
+&lt;p&gt;数据算是核心中的核心了。所有的业务基础都是按照这个来的&lt;/p&gt;
+&lt;h3 id=&#34;关系型业务&#34;&gt;关系型业务&lt;/h3&gt;
+&lt;p&gt;mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂&lt;/p&gt;
+&lt;p&gt;这里主要考虑：表结构设计，索引设计。&lt;/p&gt;
+&lt;p&gt;如果到一定规模考虑 分区，分表，分库&lt;/p&gt;
+&lt;p&gt;实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。&lt;/p&gt;
+&lt;p&gt;如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。&lt;/p&gt;
+&lt;h3 id=&#34;非关系&#34;&gt;非关系&lt;/h3&gt;
+&lt;p&gt;Redis，Es，Mongodb，图数据库&lt;/p&gt;
+&lt;p&gt;日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。&lt;/p&gt;
+&lt;p&gt;Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等&lt;/p&gt;
+&lt;p&gt;图数据库&lt;/p&gt;
+&lt;p&gt;在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多&lt;/p&gt;
+&lt;h3 id=&#34;小结&#34;&gt;小结&lt;/h3&gt;
+&lt;p&gt;这块也是一个非常大的技术体系，往深走的话需要专题讨论。&lt;/p&gt;
+&lt;p&gt;我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）&lt;/p&gt;
+&lt;p&gt;由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。&lt;/p&gt;
+&lt;h2 id=&#34;一些中间件&#34;&gt;一些中间件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;消息中间件
+几乎是必须的，做异步，服务结构等&lt;/li&gt;
+&lt;li&gt;任务队列
+做性能，并发等&lt;/li&gt;
+&lt;li&gt;日志，错误处理等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;微服务体系&#34;&gt;微服务体系&lt;/h2&gt;
+&lt;p&gt;很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理&lt;/p&gt;
+&lt;p&gt;得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里&lt;/p&gt;
+&lt;p&gt;我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大&lt;/p&gt;
+&lt;h2 id=&#34;计算机基础&#34;&gt;计算机基础&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机组成：cpu，gpu，硬盘，内存&lt;/li&gt;
+&lt;li&gt;操作系统：进程线程协程等，资源管理，IO管理：网络/文件&lt;/li&gt;
+&lt;li&gt;编译：前端：分词，语法分析，语法树，后端：机器平台生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;分布式-时间空间互换&#34;&gt;分布式-时间空间互换&lt;/h2&gt;
+&lt;p&gt;这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 学习总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-python/</link>
+      <pubDate>Sat, 22 Jun 2024 10:47:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-python/</guid>
+      <description>&lt;h2 id=&#34;为什么要学-python&#34;&gt;为什么要学 Python&lt;/h2&gt;
+&lt;p&gt;最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。&lt;/p&gt;
+&lt;p&gt;根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 &lt;code&gt;Nodejs&lt;/code&gt; &lt;code&gt;python&lt;/code&gt;。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。&lt;/p&gt;
+&lt;h2 id=&#34;python-综述&#34;&gt;Python 综述&lt;/h2&gt;
+&lt;p&gt;Python 第一版本发布于 2000年，目前在 Tiobe 排行榜里人数排名第一，社区热度也升为第一。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定位：高级语言，通用能力编程语言&lt;/li&gt;
+&lt;li&gt;特性：动态语言，基于解释器，gc 等&lt;/li&gt;
+&lt;li&gt;范式：函数编程，面向对象，面向过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要在 数据处理，计算，Web等发挥作用，AI 领域使用很多， Web 开发也有很多场景&lt;/p&gt;
+&lt;p&gt;运行模式支持 多进程，多线程，协程&lt;/p&gt;
+&lt;h2 id=&#34;执行流程&#34;&gt;执行流程&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这一章直接问了 gpt，下面都是 ai 的回答&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在Python中，程序的执行流程通常是按照以下步骤进行的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;解释器读取源代码：Python解释器会逐行读取源代码文件，并将其转换为字节码形式，这是一种中间表示形式，可以被Python虚拟机执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;词法分析和语法分析：在这个阶段，Python解释器会将源代码分解成单词（Token）并构建语法树。这个过程包括词法分析（将源代码分解为Token）和语法分析（根据语法规则构建语法树）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编译字节码：Python解释器将语法树转换为字节码。字节码是一种中间形式，类似于机器码，但是不是针对特定的硬件架构。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;执行字节码：Python虚拟机执行字节码指令。这些指令会被逐条执行，从而实现程序的逻辑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;动态类型检查：Python是一种动态类型语言，因此在运行时会进行类型检查。如果类型不匹配，会引发类型错误。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;垃圾回收：Python具有自动内存管理机制，包括垃圾回收。垃圾回收器会定期检查不再使用的内存对象，并释放它们。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;异常处理：在程序执行过程中，如果发生异常，Python会查找合适的异常处理程序。如果找不到合适的处理程序，程序会中止并打印错误信息。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;程序结束：当程序执行完所有的代码或遇到显式的退出语句（如return或sys.exit()）时，程序结束执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
+&lt;p&gt;跟我熟悉的 JS 差别很大，总体感受很灵活。基础的比如：变量 循环，函数的定义参数。可以直接看&lt;a href=&#34;https://docs.python.org/zh-cn/3/reference/index.html&#34;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;个人感觉 1-2 周左右时间，即可上手基础开发。&lt;/p&gt;
+&lt;p&gt;这里只提下我印象比较深刻的函数部分：
+通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;num2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;num1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;num2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;函数参数可以用 &lt;code&gt;*&lt;/code&gt; &lt;code&gt;*key_yars&lt;/code&gt; 来动态接收&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

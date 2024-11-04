@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tomorrowthief.github.io/categories/</loc>
+    <lastmod>2024-10-19T11:48:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/categories/"
+                />
+  </url><url>
     <loc>https://tomorrowthief.github.io/posts/ai-longterm-memory/</loc>
     <lastmod>2024-10-19T11:48:00+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/</loc>
+    <lastmod>2024-10-19T11:48:00+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-10-19T11:48:00+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/</loc>
@@ -27,32 +43,19 @@
     <loc>https://tomorrowthief.github.io/posts/sudongpo/</loc>
     <lastmod>2024-06-30T09:13:27+08:00</lastmod>
   </url><url>
+    <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
+    <lastmod>2024-06-30T09:13:27+08:00</lastmod>
+  </url><url>
     <loc>https://tomorrowthief.github.io/posts/ai-python/</loc>
     <lastmod>2024-06-22T10:47:41+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/ai-work-thought/</loc>
     <lastmod>2024-03-22T09:16:11+00:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.github.io/categories/</loc>
-    <lastmod>2024-03-22T09:16:11+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.github.io/categories/"
-                />
-  </url><url>
     <loc>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2024-03-22T09:16:11+00:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/liaofansixun/</loc>
-    <lastmod>2023-11-01T14:09:41+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
     <lastmod>2023-11-01T14:09:41+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/liuguolun/</loc>
