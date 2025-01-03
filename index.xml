@@ -10,7 +10,93 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 19 Oct 2024 11:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Dec 2024 13:50:01 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devops概念梳理</title>
+      <link>https://tomorrowthief.github.io/posts/devops/</link>
+      <pubDate>Mon, 30 Dec 2024 13:50:01 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/devops/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。&lt;/p&gt;
+&lt;h2 id=&#34;从-docker-开始&#34;&gt;从 Docker 开始&lt;/h2&gt;
+&lt;p&gt;Docker，是一种容器化的概念，属于虚拟化技术的一种形式。以颗粒度更小的方式，隔离性也更好的方式完成宿主机的资源榨取。他与虚拟机的核心区别是&lt;/p&gt;
+&lt;p&gt;Docker与虚拟机的核心区别主要在于以下几个方面：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;架构层级&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;虚拟机（Virtual Machine, VM）&lt;/strong&gt;：虚拟机在宿主操作系统之上运行一个完整的客户操作系统。它使用Hypervisor（如VMware、KVM、Hyper-V等）来虚拟化硬件资源，每个虚拟机都有自己的内核、操作系统和应用程序。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker容器&lt;/strong&gt;：Docker容器在宿主操作系统之上运行，但它们与宿主共享相同的操作系统内核。容器是通过容器引擎（如Docker）来管理和隔离的。每个容器包含应用程序及其所有依赖项，但不包含完整的操作系统。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;资源利用效率&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;虚拟机&lt;/strong&gt;：由于每个虚拟机都需要一个完整的操作系统，因此启动和运行时会消耗更多的内存和CPU资源。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker容器&lt;/strong&gt;：由于所有容器共享宿主操作系统的内核，启动时间更快，资源开销也更小。这使得容器更加轻量级，可以在同样的硬件上运行更多实例。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;启动时间&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;虚拟机&lt;/strong&gt;：由于需要启动一个完整的操作系统，虚拟机通常需要数分钟时间才能完全启动并准备好使用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker容器&lt;/strong&gt;：因为没有完整的OS启动过程，Docker容器通常可以在几秒钟内完成启动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;隔离性与安全性&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;虚拟机&lt;/strong&gt;：提供了强隔离，因为每个VM运行在完全独立的环境中，包括独立的内核。因此，安全性较高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker容器&lt;/strong&gt;：虽然提供了进程级别的隔离，但仍共享宿主OS内核，因此理论上存在一些安全风险。不过，通过适当配置和使用工具（如SELinux、AppArmor等），可以增强安全性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;存储与持久化数据管理方式&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;虚拟机&lt;/strong&gt;：通常使用虚拟磁盘文件来存储数据，这些文件可以独立于其他VM进行管理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker容器&lt;/strong&gt;：使用卷（volumes）和绑定挂载（bind mounts）来持久化数据，这些可以被多个容器共享或独立管理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总而言之，Docker作为一种轻量级、便捷、高效且快速部署的方法，在云原生应用开发中得到了广泛应用。而虚拟机则仍然适用于需要强隔离、安全要求高以及需要运行不同类型操作系统等场景。&lt;/p&gt;
+&lt;p&gt;Docker的核心原理是:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Docker的核心原理是利用操作系统级的虚拟化技术（即容器化技术）来创建、部署和运行应用程序。具体来说，Docker 的核心原理包括以下几个方面：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Namespace（命名空间）隔离&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 使用 Linux 内核的命名空间（Namespace）功能来实现进程隔离。这些命名空间包括 UTS（主机和域名）、IPC（进程间通信）、PID（进程 ID）、Network（网络）、Mount（文件系统挂载点）等。&lt;/li&gt;
+&lt;li&gt;每个容器都有独立的命名空间，因此它们之间不会互相干扰，提供了类似虚拟机的隔离效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cgroups（控制组）资源控制&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cgroups 是 Linux 内核提供的一种机制，用于限制、记录和隔离单个进程组的资源使用情况。Docker 使用 Cgroups 来限制容器可以使用的 CPU、内存、磁盘 I/O 等资源。&lt;/li&gt;
+&lt;li&gt;通过这种方式，Docker 能够确保每个容器在资源分配上互不干扰，并且可以避免某个容器滥用系统资源。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Union File System（联合文件系统）&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker 使用联合文件系统，如 AUFS、OverlayFS 等，来实现镜像和容器的分层存储。每个 Docker 镜像由多层组成，每一层都是只读的，当需要对镜像进行修改时，会在顶层添加一个可写层。&lt;/li&gt;
+&lt;li&gt;这种分层设计不仅提高了存储效率，还使得镜像可以快速构建和共享。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Container Image（容器镜像）&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;容器镜像是一个包含应用程序及其所有依赖项的只读模板。Docker 容器是从这些镜像创建出来的一种运行实例。&lt;/li&gt;
+&lt;li&gt;镜像可以通过 Dockerfile 定义，并且支持版本管理，这使得应用程序环境变得可移植且易于复制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Container Runtime&lt;/strong&gt;：&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LLM 长记忆工具总结</title>
       <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
