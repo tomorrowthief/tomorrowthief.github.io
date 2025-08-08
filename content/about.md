@@ -10,10 +10,10 @@ I am now a web developer, software developer, based in 杭州 / 郑州.
 
 <br />
 
-### Skills & Languages
-* Web Develope，JavaScript，Nodejs, Python
-* AI Application, LLM, LangChain
+## Skills & Languages
+* Front End，Nodejs, Python, Golang
+* AI Application, LLM, Agentic Application
 
-### Learning
+## Learning
 * Something about Web3
 * Neurons Networks & Transformer
