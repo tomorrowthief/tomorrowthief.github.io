@@ -1,4 +1,3 @@
-<img width="922" height="250" alt="image" src="https://github.com/user-attachments/assets/ac1a2db4-32bc-4d69-93d3-083d7b3513c2" />---
 title: "AI 时代下的你我"
 date: 2025-08-08T18:24:41+08:00
 draft: false
