@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>技术 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.vercel.app/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.vercel.app/cover.png</url>
-      <link>https://tomorrowthief.vercel.app/cover.png</link>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 08 Aug 2025 18:17:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 18:17:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 应用技术</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-tec/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-tec/</link>
       <pubDate>Fri, 08 Aug 2025 18:17:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-tec/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-tec/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;梳理下自己在 AI 产品开发中用到的一些技术，自己了解的一些业界中的技术&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AI 产品思考</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-products/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-products/</link>
       <pubDate>Fri, 08 Aug 2025 18:15:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-products/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-products/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;梳理我个人AI产品开发迭代的经验，遇到的好玩的产品等&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Devops概念梳理</title>
-      <link>https://tomorrowthief.vercel.app/posts/devops/</link>
+      <link>https://tomorrowthief.github.io/posts/devops/</link>
       <pubDate>Mon, 30 Dec 2024 13:50:01 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/devops/</guid>
+      <guid>https://tomorrowthief.github.io/posts/devops/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。&lt;/p&gt;
 &lt;h2 id=&#34;从-docker-开始&#34;&gt;从 Docker 开始&lt;/h2&gt;
@@ -118,10 +118,10 @@
     
     <item>
       <title>LLM 长记忆工具总结</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-longterm-memory/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
       <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-longterm-memory/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
 &lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
@@ -150,7 +150,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;方案&#34;&gt;方案&lt;/h2&gt;
 &lt;p&gt;工作流程图&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://tomorrowthief.vercel.app/long-term-memory.png&#34; alt=&#34;Alt text&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://tomorrowthief.github.io/long-term-memory.png&#34; alt=&#34;Alt text&#34;  /&gt;
 &lt;/p&gt;
 &lt;p&gt;如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。&lt;/p&gt;
 &lt;h2 id=&#34;记忆引擎&#34;&gt;记忆引擎&lt;/h2&gt;
@@ -188,10 +188,10 @@
     
     <item>
       <title>后端开发经验-阶段性总结思考</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-backend-dev/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
       <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-backend-dev/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-backend-dev/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;做了大半年左右的后端开发后，总结下相关感受。&lt;/p&gt;
 &lt;p&gt;技术栈：Python/Nodejs + React&lt;/p&gt;
@@ -245,10 +245,10 @@
     
     <item>
       <title>Python 学习总结</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-python/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-python/</link>
       <pubDate>Sat, 22 Jun 2024 10:47:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-python/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-python/</guid>
       <description>&lt;h2 id=&#34;为什么要学-python&#34;&gt;为什么要学 Python&lt;/h2&gt;
 &lt;p&gt;最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。&lt;/p&gt;
 &lt;p&gt;根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 &lt;code&gt;Nodejs&lt;/code&gt; &lt;code&gt;python&lt;/code&gt;。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。&lt;/p&gt;

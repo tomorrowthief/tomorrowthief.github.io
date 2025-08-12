@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>哲思 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.vercel.app/categories/%E5%93%B2%E6%80%9D/</link>
+    <link>https://tomorrowthief.github.io/categories/%E5%93%B2%E6%80%9D/</link>
     <description>Recent content in 哲思 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.vercel.app/cover.png</url>
-      <link>https://tomorrowthief.vercel.app/cover.png</link>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 08 Aug 2025 18:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E5%93%B2%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 18:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E5%93%B2%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 时代下的你我</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-person/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-person/</link>
       <pubDate>Fri, 08 Aug 2025 18:24:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-person/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-person/</guid>
       <description>&lt;p&gt;首先我认同 AI 时代会改变很多生活，生产，工作的形态，甚至更多……，当然这个主题很大，谁都难以精确的的预测各行各业的发展，&lt;/p&gt;
 &lt;p&gt;很荣幸为一个 &lt;strong&gt;软件工作者&lt;/strong&gt; 及 &lt;strong&gt;普通居民&lt;/strong&gt; 的角色能站在这场变革的一线，几乎从23年开始一直持续关注相关的动态，参与到一些 AI 产品的使用中，并且参与到一些 AI 产品的开发中。&lt;/p&gt;
 &lt;p&gt;就宏观上输出下我个人的感受，后面会继续在一些细节(产品发展，相关技术，及个人重度参与的 vibe coding)上深入讨论&lt;/p&gt;

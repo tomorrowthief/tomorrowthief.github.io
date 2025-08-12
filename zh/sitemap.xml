@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-person/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-person/</loc>
     <lastmod>2025-08-08T18:24:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/</loc>
-    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.vercel.app/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.vercel.app/categories/"
-                />
-  </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/</loc>
-    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/%E5%93%B2%E6%80%9D/</loc>
-    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.vercel.app/</loc>
+    <loc>https://tomorrowthief.github.io/categories/</loc>
     <lastmod>2025-08-08T18:24:41+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.vercel.app/en/"
+                href="https://tomorrowthief.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.vercel.app/"
+                href="https://tomorrowthief.github.io/categories/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-tec/</loc>
+    <loc>https://tomorrowthief.github.io/posts/</loc>
+    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/categories/%E5%93%B2%E6%80%9D/</loc>
+    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/</loc>
+    <lastmod>2025-08-08T18:24:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/ai-tec/</loc>
     <lastmod>2025-08-08T18:17:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-08-08T18:17:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-products/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-products/</loc>
     <lastmod>2025-08-08T18:15:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/devops/</loc>
+    <loc>https://tomorrowthief.github.io/posts/devops/</loc>
     <lastmod>2024-12-30T13:50:01+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-longterm-memory/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-longterm-memory/</loc>
     <lastmod>2024-10-19T11:48:00+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-backend-dev/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-backend-dev/</loc>
     <lastmod>2024-09-22T10:48:00+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/sudongpo/</loc>
+    <loc>https://tomorrowthief.github.io/posts/sudongpo/</loc>
     <lastmod>2024-06-30T09:13:27+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/%E6%9C%AD%E8%AE%B0/</loc>
+    <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
     <lastmod>2024-06-30T09:13:27+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-python/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-python/</loc>
     <lastmod>2024-06-22T10:47:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/ai-work-thought/</loc>
+    <loc>https://tomorrowthief.github.io/posts/ai-work-thought/</loc>
     <lastmod>2024-03-22T09:16:11+00:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/</loc>
+    <loc>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</loc>
     <lastmod>2024-03-22T09:16:11+00:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/liaofansixun/</loc>
+    <loc>https://tomorrowthief.github.io/posts/liaofansixun/</loc>
     <lastmod>2023-11-01T14:09:41+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/liuguolun/</loc>
+    <loc>https://tomorrowthief.github.io/posts/liuguolun/</loc>
     <lastmod>2023-01-16T10:43:11+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/art-of-war/</loc>
+    <loc>https://tomorrowthief.github.io/posts/art-of-war/</loc>
     <lastmod>2022-06-17T10:08:36+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/categories/%E6%9E%B6%E6%9E%84/</loc>
+    <loc>https://tomorrowthief.github.io/categories/%E6%9E%B6%E6%9E%84/</loc>
     <lastmod>2022-05-11T10:38:36+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/extend-design/</loc>
+    <loc>https://tomorrowthief.github.io/posts/extend-design/</loc>
     <lastmod>2022-05-11T10:38:36+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/deep-thinking/</loc>
+    <loc>https://tomorrowthief.github.io/posts/deep-thinking/</loc>
     <lastmod>2022-04-18T10:08:36+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/swim/</loc>
+    <loc>https://tomorrowthief.github.io/posts/swim/</loc>
     <lastmod>2022-04-15T14:34:21+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/posts/kaishila/</loc>
+    <loc>https://tomorrowthief.github.io/posts/kaishila/</loc>
     <lastmod>2022-04-14T20:21:59+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/about/</loc>
+    <loc>https://tomorrowthief.github.io/about/</loc>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/search/</loc>
+    <loc>https://tomorrowthief.github.io/search/</loc>
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/series/</loc>
+    <loc>https://tomorrowthief.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.vercel.app/en/series/"
+                href="https://tomorrowthief.github.io/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.vercel.app/series/"
+                href="https://tomorrowthief.github.io/series/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/tags/</loc>
+    <loc>https://tomorrowthief.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.vercel.app/en/tags/"
+                href="https://tomorrowthief.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.vercel.app/tags/"
+                href="https://tomorrowthief.github.io/tags/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.vercel.app/archives/</loc>
+    <loc>https://tomorrowthief.github.io/archives/</loc>
   </url>
 </urlset>

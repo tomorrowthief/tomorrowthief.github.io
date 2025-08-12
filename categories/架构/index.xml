@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>架构 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.vercel.app/categories/%E6%9E%B6%E6%9E%84/</link>
+    <link>https://tomorrowthief.github.io/categories/%E6%9E%B6%E6%9E%84/</link>
     <description>Recent content in 架构 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.vercel.app/cover.png</url>
-      <link>https://tomorrowthief.vercel.app/cover.png</link>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 11 May 2022 10:38:36 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 10:38:36 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>扩展性设计</title>
-      <link>https://tomorrowthief.vercel.app/posts/extend-design/</link>
+      <link>https://tomorrowthief.github.io/posts/extend-design/</link>
       <pubDate>Wed, 11 May 2022 10:38:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/extend-design/</guid>
+      <guid>https://tomorrowthief.github.io/posts/extend-design/</guid>
       <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;之前在公司内部做过「扩展性设计」的分享。后面重新整理形成博客形式记录自己的学习。&lt;/p&gt;
 &lt;p&gt;由于作者长期从事Web前端领域的工作的原因，本文也是基于这些技术领域发出的一些关于应用软件方向上的扩展性总结&lt;/p&gt;

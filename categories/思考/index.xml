@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>思考 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/</link>
+    <link>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</link>
     <description>Recent content in 思考 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.vercel.app/cover.png</url>
-      <link>https://tomorrowthief.vercel.app/cover.png</link>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 22 Mar 2024 09:16:11 +0000</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 09:16:11 +0000</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI应用实践的思考</title>
-      <link>https://tomorrowthief.vercel.app/posts/ai-work-thought/</link>
+      <link>https://tomorrowthief.github.io/posts/ai-work-thought/</link>
       <pubDate>Fri, 22 Mar 2024 09:16:11 +0000</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/ai-work-thought/</guid>
+      <guid>https://tomorrowthief.github.io/posts/ai-work-thought/</guid>
       <description>&lt;p&gt;近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;&lt;/blockquote&gt;
@@ -67,10 +67,10 @@
     
     <item>
       <title>深度思考</title>
-      <link>https://tomorrowthief.vercel.app/posts/deep-thinking/</link>
+      <link>https://tomorrowthief.github.io/posts/deep-thinking/</link>
       <pubDate>Mon, 18 Apr 2022 10:08:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/deep-thinking/</guid>
+      <guid>https://tomorrowthief.github.io/posts/deep-thinking/</guid>
       <description>&lt;p&gt;深度思考的重要性就不多强调了，该如何做好呢？&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如何做好深度思考？&lt;/p&gt;&lt;/blockquote&gt;
@@ -95,10 +95,10 @@
     
     <item>
       <title>蛙泳学思</title>
-      <link>https://tomorrowthief.vercel.app/posts/swim/</link>
+      <link>https://tomorrowthief.github.io/posts/swim/</link>
       <pubDate>Fri, 15 Apr 2022 14:34:21 +0800</pubDate>
       
-      <guid>https://tomorrowthief.vercel.app/posts/swim/</guid>
+      <guid>https://tomorrowthief.github.io/posts/swim/</guid>
       <description>&lt;p&gt;最近开始学习蛙泳，其实很早之前下水练习过几次，但是没有系统的整理。最近开始了系统性的练习：看了些视频讲解，纠正了些错误，总算有些小进步。&lt;/p&gt;
 &lt;p&gt;过程中发现了自己之前很多动作，模式，思考是不对的。但是纠正这些不对的点花费了很久时间。学习效率比较低。而纠正错误的技巧以及思路是一个通用的学习理论，对于工作，生活应该都适用。所以做了此快速学习新技能技巧的总结，或者称之为方法论也好。&lt;/p&gt;
 &lt;h2 id=&#34;学习速度&#34;&gt;学习速度&lt;/h2&gt;
