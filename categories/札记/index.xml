@@ -2,24 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>札记 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</link>
+    <link>https://tomorrowthief.vercel.app/categories/%E6%9C%AD%E8%AE%B0/</link>
     <description>Recent content in 札记 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://tomorrowthief.vercel.app/cover.png</url>
+      <link>https://tomorrowthief.vercel.app/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 30 Jun 2024 09:13:27 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jun 2024 09:13:27 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E6%9C%AD%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>苏东坡</title>
-      <link>https://tomorrowthief.github.io/posts/sudongpo/</link>
+      <link>https://tomorrowthief.vercel.app/posts/sudongpo/</link>
       <pubDate>Sun, 30 Jun 2024 09:13:27 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/sudongpo/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/sudongpo/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;进入偶然原因看了些苏词，同时也看了林语堂的苏轼传，这里记录下所感，所想。重点不是描述豪放的苏词，而是苏轼这种人才的优点，缺点。苏轼若是在当代社会又是咋样的？&lt;/p&gt;
 &lt;h2 id=&#34;大概过下苏轼传&#34;&gt;大概过下「苏轼传」&lt;/h2&gt;
 &lt;p&gt;苏轼传记有很多，各种角度去描写的，我选择了林语堂的这本。林语堂是民国时期著名文科生，特点中外双休，说来奇怪，他写的苏轼传是用英语写的，或许是为了向世界科普这个中国巨星。而我读的却是一个国人的译本。既然是面向世界的，选择的角度肯定不太一样了，也会拿西方的文豪大家与苏轼对比。&lt;/p&gt;
@@ -44,10 +43,10 @@
     
     <item>
       <title>了凡四训</title>
-      <link>https://tomorrowthief.github.io/posts/liaofansixun/</link>
+      <link>https://tomorrowthief.vercel.app/posts/liaofansixun/</link>
       <pubDate>Wed, 01 Nov 2023 14:09:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/liaofansixun/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/liaofansixun/</guid>
       <description>&lt;p&gt;此为一种劝诫训子的书，主要方向是如何处事，也可以是一本养心之书。从中国传统价值观及儒释道的哲学体系来讲述如何处事。总体分为四部分。&lt;/p&gt;
 &lt;p&gt;作者是明万历期，69岁时所著。推荐此书的名人：曾国藩，据说其号 &lt;code&gt;涤生&lt;/code&gt; 就是因为此书而来；稻盛和夫等。&lt;/p&gt;
 &lt;p&gt;阅读建议：作为枕边书，或者心静的时候细读。&lt;/p&gt;
@@ -101,30 +100,27 @@
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这本书，于我作为一本修心的书去阅读。对于有些人会问值不值得读，我觉得非常值得。但书和道理是死的。看你怎么理解消化了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;从前种种, 譬如昨日死; 以后种种, 譬如今日生.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;从前种种, 譬如昨日死; 以后种种, 譬如今日生.&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     
     <item>
       <title>孙子兵法-研习记</title>
-      <link>https://tomorrowthief.github.io/posts/art-of-war/</link>
+      <link>https://tomorrowthief.vercel.app/posts/art-of-war/</link>
       <pubDate>Fri, 17 Jun 2022 10:08:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/art-of-war/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/art-of-war/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;近日工作不忙，偶然看到孙子兵法一书，印象里面应是各种打打杀杀，由无他事就读了一些，发现并不是那么简单。
 博主在上下班路上，前后半个月的时间学习了一些。为了加深自己的记忆，理解。就梳理了这篇札记&lt;/p&gt;
 &lt;h2 id=&#34;孙子兵法-是什么&#34;&gt;孙子兵法 是什么&lt;/h2&gt;
 &lt;p&gt;孙子兵法是一本信息熵极高的阐述战争方法论的书，原文仅 6000 余字。经过之后两千多年时间沉淀：注解引申，国内外各大名家的参与，现在已经形成了一个&lt;code&gt;战争理论生态&lt;/code&gt;，&lt;code&gt;战争方法论&lt;/code&gt;。这里说的战争可以是冷兵器时代的战争，也可以是强调技术装备，信息化的&lt;code&gt;现在战争&lt;/code&gt;，也可以是&lt;code&gt;商战&lt;/code&gt;，&lt;code&gt;工作职场&lt;/code&gt;，&lt;code&gt;学业&lt;/code&gt;，&lt;code&gt;投资&lt;/code&gt;。现在已经翻译了多国语言，据说在国外也比较流行，认可度极高。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;适读人群: 最好是有一定工作生活经验的人，如果是单纯的学生不建议阅读&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;适读人群: 最好是有一定工作生活经验的人，如果是单纯的学生不建议阅读&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;架构图&#34;&gt;架构图&lt;/h2&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://pic1.zhimg.com/80/31b844f5d5119c1d9abfb8dd91cb31c6_1440w.jpg?source=1940ef5c&#34; alt=&#34;架构图&#34;  /&gt;
 &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注此图引自知乎&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;注此图引自知乎&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;首先-不去战争&#34;&gt;首先-不去战争&lt;/h3&gt;
 &lt;p&gt;孙子兵法首要强调的是&lt;code&gt;不战而胜&lt;/code&gt;，因为战争成本太高代价太大。特等医生的价值不是体现在治病救人，而是在生病前防疫工作：如何不得病，如何尽早发现病并及时治理。当然这里不是贬低治病救人的技术，只是我们经常忽略准备防疫的重要性，到了生病时候才发现代价真的太大。所以孙子兵法虽然是一本兵书，却比较强调怎么不去战争，规避战争，强调的是：&lt;code&gt;日积月累&lt;/code&gt;，&lt;code&gt;有备无患&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;作战原则&#34;&gt;作战原则&lt;/h3&gt;
@@ -141,8 +137,7 @@
 &lt;p&gt;收获还是挺多：明确了做事的 原则，系统分析法所谓方法论，底层逻辑。以及该做哪些事情，不该做哪些事情的取舍&lt;/p&gt;
 &lt;h3 id=&#34;不要忽略基本面&#34;&gt;不要忽略基本面&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;善战者,无智名,无勇功&lt;/code&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;善战者,无智名,无勇功&lt;/code&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;人们往往比较喜欢波澜壮阔的故事，而忽略基本面的作用。比如我们喜欢韩信背水一战的故事，但是从理论来上看是违背 &lt;code&gt;五事七计&lt;/code&gt; 的分析。诸葛亮出师北伐的例子也是在基本面上就输了，汉武大帝的传奇一生，却耗费了文景之治的积累，所谓一将功成万骨枯。&lt;/p&gt;
 &lt;p&gt;古今中外精彩故事也不少，但那是2000多年的历史积累，更多的是默默无闻却又贡献很多的平淡故事&lt;/p&gt;
 &lt;p&gt;我们每个人也一样，绝大多数都是平凡平淡的。但是能把基础面做好，有一份好的学业，经营一份自己的工作事业，有个好的身体健康素质，已经能达到生活的意义&lt;/p&gt;
@@ -160,8 +155,7 @@
 &lt;p&gt;心里学上 人们选择一个事情，不是这个事情真实客观，而是人们期望他是对的，想要他是对的。&lt;/p&gt;
 &lt;p&gt;最后生活并没有银弹，养兵千日用兵一时。基本面做的好了，操作面做的再差胜算也大；基本面做的普通，也不要放弃，操作面上还有很多空间。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

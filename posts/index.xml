@@ -2,21 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/posts/</link>
+    <link>https://tomorrowthief.vercel.app/posts/</link>
     <description>Recent content in Posts on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://tomorrowthief.vercel.app/cover.png</url>
+      <link>https://tomorrowthief.vercel.app/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Dec 2024 13:50:01 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 18:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 时代下的你我</title>
+      <link>https://tomorrowthief.vercel.app/posts/ai-person/</link>
+      <pubDate>Fri, 08 Aug 2025 18:24:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.vercel.app/posts/ai-person/</guid>
+      <description>&lt;p&gt;首先我认同 AI 时代会改变很多生活，生产，工作的形态，甚至更多……，当然这个主题很大，谁都难以精确的的预测各行各业的发展，&lt;/p&gt;
+&lt;p&gt;很荣幸为一个 &lt;strong&gt;软件工作者&lt;/strong&gt; 及 &lt;strong&gt;普通居民&lt;/strong&gt; 的角色能站在这场变革的一线，几乎从23年开始一直持续关注相关的动态，参与到一些 AI 产品的使用中，并且参与到一些 AI 产品的开发中。&lt;/p&gt;
+&lt;p&gt;就宏观上输出下我个人的感受，后面会继续在一些细节(产品发展，相关技术，及个人重度参与的 vibe coding)上深入讨论&lt;/p&gt;
+&lt;h3 id=&#34;类比以往的变革&#34;&gt;类比以往的变革&lt;/h3&gt;
+&lt;p&gt;我认为历史上重要的变革包含：语言产生，各种标准，各种度量，电，工业革命等。这些都是突破人类自然能力的变革，这一轮 AI 的发展也是的，因为能大幅提升人类输出内容&lt;/p&gt;
+&lt;h2 id=&#34;预制菜&#34;&gt;预制菜&lt;/h2&gt;
+&lt;p&gt;为什么要提这个似乎概念离得很远的词。因为看到当前 AI 输出的内容，很像是预制菜的感觉，简单分析下：
+预制菜的特点是:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预包装，提前做了食材处理&lt;/li&gt;
+&lt;li&gt;便捷，通过简单加热即可快速出货&lt;/li&gt;
+&lt;li&gt;多样化：种类繁多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;节省时间&lt;/li&gt;
+&lt;li&gt;体验自己不会的菜谱&lt;/li&gt;
+&lt;li&gt;成本降低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cons：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;食品安全&lt;/li&gt;
+&lt;li&gt;营养价值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;仔细品一品，是不是当前 AI 生成的内容很类似。市场中，不乏有好的与坏的预制菜，总之也占领了一部分市场，人们多少都会接纳一些，默默的改变生活方式。我相信 AI 输出的内容是同理，有好有坏，有很大的市场，也在 默默改变生活生产方式。&lt;/p&gt;
+&lt;p&gt;再想一想人类社会发展进程出现的一些工具基本都会改变人自然属性，从打猎到农业，从农业到工业，从工业到信息化，这些都是人类社会的进步。AI 也是一样，能大幅提升人类的输出能力。&lt;/p&gt;
+&lt;p&gt;换言之：市场很大，拥抱接受，吸收，取其精华，去其糟粕。&lt;/p&gt;
+&lt;h2 id=&#34;ai-下催生的机会&#34;&gt;AI 下催生的机会&lt;/h2&gt;
+&lt;h3 id=&#34;已经靠-ai-赚到的有哪些人&#34;&gt;已经靠 AI 赚到的有哪些人？&lt;/h3&gt;
+&lt;p&gt;我发现这波浪潮下已经赚到的一些普通人，大概是这几类方向&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自媒体 &amp;amp; 卖课&lt;/li&gt;
+&lt;li&gt;出海的一些 AI 产品，出海更容易做商业化&lt;/li&gt;
+&lt;li&gt;国内的一些 AI 平台：Dify 等&lt;/li&gt;
+&lt;li&gt;靠这波热点拉投资的公司&lt;/li&gt;
+&lt;li&gt;公司转型，做这个方向的工作者&lt;/li&gt;
+&lt;li&gt;吃政策福利，研究经费的一些公职，教育者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总结下来看基本都是在原有行当做的很好的这波人，刚好了来了个 AI 机会给抓住了，比如卖课的人家本来就在卖课，吃政策拉投资的，人家就是这个圈里的，外人难以挤进来。单纯靠改变方向到 AI 硬靠的又赚到钱的并不多。&lt;/p&gt;
+&lt;p&gt;所以还是那句话：机会是留给有准备的人的。普通人呢做好自己本来该做好的事情，然后添加一些爱学习的思维，当这波来的时候，能喝喝汤就好，如果能吃上肉那就偷着乐吧。&lt;/p&gt;
+&lt;h3 id=&#34;提升个人战斗力&#34;&gt;提升个人战斗力&lt;/h3&gt;
+&lt;p&gt;如果能提升个人战斗力，意味着能输出更多，进而能收入更多。现在市面上出现了一些 AI 产品，可以武装你让你从普通兵变为&lt;strong&gt;特种兵&lt;/strong&gt;，具备一个人挑战一个团队的能力。所以市面上出现的 &lt;strong&gt;一人公司&lt;/strong&gt; 概念也不是空穴来风。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AI 应用技术</title>
+      <link>https://tomorrowthief.vercel.app/posts/ai-tec/</link>
+      <pubDate>Fri, 08 Aug 2025 18:17:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.vercel.app/posts/ai-tec/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;梳理下自己在 AI 产品开发中用到的一些技术，自己了解的一些业界中的技术&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AI 产品思考</title>
+      <link>https://tomorrowthief.vercel.app/posts/ai-products/</link>
+      <pubDate>Fri, 08 Aug 2025 18:15:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.vercel.app/posts/ai-products/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;梳理我个人AI产品开发迭代的经验，遇到的好玩的产品等&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Devops概念梳理</title>
-      <link>https://tomorrowthief.github.io/posts/devops/</link>
+      <link>https://tomorrowthief.vercel.app/posts/devops/</link>
       <pubDate>Mon, 30 Dec 2024 13:50:01 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/devops/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/devops/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。&lt;/p&gt;
 &lt;h2 id=&#34;从-docker-开始&#34;&gt;从 Docker 开始&lt;/h2&gt;
@@ -62,8 +132,7 @@
 &lt;p&gt;总而言之，Docker作为一种轻量级、便捷、高效且快速部署的方法，在云原生应用开发中得到了广泛应用。而虚拟机则仍然适用于需要强隔离、安全要求高以及需要运行不同类型操作系统等场景。&lt;/p&gt;
 &lt;p&gt;Docker的核心原理是:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Docker的核心原理是利用操作系统级的虚拟化技术（即容器化技术）来创建、部署和运行应用程序。具体来说，Docker 的核心原理包括以下几个方面：&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Docker的核心原理是利用操作系统级的虚拟化技术（即容器化技术）来创建、部署和运行应用程序。具体来说，Docker 的核心原理包括以下几个方面：&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Namespace（命名空间）隔离&lt;/strong&gt;：&lt;/p&gt;
@@ -99,10 +168,10 @@
     
     <item>
       <title>LLM 长记忆工具总结</title>
-      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
+      <link>https://tomorrowthief.vercel.app/posts/ai-longterm-memory/</link>
       <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/ai-longterm-memory/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
 &lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
@@ -131,7 +200,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;方案&#34;&gt;方案&lt;/h2&gt;
 &lt;p&gt;工作流程图&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://tomorrowthief.github.io/long-term-memory.png&#34; alt=&#34;Alt text&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://tomorrowthief.vercel.app/long-term-memory.png&#34; alt=&#34;Alt text&#34;  /&gt;
 &lt;/p&gt;
 &lt;p&gt;如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。&lt;/p&gt;
 &lt;h2 id=&#34;记忆引擎&#34;&gt;记忆引擎&lt;/h2&gt;
@@ -169,10 +238,10 @@
     
     <item>
       <title>后端开发经验-阶段性总结思考</title>
-      <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
+      <link>https://tomorrowthief.vercel.app/posts/ai-backend-dev/</link>
       <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-backend-dev/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/ai-backend-dev/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;做了大半年左右的后端开发后，总结下相关感受。&lt;/p&gt;
 &lt;p&gt;技术栈：Python/Nodejs + React&lt;/p&gt;
@@ -226,13 +295,12 @@
     
     <item>
       <title>苏东坡</title>
-      <link>https://tomorrowthief.github.io/posts/sudongpo/</link>
+      <link>https://tomorrowthief.vercel.app/posts/sudongpo/</link>
       <pubDate>Sun, 30 Jun 2024 09:13:27 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/sudongpo/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/sudongpo/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;进入偶然原因看了些苏词，同时也看了林语堂的苏轼传，这里记录下所感，所想。重点不是描述豪放的苏词，而是苏轼这种人才的优点，缺点。苏轼若是在当代社会又是咋样的？&lt;/p&gt;
 &lt;h2 id=&#34;大概过下苏轼传&#34;&gt;大概过下「苏轼传」&lt;/h2&gt;
 &lt;p&gt;苏轼传记有很多，各种角度去描写的，我选择了林语堂的这本。林语堂是民国时期著名文科生，特点中外双休，说来奇怪，他写的苏轼传是用英语写的，或许是为了向世界科普这个中国巨星。而我读的却是一个国人的译本。既然是面向世界的，选择的角度肯定不太一样了，也会拿西方的文豪大家与苏轼对比。&lt;/p&gt;
@@ -257,10 +325,10 @@
     
     <item>
       <title>Python 学习总结</title>
-      <link>https://tomorrowthief.github.io/posts/ai-python/</link>
+      <link>https://tomorrowthief.vercel.app/posts/ai-python/</link>
       <pubDate>Sat, 22 Jun 2024 10:47:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-python/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/ai-python/</guid>
       <description>&lt;h2 id=&#34;为什么要学-python&#34;&gt;为什么要学 Python&lt;/h2&gt;
 &lt;p&gt;最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。&lt;/p&gt;
 &lt;p&gt;根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 &lt;code&gt;Nodejs&lt;/code&gt; &lt;code&gt;python&lt;/code&gt;。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。&lt;/p&gt;
@@ -275,8 +343,7 @@
 &lt;p&gt;运行模式支持 多进程，多线程，协程&lt;/p&gt;
 &lt;h2 id=&#34;执行流程&#34;&gt;执行流程&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这一章直接问了 gpt，下面都是 ai 的回答&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;这一章直接问了 gpt，下面都是 ai 的回答&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;在Python中，程序的执行流程通常是按照以下步骤进行的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -320,14 +387,13 @@
     
     <item>
       <title>AI应用实践的思考</title>
-      <link>https://tomorrowthief.github.io/posts/ai-work-thought/</link>
+      <link>https://tomorrowthief.vercel.app/posts/ai-work-thought/</link>
       <pubDate>Fri, 22 Mar 2024 09:16:11 +0000</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-work-thought/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/ai-work-thought/</guid>
       <description>&lt;p&gt;近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;生成式ai的爆发&#34;&gt;生成式AI的爆发&lt;/h2&gt;
 &lt;p&gt;AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：&lt;/p&gt;
 &lt;ul&gt;
@@ -341,8 +407,7 @@
 &lt;p&gt;总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础&lt;/p&gt;
 &lt;h2 id=&#34;能改变什么&#34;&gt;能改变什么&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;有人说任何行业都可以重新再做一遍&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;有人说任何行业都可以重新再做一遍&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。&lt;/p&gt;
 &lt;p&gt;总结下来当前影响最大的几个面：&lt;/p&gt;
 &lt;h3 id=&#34;广告自媒体行业的商业模式&#34;&gt;广告/自媒体行业的商业模式&lt;/h3&gt;
@@ -358,8 +423,7 @@
 所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
 当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;模型&#34;&gt;模型&lt;/h2&gt;
 &lt;p&gt;百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。&lt;/p&gt;
 &lt;p&gt;要谈的是：&lt;/p&gt;
@@ -369,21 +433,18 @@
 &lt;/ul&gt;
 &lt;p&gt;基于这两个重要的底层知识，模型的发展，飞起来了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;ai应用&#34;&gt;AI应用&lt;/h2&gt;
 &lt;p&gt;大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。&lt;/p&gt;
-&lt;p&gt;所以 AI 应用，或则 Agent 的概念，可以如此类比。&lt;/p&gt;
-&lt;h2 id=&#34;技术工具&#34;&gt;技术工具&lt;/h2&gt;
-&lt;p&gt;开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具&lt;/p&gt;</description>
+&lt;p&gt;所以 AI 应用，或则 Agent 的概念，可以如此类比。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>了凡四训</title>
-      <link>https://tomorrowthief.github.io/posts/liaofansixun/</link>
+      <link>https://tomorrowthief.vercel.app/posts/liaofansixun/</link>
       <pubDate>Wed, 01 Nov 2023 14:09:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/liaofansixun/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/liaofansixun/</guid>
       <description>&lt;p&gt;此为一种劝诫训子的书，主要方向是如何处事，也可以是一本养心之书。从中国传统价值观及儒释道的哲学体系来讲述如何处事。总体分为四部分。&lt;/p&gt;
 &lt;p&gt;作者是明万历期，69岁时所著。推荐此书的名人：曾国藩，据说其号 &lt;code&gt;涤生&lt;/code&gt; 就是因为此书而来；稻盛和夫等。&lt;/p&gt;
 &lt;p&gt;阅读建议：作为枕边书，或者心静的时候细读。&lt;/p&gt;
@@ -437,29 +498,25 @@
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这本书，于我作为一本修心的书去阅读。对于有些人会问值不值得读，我觉得非常值得。但书和道理是死的。看你怎么理解消化了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;从前种种, 譬如昨日死; 以后种种, 譬如今日生.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;从前种种, 譬如昨日死; 以后种种, 譬如今日生.&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     
     <item>
       <title>再读六国论</title>
-      <link>https://tomorrowthief.github.io/posts/liuguolun/</link>
+      <link>https://tomorrowthief.vercel.app/posts/liuguolun/</link>
       <pubDate>Mon, 16 Jan 2023 10:43:11 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/liuguolun/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/liuguolun/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;六国破灭非并不利战不善，弊在赂秦……&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;六国破灭非并不利战不善，弊在赂秦……&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;近日偶然重新看了这篇文章。再细读后，才发现其文风犀利，逻辑清晰，论点简明有力。虽作为高中时期的教材，那会儿跟不懂内容只知道背诵那些文字，再读后有种相见恨晚的感觉。&lt;/p&gt;
 &lt;p&gt;全文读下来感觉朗朗上口，思路清晰，逻辑感也很强。是一篇非常好的议论文。&lt;/p&gt;
 &lt;h2 id=&#34;一些文段&#34;&gt;一些文段&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;今日割五城，明日割十城，然后换得一夕安寝。起视四境，而秦兵又至。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;今日割五城，明日割十城，然后换得一夕安寝。起视四境，而秦兵又至。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;用物质消灭贪婪是不可能的，犹抱薪救火，薪不尽火不灭。讲的是人的贪婪欲望是无限的，一味的去迎合这些，那就会陷入无底洞。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;以赂秦之地封天下之谋臣，以事秦之心礼天下奇才，并力向西。则吾恐秦人食之不得下咽也&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;以赂秦之地封天下之谋臣，以事秦之心礼天下奇才，并力向西。则吾恐秦人食之不得下咽也&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;这里想到了一个公司内耗严重的时候，将这些内耗的精力拿到做应该做的事情，才是公司团队应该的做法。&lt;/p&gt;
 &lt;h2 id=&#34;个体利益与群体利益&#34;&gt;个体利益与群体利益&lt;/h2&gt;
 &lt;p&gt;上面那个道理我想很多人都会懂，但是为什么现实中还是会陷入内耗中。我觉得是一些人性本质问题: 为什么要你过的比我好，我玩不了，大家也都别想玩，所谓&lt;code&gt;不患寡而患不均&lt;/code&gt;。另外就是在总的资源有限人又很多的时候，每个人都为了生存不得选择了个体利益优先的决定。&lt;/p&gt;
@@ -472,24 +529,22 @@
     
     <item>
       <title>孙子兵法-研习记</title>
-      <link>https://tomorrowthief.github.io/posts/art-of-war/</link>
+      <link>https://tomorrowthief.vercel.app/posts/art-of-war/</link>
       <pubDate>Fri, 17 Jun 2022 10:08:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/art-of-war/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/art-of-war/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;近日工作不忙，偶然看到孙子兵法一书，印象里面应是各种打打杀杀，由无他事就读了一些，发现并不是那么简单。
 博主在上下班路上，前后半个月的时间学习了一些。为了加深自己的记忆，理解。就梳理了这篇札记&lt;/p&gt;
 &lt;h2 id=&#34;孙子兵法-是什么&#34;&gt;孙子兵法 是什么&lt;/h2&gt;
 &lt;p&gt;孙子兵法是一本信息熵极高的阐述战争方法论的书，原文仅 6000 余字。经过之后两千多年时间沉淀：注解引申，国内外各大名家的参与，现在已经形成了一个&lt;code&gt;战争理论生态&lt;/code&gt;，&lt;code&gt;战争方法论&lt;/code&gt;。这里说的战争可以是冷兵器时代的战争，也可以是强调技术装备，信息化的&lt;code&gt;现在战争&lt;/code&gt;，也可以是&lt;code&gt;商战&lt;/code&gt;，&lt;code&gt;工作职场&lt;/code&gt;，&lt;code&gt;学业&lt;/code&gt;，&lt;code&gt;投资&lt;/code&gt;。现在已经翻译了多国语言，据说在国外也比较流行，认可度极高。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;适读人群: 最好是有一定工作生活经验的人，如果是单纯的学生不建议阅读&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;适读人群: 最好是有一定工作生活经验的人，如果是单纯的学生不建议阅读&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;架构图&#34;&gt;架构图&lt;/h2&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://pic1.zhimg.com/80/31b844f5d5119c1d9abfb8dd91cb31c6_1440w.jpg?source=1940ef5c&#34; alt=&#34;架构图&#34;  /&gt;
 &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注此图引自知乎&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;注此图引自知乎&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;首先-不去战争&#34;&gt;首先-不去战争&lt;/h3&gt;
 &lt;p&gt;孙子兵法首要强调的是&lt;code&gt;不战而胜&lt;/code&gt;，因为战争成本太高代价太大。特等医生的价值不是体现在治病救人，而是在生病前防疫工作：如何不得病，如何尽早发现病并及时治理。当然这里不是贬低治病救人的技术，只是我们经常忽略准备防疫的重要性，到了生病时候才发现代价真的太大。所以孙子兵法虽然是一本兵书，却比较强调怎么不去战争，规避战争，强调的是：&lt;code&gt;日积月累&lt;/code&gt;，&lt;code&gt;有备无患&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;作战原则&#34;&gt;作战原则&lt;/h3&gt;
@@ -506,8 +561,7 @@
 &lt;p&gt;收获还是挺多：明确了做事的 原则，系统分析法所谓方法论，底层逻辑。以及该做哪些事情，不该做哪些事情的取舍&lt;/p&gt;
 &lt;h3 id=&#34;不要忽略基本面&#34;&gt;不要忽略基本面&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;善战者,无智名,无勇功&lt;/code&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;善战者,无智名,无勇功&lt;/code&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;人们往往比较喜欢波澜壮阔的故事，而忽略基本面的作用。比如我们喜欢韩信背水一战的故事，但是从理论来上看是违背 &lt;code&gt;五事七计&lt;/code&gt; 的分析。诸葛亮出师北伐的例子也是在基本面上就输了，汉武大帝的传奇一生，却耗费了文景之治的积累，所谓一将功成万骨枯。&lt;/p&gt;
 &lt;p&gt;古今中外精彩故事也不少，但那是2000多年的历史积累，更多的是默默无闻却又贡献很多的平淡故事&lt;/p&gt;
 &lt;p&gt;我们每个人也一样，绝大多数都是平凡平淡的。但是能把基础面做好，有一份好的学业，经营一份自己的工作事业，有个好的身体健康素质，已经能达到生活的意义&lt;/p&gt;
@@ -525,27 +579,24 @@
 &lt;p&gt;心里学上 人们选择一个事情，不是这个事情真实客观，而是人们期望他是对的，想要他是对的。&lt;/p&gt;
 &lt;p&gt;最后生活并没有银弹，养兵千日用兵一时。基本面做的好了，操作面做的再差胜算也大；基本面做的普通，也不要放弃，操作面上还有很多空间。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     
     <item>
       <title>扩展性设计</title>
-      <link>https://tomorrowthief.github.io/posts/extend-design/</link>
+      <link>https://tomorrowthief.vercel.app/posts/extend-design/</link>
       <pubDate>Wed, 11 May 2022 10:38:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/extend-design/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/extend-design/</guid>
       <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;之前在公司内部做过「扩展性设计」的分享。后面重新整理形成博客形式记录自己的学习。&lt;/p&gt;
 &lt;p&gt;由于作者长期从事Web前端领域的工作的原因，本文也是基于这些技术领域发出的一些关于应用软件方向上的扩展性总结&lt;/p&gt;
 &lt;h2 id=&#34;什么是扩展性设计&#34;&gt;什么是扩展性设计&lt;/h2&gt;
 &lt;p&gt;软件架构设计里比较关注的几个要素：&lt;code&gt;扩展性&lt;/code&gt;，&lt;code&gt;稳定性&lt;/code&gt;，&lt;code&gt;可维护性&lt;/code&gt;。很多领域里都会有这方面的考虑。比如：业务架构，产品架构，软件技术架构。那么具体怎么定义呢&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Extensibility is a software engineering and systems design principle where the implementation takes future growth into consideration&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Extensibility is a software engineering and systems design principle where the implementation takes future growth into consideration&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;扩展性是在考虑未来增长发展时所做的一些工程实践和系统设计原则&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;扩展性是在考虑未来增长发展时所做的一些工程实践和系统设计原则&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;引用自维基百科的定义&lt;/p&gt;
 &lt;h2 id=&#34;基础理论&#34;&gt;基础理论&lt;/h2&gt;
 &lt;p&gt;这里讨论的理论基础是比较原始的，类似于数学或物理中的定律定理。实践中是要结合具体场景通过组合这里理论，以及基于这些理论做些推导来形成最佳的设计&lt;/p&gt;
@@ -575,8 +626,7 @@
 &lt;li&gt;插件之间管理：插件之间是否能互相调用，互相影响&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;插件机制思想很简单，重要的是各种实现细节，实践中有不同形式与细节。这里日后单独写一篇文章来分析&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;插件机制思想很简单，重要的是各种实现细节，实践中有不同形式与细节。这里日后单独写一篇文章来分析&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;配置&#34;&gt;配置&lt;/h3&gt;
 &lt;p&gt;读取配置文件，读取参数都是这种形式。是一种简单但实用的形式。不过多讨论&lt;/p&gt;
 &lt;h2 id=&#34;案例分析&#34;&gt;案例分析&lt;/h2&gt;
@@ -590,14 +640,13 @@
     
     <item>
       <title>深度思考</title>
-      <link>https://tomorrowthief.github.io/posts/deep-thinking/</link>
+      <link>https://tomorrowthief.vercel.app/posts/deep-thinking/</link>
       <pubDate>Mon, 18 Apr 2022 10:08:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/deep-thinking/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/deep-thinking/</guid>
       <description>&lt;p&gt;深度思考的重要性就不多强调了，该如何做好呢？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如何做好深度思考？&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如何做好深度思考？&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;多维度&#34;&gt;多维度&lt;/h2&gt;
 &lt;p&gt;我这里说的多维度可以理解为&lt;code&gt;多视角&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;做一个技术分享，在听众的视角下如何的，主办方的视角如何，分享者的视角又如何，领导视角，同事视角如何……&lt;/p&gt;
@@ -619,10 +668,10 @@
     
     <item>
       <title>蛙泳学思</title>
-      <link>https://tomorrowthief.github.io/posts/swim/</link>
+      <link>https://tomorrowthief.vercel.app/posts/swim/</link>
       <pubDate>Fri, 15 Apr 2022 14:34:21 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/swim/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/swim/</guid>
       <description>&lt;p&gt;最近开始学习蛙泳，其实很早之前下水练习过几次，但是没有系统的整理。最近开始了系统性的练习：看了些视频讲解，纠正了些错误，总算有些小进步。&lt;/p&gt;
 &lt;p&gt;过程中发现了自己之前很多动作，模式，思考是不对的。但是纠正这些不对的点花费了很久时间。学习效率比较低。而纠正错误的技巧以及思路是一个通用的学习理论，对于工作，生活应该都适用。所以做了此快速学习新技能技巧的总结，或者称之为方法论也好。&lt;/p&gt;
 &lt;h2 id=&#34;学习速度&#34;&gt;学习速度&lt;/h2&gt;
@@ -649,18 +698,17 @@
     
     <item>
       <title>文章搬运开始啦</title>
-      <link>https://tomorrowthief.github.io/posts/kaishila/</link>
+      <link>https://tomorrowthief.vercel.app/posts/kaishila/</link>
       <pubDate>Thu, 14 Apr 2022 20:21:59 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/kaishila/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/kaishila/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;最近比较空闲，在写作东西的时候发现一个不错的主题。刚好自己除了一些公共账号外，还没自己的博客，遂搭建之。&lt;/p&gt;
 &lt;p&gt;主题：基于Hugo，详细可以见网站底部。托管于 &lt;code&gt;GitHub Pages&lt;/code&gt;。&lt;/p&gt;
 &lt;h2 id=&#34;博客内容&#34;&gt;博客内容&lt;/h2&gt;
 &lt;p&gt;主要是搬移之前写过的一些东西，同时做了一些格式化处理。未来新写的东西应该会首先发到这里了&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

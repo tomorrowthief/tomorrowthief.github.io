@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tomorrowthief.github.io/en/categories/</loc>
+    <loc>https://tomorrowthief.vercel.app/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.github.io/categories/"
+                href="https://tomorrowthief.vercel.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.github.io/en/categories/"
+                href="https://tomorrowthief.vercel.app/en/categories/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.github.io/en/series/</loc>
+    <loc>https://tomorrowthief.vercel.app/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.github.io/series/"
+                href="https://tomorrowthief.vercel.app/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.github.io/en/series/"
+                href="https://tomorrowthief.vercel.app/en/series/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.github.io/en/tags/</loc>
+    <loc>https://tomorrowthief.vercel.app/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.github.io/tags/"
+                href="https://tomorrowthief.vercel.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.github.io/en/tags/"
+                href="https://tomorrowthief.vercel.app/en/tags/"
                 />
   </url><url>
-    <loc>https://tomorrowthief.github.io/en/</loc>
+    <loc>https://tomorrowthief.vercel.app/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://tomorrowthief.github.io/"
+                href="https://tomorrowthief.vercel.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomorrowthief.github.io/en/"
+                href="https://tomorrowthief.vercel.app/en/"
                 />
   </url>
 </urlset>

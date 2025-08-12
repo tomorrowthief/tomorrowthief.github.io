@@ -2,48 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/categories/</link>
+    <link>https://tomorrowthief.vercel.app/categories/</link>
     <description>Recent content in Categories on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://tomorrowthief.vercel.app/cover.png</url>
+      <link>https://tomorrowthief.vercel.app/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Dec 2024 13:50:01 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Aug 2025 18:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>哲思</title>
+      <link>https://tomorrowthief.vercel.app/categories/%E5%93%B2%E6%80%9D/</link>
+      <pubDate>Fri, 08 Aug 2025 18:24:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.vercel.app/categories/%E5%93%B2%E6%80%9D/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>技术</title>
-      <link>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Mon, 30 Dec 2024 13:50:01 +0800</pubDate>
+      <link>https://tomorrowthief.vercel.app/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Fri, 08 Aug 2025 18:17:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://tomorrowthief.vercel.app/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>札记</title>
-      <link>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</link>
+      <link>https://tomorrowthief.vercel.app/categories/%E6%9C%AD%E8%AE%B0/</link>
       <pubDate>Sun, 30 Jun 2024 09:13:27 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</guid>
+      <guid>https://tomorrowthief.vercel.app/categories/%E6%9C%AD%E8%AE%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>思考</title>
-      <link>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</link>
+      <link>https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/</link>
       <pubDate>Fri, 22 Mar 2024 09:16:11 +0000</pubDate>
       
-      <guid>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</guid>
+      <guid>https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/</guid>
       <description></description>
     </item>
     
     <item>
       <title>架构</title>
-      <link>https://tomorrowthief.github.io/categories/%E6%9E%B6%E6%9E%84/</link>
+      <link>https://tomorrowthief.vercel.app/categories/%E6%9E%B6%E6%9E%84/</link>
       <pubDate>Wed, 11 May 2022 10:38:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/categories/%E6%9E%B6%E6%9E%84/</guid>
+      <guid>https://tomorrowthief.vercel.app/categories/%E6%9E%B6%E6%9E%84/</guid>
       <description></description>
     </item>
     

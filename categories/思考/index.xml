@@ -2,25 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>思考 on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/</link>
+    <link>https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/</link>
     <description>Recent content in 思考 on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://tomorrowthief.vercel.app/cover.png</url>
+      <link>https://tomorrowthief.vercel.app/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 22 Mar 2024 09:16:11 +0000</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 09:16:11 +0000</lastBuildDate><atom:link href="https://tomorrowthief.vercel.app/categories/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI应用实践的思考</title>
-      <link>https://tomorrowthief.github.io/posts/ai-work-thought/</link>
+      <link>https://tomorrowthief.vercel.app/posts/ai-work-thought/</link>
       <pubDate>Fri, 22 Mar 2024 09:16:11 +0000</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-work-thought/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/ai-work-thought/</guid>
       <description>&lt;p&gt;近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;打败马车夫的不是汽车本身，而是会开车的司机&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;生成式ai的爆发&#34;&gt;生成式AI的爆发&lt;/h2&gt;
 &lt;p&gt;AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：&lt;/p&gt;
 &lt;ul&gt;
@@ -34,8 +33,7 @@
 &lt;p&gt;总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础&lt;/p&gt;
 &lt;h2 id=&#34;能改变什么&#34;&gt;能改变什么&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;有人说任何行业都可以重新再做一遍&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;有人说任何行业都可以重新再做一遍&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。&lt;/p&gt;
 &lt;p&gt;总结下来当前影响最大的几个面：&lt;/p&gt;
 &lt;h3 id=&#34;广告自媒体行业的商业模式&#34;&gt;广告/自媒体行业的商业模式&lt;/h3&gt;
@@ -51,8 +49,7 @@
 所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。
 当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;模型&#34;&gt;模型&lt;/h2&gt;
 &lt;p&gt;百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。&lt;/p&gt;
 &lt;p&gt;要谈的是：&lt;/p&gt;
@@ -62,25 +59,21 @@
 &lt;/ul&gt;
 &lt;p&gt;基于这两个重要的底层知识，模型的发展，飞起来了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;菩提本无树，明镜亦非台，本来无一物，何处惹尘埃&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;ai应用&#34;&gt;AI应用&lt;/h2&gt;
 &lt;p&gt;大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。&lt;/p&gt;
-&lt;p&gt;所以 AI 应用，或则 Agent 的概念，可以如此类比。&lt;/p&gt;
-&lt;h2 id=&#34;技术工具&#34;&gt;技术工具&lt;/h2&gt;
-&lt;p&gt;开源的技术工具很多，目前我在用 Langchain。但是不能局限于这些上层工具&lt;/p&gt;</description>
+&lt;p&gt;所以 AI 应用，或则 Agent 的概念，可以如此类比。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>深度思考</title>
-      <link>https://tomorrowthief.github.io/posts/deep-thinking/</link>
+      <link>https://tomorrowthief.vercel.app/posts/deep-thinking/</link>
       <pubDate>Mon, 18 Apr 2022 10:08:36 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/deep-thinking/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/deep-thinking/</guid>
       <description>&lt;p&gt;深度思考的重要性就不多强调了，该如何做好呢？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如何做好深度思考？&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如何做好深度思考？&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;多维度&#34;&gt;多维度&lt;/h2&gt;
 &lt;p&gt;我这里说的多维度可以理解为&lt;code&gt;多视角&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;做一个技术分享，在听众的视角下如何的，主办方的视角如何，分享者的视角又如何，领导视角，同事视角如何……&lt;/p&gt;
@@ -102,10 +95,10 @@
     
     <item>
       <title>蛙泳学思</title>
-      <link>https://tomorrowthief.github.io/posts/swim/</link>
+      <link>https://tomorrowthief.vercel.app/posts/swim/</link>
       <pubDate>Fri, 15 Apr 2022 14:34:21 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/swim/</guid>
+      <guid>https://tomorrowthief.vercel.app/posts/swim/</guid>
       <description>&lt;p&gt;最近开始学习蛙泳，其实很早之前下水练习过几次，但是没有系统的整理。最近开始了系统性的练习：看了些视频讲解，纠正了些错误，总算有些小进步。&lt;/p&gt;
 &lt;p&gt;过程中发现了自己之前很多动作，模式，思考是不对的。但是纠正这些不对的点花费了很久时间。学习效率比较低。而纠正错误的技巧以及思路是一个通用的学习理论，对于工作，生活应该都适用。所以做了此快速学习新技能技巧的总结，或者称之为方法论也好。&lt;/p&gt;
 &lt;h2 id=&#34;学习速度&#34;&gt;学习速度&lt;/h2&gt;
