@@ -27,7 +27,12 @@
       <pubDate>Fri, 08 Aug 2025 18:15:41 +0800</pubDate>
       
       <guid>https://tomorrowthief.github.io/posts/ai-products/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。&lt;/p&gt;
+&lt;h2 id=&#34;ai-产品核心之核心&#34;&gt;AI 产品核心之核心&lt;/h2&gt;
+&lt;p&gt;毋庸置疑核心是模型：LLM，Difusion Model，CV 模型等。与模型唯一通信载体是 Prompt，请记住这个唯一，非常重要，基本上功能都是围绕这个来做的。所以早期的AI产品都是称为 Prompt 产品，开发者是 prompt 工程师。&lt;/p&gt;
+&lt;p&gt;而 Prompt 也有种类繁多的范式，不同场景不同目的使用不同的 Prompt。Prompt 设计的好坏直接影响 AI 产品的效果，这里暂且不表。&lt;/p&gt;
+&lt;h2 id=&#34;agent-与-workflow&#34;&gt;Agent 与 Workflow&lt;/h2&gt;</description>
     </item>
     
     <item>
