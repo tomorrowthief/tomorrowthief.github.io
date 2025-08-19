@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 19 Aug 2025 18:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Aug 2025 16:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding: AI的编程总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-vibe-coding/</link>
+      <pubDate>Tue, 19 Aug 2025 16:24:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-vibe-coding/</guid>
+      <description>&lt;p&gt;Vibe coding 效果让人震惊。结合最近一段时间的AI编程实践，输出一点总结……&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>AI 时代下的你我</title>
       <link>https://tomorrowthief.github.io/posts/ai-person/</link>
