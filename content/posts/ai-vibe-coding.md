@@ -1,6 +1,6 @@
 ---
 title: "Vibe Coding: AI的编程总结"
-date: 2025-08-19T18:24:41+08:00
+date: 2025-08-19T16:24:41+08:00
 draft: false
 categories: 'AI'
 ---
