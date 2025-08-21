@@ -23,14 +23,10 @@
 &lt;p&gt;作为一个典型的喜欢白嫖的用户，也会为顶部产品付费，最多的是 Cursor。因为真的被他们的效果吸引了。&lt;/p&gt;
 &lt;p&gt;这里就总结下我对 AI 编程的体验和感受。&lt;/p&gt;
 &lt;h2 id=&#34;交互形式&#34;&gt;交互形式&lt;/h2&gt;
-&lt;h2 id=&#34;cursor-的一些内容&#34;&gt;Cursor 的一些内容&lt;/h2&gt;
-&lt;h2 id=&#34;claude-code&#34;&gt;Claude Code&lt;/h2&gt;
-&lt;h2 id=&#34;上下文工程&#34;&gt;上下文工程&lt;/h2&gt;
-&lt;h2 id=&#34;依然是工具&#34;&gt;依然是工具&lt;/h2&gt;
-&lt;h2 id=&#34;取代程序员&#34;&gt;取代程序员？&lt;/h2&gt;
-&lt;h2 id=&#34;和谐共处&#34;&gt;和谐共处&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;路漫漫其修远兮，吾将上下而求索&lt;/p&gt;&lt;/blockquote&gt;</description>
+&lt;p&gt;蛮荒期的交互很简单： 在一个 Chat 框里，一顿问答，然后把输出内容，就是把 AI 当作搜索引擎用了。这里几乎没有什么上下文，仅靠系统提示词给一些约束&lt;/p&gt;
+&lt;p&gt;IDE 插件的形式：早期 Github 的 Copilot。这种能在编辑器光标的地方直接生成并插入，然后使用 Tab 来接受，也能有个侧边栏出现 Chat 框，只是这里的 Chat 框里仅包含问答&lt;/p&gt;
+&lt;p&gt;AI IDE： Cursor WindSurf，及后来的 kiro， Codebuddy 等等。能更方便的操作编辑器：获取更多的上下文，更有效的上下文，回填，插入修改等。让体验更丝滑。由于能拿到更好的上下文，效果也更好。大家一致认可，也成功帮助这些公司拿到恐怖的融资。&lt;/p&gt;
+&lt;p&gt;AI CLI： 这种形式的交互，主要是通过命令行来进行交互。典型代表有 Claude Code 和 Cursor CLI， Gemini cli，等其他 Fork 开源产生的。特点是比较轻量，在一个终端里随意就能使用，但是少了编辑器的可视化操作，多少对于非专业工程师来说不太习惯&lt;/p&gt;</description>
     </item>
     
     <item>
