@@ -12,7 +12,7 @@
     <language>zh</language>
     <lastBuildDate>Tue, 19 Aug 2025 16:24:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vibe Coding: AI的编程总结</title>
+      <title>Vibe Coding: AI编程总结</title>
       <link>https://tomorrowthief.github.io/posts/ai-vibe-coding/</link>
       <pubDate>Tue, 19 Aug 2025 16:24:41 +0800</pubDate>
       
@@ -20,8 +20,8 @@
       <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起&lt;/h2&gt;
 &lt;p&gt;我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。&lt;/p&gt;
 &lt;p&gt;AI 编程的称呼也很多，有的叫 AI Coding，有的叫 AI Pair Programming，还有的叫 AI Copilot，甚至有的叫 AI Vibe Coding。我更喜欢 Pair Programming 这个说法，因为它强调了 AI 和人类的协作关系。&lt;/p&gt;
-&lt;p&gt;作为一个典型的喜欢白嫖的用户，也会为顶部产品付费，最多的是 Cursor。因为真的被他们的效果吸引了。&lt;/p&gt;
-&lt;p&gt;这里就总结下我对 AI 编程的体验和感受。&lt;/p&gt;
+&lt;p&gt;作为一个喜欢白嫖的用户，也会为顶部产品付费，最多的是 Cursor。因为真的被他们的效果吸引了，没有他就降低了很多效率。&lt;/p&gt;
+&lt;p&gt;下面总结下我对 AI 编程的体验和感受。&lt;/p&gt;
 &lt;h2 id=&#34;交互形式&#34;&gt;交互形式&lt;/h2&gt;
 &lt;p&gt;蛮荒期的交互很简单： 在一个 Chat 框里，一顿问答，然后把输出内容，就是把 AI 当作搜索引擎用了。这里几乎没有什么上下文，仅靠系统提示词给一些约束&lt;/p&gt;
 &lt;p&gt;IDE 插件的形式：早期 Github 的 Copilot。这种能在编辑器光标的地方直接生成并插入，然后使用 Tab 来接受，也能有个侧边栏出现 Chat 框，只是这里的 Chat 框里仅包含问答&lt;/p&gt;
