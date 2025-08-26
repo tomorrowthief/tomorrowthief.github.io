@@ -31,14 +31,20 @@
       <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起&lt;/h2&gt;
 &lt;p&gt;我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。&lt;/p&gt;
 &lt;p&gt;AI 编程的称呼也很多，有的叫 AI Coding，有的叫 AI Pair Programming，还有的叫 AI Copilot，甚至有的叫 AI Vibe Coding。我更喜欢 Pair Programming 这个说法，因为它强调了 AI 和人类的协作关系。&lt;/p&gt;
-&lt;p&gt;作为一个喜欢白嫖的用户，也会为顶部产品付费，最多的是 Cursor。因为真的被他们的效果吸引了，没有他就降低了很多效率。先列觉下我用过的 AI 编程工具：&lt;/p&gt;
+&lt;p&gt;作为一个喜欢白嫖的用户，这一波也会为顶部产品付费，最多的是 Cursor。真的被其惊艳效果吸引了，没有他就降低了很多效率。先列举下我用过的 AI 编程工具：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;插件：Github Copilot / 通义灵码 / Cline / Bito / Codeium（Windsurf 早期形态）/ Augment&lt;/li&gt;
 &lt;li&gt;Vscode 系列：Cursor / WindSurf / Kiro / Trae&lt;/li&gt;
 &lt;li&gt;CLI 系列：Claude Code / Cursor CLI / Gemini CLI&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;目前使用最多的是 Cursor 和 Claude Code。&lt;/p&gt;
-&lt;p&gt;使用数据：工作中几乎 90% 的代码是 AI 生成的。&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;使用数据&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;代码量上：几乎 90% 的代码是 AI 生成的。&lt;/li&gt;
+&lt;li&gt;时间上：大概 50% 的时间是 AI 辅助的。&lt;/li&gt;
+&lt;li&gt;效率上：平均提升了 1-2 倍。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面总结下我对 AI 编程的体验和感受，Lets go&lt;/p&gt;</description>
     </item>
     
   </channel>
