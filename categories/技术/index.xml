@@ -18,7 +18,32 @@
       
       <guid>https://tomorrowthief.github.io/posts/ai-tec/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;梳理下自己在 AI 产品开发中用到的一些技术，自己了解的一些业界中的技术&lt;/p&gt;</description>
+&lt;p&gt;梳理下自己在 AI 产品开发中用到的一些工程技术，只会做工程了属于是，算法方面的东西基本上不懂。&lt;/p&gt;
+&lt;p&gt;列下我做过的东西：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code Review Agent&lt;/li&gt;
+&lt;li&gt;Long term memory&lt;/li&gt;
+&lt;li&gt;Dify 二开&lt;/li&gt;
+&lt;li&gt;Rag 流程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;语言技术：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Nodejs&lt;/li&gt;
+&lt;li&gt;Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agent 框架：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Langchain&lt;/li&gt;
+&lt;li&gt;React Agent&lt;/li&gt;
+&lt;li&gt;Function calling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。&lt;/p&gt;
+&lt;h2 id=&#34;起步与-llm-交互&#34;&gt;起步：与 LLM 交互&lt;/h2&gt;
+&lt;h2 id=&#34;agent-范式&#34;&gt;Agent 范式&lt;/h2&gt;
+&lt;h2 id=&#34;大脑的重要性&#34;&gt;大脑的重要性&lt;/h2&gt;
+&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
+&lt;p&gt;某种角度下是：以工程的复杂度换来模型的不足，但是呢工程基本是必须的，模型的提升是一个长期的过程，工程的提升是一个短期的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
