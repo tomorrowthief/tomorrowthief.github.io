@@ -21,10 +21,17 @@
 &lt;p&gt;目前编码工作几乎是 Cursor， 体验了 Claude code&lt;/p&gt;
 &lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
 &lt;p&gt;有 80% 的 coding 是生成的，能提升效率：50% +，更重要的是让自己有信心做一些未知领域的事情&lt;/p&gt;
-&lt;h2 id=&#34;cursor&#34;&gt;Cursor&lt;/h2&gt;
+&lt;h2 id=&#34;cursor-等类似的工具&#34;&gt;Cursor 等类似的工具&lt;/h2&gt;
 &lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;kiro&#34;&gt;kiro&lt;/h3&gt;
+&lt;p&gt;Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务&lt;/p&gt;
+&lt;h2 id=&#34;claude&#34;&gt;Claude&lt;/h2&gt;
+&lt;h2 id=&#34;当个正儿八经的同事&#34;&gt;当个正儿八经的同事&lt;/h2&gt;
+&lt;p&gt;借助这些工具，当作一个正儿八经的同事来对待，能在另一个纬度提升工具的战斗力。&lt;/p&gt;
+&lt;h2 id=&#34;虚拟团队&#34;&gt;虚拟团队？&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;工欲善其事 必先利其器&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
