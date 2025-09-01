@@ -25,10 +25,15 @@
 &lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
-&lt;h3&gt;&lt;/h3&gt;
-&lt;h3 id=&#34;kiro&#34;&gt;kiro&lt;/h3&gt;
-&lt;p&gt;Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务&lt;/p&gt;
+&lt;h3 id=&#34;上下文工程&#34;&gt;上下文工程&lt;/h3&gt;
+&lt;h3 id=&#34;多模态工程&#34;&gt;多模态工程&lt;/h3&gt;
+&lt;p&gt;前端场景里可以上传图片完成 UI 上的初稿。&lt;/p&gt;
+&lt;h3 id=&#34;mcp&#34;&gt;MCP&lt;/h3&gt;
+&lt;p&gt;一些好用的 MCP: 查看最新文档&lt;/p&gt;
+&lt;h3 id=&#34;交互文档化&#34;&gt;交互文档化&lt;/h3&gt;
+&lt;p&gt;Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务.&lt;/p&gt;
 &lt;h2 id=&#34;claude&#34;&gt;Claude&lt;/h2&gt;
+&lt;p&gt;Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉得长期对于大众&lt;/p&gt;
 &lt;h2 id=&#34;当个正儿八经的同事&#34;&gt;当个正儿八经的同事&lt;/h2&gt;
 &lt;p&gt;借助这些工具，当作一个正儿八经的同事来对待，能在另一个纬度提升工具的战斗力。&lt;/p&gt;
 &lt;h2 id=&#34;虚拟团队&#34;&gt;虚拟团队？&lt;/h2&gt;
