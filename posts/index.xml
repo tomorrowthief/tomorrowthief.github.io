@@ -25,6 +25,7 @@
 &lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
+&lt;p&gt;通过 Ask 模式探讨方案，梳理问题，通过 Agent 模式来做执行工作，是一个比较常规的模式了。&lt;/p&gt;
 &lt;h3 id=&#34;上下文工程&#34;&gt;上下文工程&lt;/h3&gt;
 &lt;h3 id=&#34;多模态工程&#34;&gt;多模态工程&lt;/h3&gt;
 &lt;p&gt;前端场景里可以上传图片完成 UI 上的初稿。&lt;/p&gt;
