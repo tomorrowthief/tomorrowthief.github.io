@@ -152,10 +152,10 @@
 &lt;h3 id=&#34;起步与-llm-交互&#34;&gt;起步：与 LLM 交互&lt;/h3&gt;
 &lt;p&gt;唯有提示词，就像圣经里能唯一与上帝交流传话的那个家伙。&lt;/p&gt;
 &lt;p&gt;形式上有 stream blocking。&lt;/p&gt;
-&lt;p&gt;通信载体几乎是基于：Http，无非多一些 sse stream able 返回等。&lt;/p&gt;
+&lt;p&gt;通信载体几乎是基于：Http，无非是协议上多了一些 sse streamable 返回等。&lt;/p&gt;
 &lt;h3 id=&#34;agent-范式&#34;&gt;Agent 范式&lt;/h3&gt;
 &lt;p&gt;React 一直是比较经典的范式，很多其他模式也是基于这个演化的&lt;/p&gt;
-&lt;p&gt;早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等&lt;/p&gt;
+&lt;p&gt;早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等一股脑的都会拼接到提示词上，然后返回内容的解析也会根据一些约定标记等做信息提取&lt;/p&gt;
 &lt;p&gt;中期这些内容被 大模型公司给 Native 了，做到模型内部了： function call api 规范&lt;/p&gt;
 &lt;p&gt;当前是被 MCP 协议规范了，当然底层还是基于 funciton call 的能力包装的标准协议&lt;/p&gt;</description>
     </item>

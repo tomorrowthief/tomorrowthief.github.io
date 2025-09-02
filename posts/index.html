@@ -42,9 +42,9 @@ Langchain React Agent Function calling 总结下来基本上都是常规的 web 
 工程是重点不是难点，模型是难点不是重点毕竟能搞模型的就那么几家公司
 工程 起步：与 LLM 交互 唯有提示词，就像圣经里能唯一与上帝交流传话的那个家伙。
 形式上有 stream blocking。
-通信载体几乎是基于：Http，无非多一些 sse stream able 返回等。
+通信载体几乎是基于：Http，无非是协议上多了一些 sse streamable 返回等。
 Agent 范式 React 一直是比较经典的范式，很多其他模式也是基于这个演化的
-早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等
+早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等一股脑的都会拼接到提示词上，然后返回内容的解析也会根据一些约定标记等做信息提取
 中期这些内容被 大模型公司给 Native 了，做到模型内部了： function call api 规范
 当前是被 MCP 协议规范了，当然底层还是基于 funciton call 的能力包装的标准协议
 ...</p></div><footer class=entry-footer><span title='2025-08-08 18:17:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 应用技术" href=https://tomorrowthief.github.io/posts/ai-tec/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
