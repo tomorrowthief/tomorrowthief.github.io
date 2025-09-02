@@ -92,7 +92,7 @@ Rag 是典型的 demo 很简单调优很魔鬼的技术方案。一些我知道�
 算是比较厉害的，可以称为AI应用架构师了
 
 ## 高质量开源项目
-[continuedev](https://github.com/continuedev/continue)
+1. [continuedev](https://github.com/continuedev/continue) 一个做研发领域工具链的好项目包含 vscode 插件，cli 等
 
 ## 结语
 
