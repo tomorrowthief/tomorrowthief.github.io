@@ -8,9 +8,11 @@ Cursor 等类似的工具 Tab Tab Tab Cursor 最基础的使用就是 Tab 接受
 Agent / Ask 上下文工程 多模态工程 前端场景里可以上传图片完成 UI 上的初稿。
 MCP 一些好用的 MCP: 查看最新文档
 交互文档化 Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务.
-Claude Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉得长期对于大众
-当个正儿八经的同事 借助这些工具，当作一个正儿八经的同事来对待，能在另一个纬度提升工具的战斗力。
-虚拟团队？ 工欲善其事 必先利其器</p></div><footer class=entry-footer><span title='2025-08-25 18:46:41 +0800 +0800'>八月 25, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Vibe Coding: Cursor & Claude Code 体验总结" href=https://tomorrowthief.github.io/posts/ai-cursor-claudecode/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Vibe Coding: AI编程总结</h2></header><div class=entry-content><p>缘起 我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。
+Claude Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉得长期对于大众用户来说 UI 可视化的界面会胜出。原因是历史数据来看的，历史上 cli 操作和可视化操作一般在很多软件里都会存在，各有利弊 各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。
+国内用户被限制？ 某些原因导致 Anthropic 家的产品在国内是被限制的，Claude 也一样。
+但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 ccr 我是在用这个
+具体是使用公司的提供的百炼接口 Api key。里面有很多开源模型可以选择比如 Qwen系列，Kimi K2，Deepseek3.1 等。我在用 Claude + deepseek-v3.1。
+...</p></div><footer class=entry-footer><span title='2025-08-25 18:46:41 +0800 +0800'>八月 25, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Vibe Coding: Cursor & Claude Code 体验总结" href=https://tomorrowthief.github.io/posts/ai-cursor-claudecode/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Vibe Coding: AI编程总结</h2></header><div class=entry-content><p>缘起 我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。
 AI 编程的称呼也很多，有的叫 AI Coding，有的叫 AI Pair Programming，还有的叫 AI Copilot，甚至有的叫 AI Vibe Coding。我更喜欢 Pair Programming 这个说法，因为它强调了 AI 和人类的协作关系。
 作为一个喜欢白嫖的用户，这一波也会为顶部产品付费，最多的是 Cursor。真的被其惊艳效果吸引了，没有他就降低了很多效率。先列举下我用过的 AI 编程工具：
 插件：Github Copilot / 通义灵码 / Cline / Bito / Codeium（Windsurf 早期形态）/ Augment Vscode 系列：Cursor / WindSurf / Kiro / Trae CLI 系列：Claude Code / Cursor CLI / Gemini CLI 目前使用最多的是 Cursor 和 Claude Code。
