@@ -38,12 +38,20 @@
 &lt;li&gt;React Agent&lt;/li&gt;
 &lt;li&gt;Function calling&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。&lt;/p&gt;
-&lt;h2 id=&#34;起步与-llm-交互&#34;&gt;起步：与 LLM 交互&lt;/h2&gt;
-&lt;h2 id=&#34;agent-范式&#34;&gt;Agent 范式&lt;/h2&gt;
-&lt;h2 id=&#34;大脑的重要性&#34;&gt;大脑的重要性&lt;/h2&gt;
-&lt;h2 id=&#34;结语&#34;&gt;结语&lt;/h2&gt;
-&lt;p&gt;某种角度下是：以工程的复杂度换来模型的不足，但是呢工程基本是必须的，模型的提升是一个长期的过程，工程的提升是一个短期的过程。&lt;/p&gt;</description>
+&lt;p&gt;总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。本文从工程与算法两层来总结梳理自己了解到的东西&lt;/p&gt;
+&lt;h2 id=&#34;关系&#34;&gt;关系&lt;/h2&gt;
+&lt;p&gt;工程与模型的关系，有点像是算法里的复杂度控制：空间换时间，时间换空间，性能换效率，效率换性能&lt;/p&gt;
+&lt;p&gt;工程是重点不是难点，模型是难点不是重点毕竟能搞模型的就那么几家公司&lt;/p&gt;
+&lt;h2 id=&#34;工程&#34;&gt;工程&lt;/h2&gt;
+&lt;h3 id=&#34;起步与-llm-交互&#34;&gt;起步：与 LLM 交互&lt;/h3&gt;
+&lt;p&gt;唯有提示词，就像圣经里能唯一与上帝交流传话的那个家伙。&lt;/p&gt;
+&lt;p&gt;形式上有 stream blocking。&lt;/p&gt;
+&lt;p&gt;通信载体几乎是基于：Http，无非多一些 sse stream able 返回等。&lt;/p&gt;
+&lt;h3 id=&#34;agent-范式&#34;&gt;Agent 范式&lt;/h3&gt;
+&lt;p&gt;React 一直是比较经典的范式，很多其他模式也是基于这个演化的&lt;/p&gt;
+&lt;p&gt;早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等&lt;/p&gt;
+&lt;p&gt;中期这些内容被 大模型公司给 Native 了，做到模型内部了： function call api 规范&lt;/p&gt;
+&lt;p&gt;当前是被 MCP 协议规范了，当然底层还是基于 funciton call 的能力包装的标准协议&lt;/p&gt;</description>
     </item>
     
     <item>

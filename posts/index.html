@@ -37,8 +37,17 @@ AI 下催生的机会 已经靠 AI 赚到的有哪些人？ 我发现这波浪�
 列下我做过的东西：
 Code Review Agent Long term memory Dify 二开 Rag 流程 语言技术：
 Python Nodejs Go Agent 框架：
-Langchain React Agent Function calling 总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。
-起步：与 LLM 交互 Agent 范式 大脑的重要性 结语 某种角度下是：以工程的复杂度换来模型的不足，但是呢工程基本是必须的，模型的提升是一个长期的过程，工程的提升是一个短期的过程。</p></div><footer class=entry-footer><span title='2025-08-08 18:17:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 应用技术" href=https://tomorrowthief.github.io/posts/ai-tec/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
+Langchain React Agent Function calling 总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。本文从工程与算法两层来总结梳理自己了解到的东西
+关系 工程与模型的关系，有点像是算法里的复杂度控制：空间换时间，时间换空间，性能换效率，效率换性能
+工程是重点不是难点，模型是难点不是重点毕竟能搞模型的就那么几家公司
+工程 起步：与 LLM 交互 唯有提示词，就像圣经里能唯一与上帝交流传话的那个家伙。
+形式上有 stream blocking。
+通信载体几乎是基于：Http，无非多一些 sse stream able 返回等。
+Agent 范式 React 一直是比较经典的范式，很多其他模式也是基于这个演化的
+早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等
+中期这些内容被 大模型公司给 Native 了，做到模型内部了： function call api 规范
+当前是被 MCP 协议规范了，当然底层还是基于 funciton call 的能力包装的标准协议
+...</p></div><footer class=entry-footer><span title='2025-08-08 18:17:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 应用技术" href=https://tomorrowthief.github.io/posts/ai-tec/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
 AI 产品核心之核心 毋庸置疑核心是模型：LLM，Difusion Model，CV 模型等。与模型唯一通信载体是 Prompt，请记住这个唯一，非常重要，基本上功能都是围绕这个来做的。所以早期的AI产品都是称为 Prompt 产品，开发者是 prompt 工程师。
 而 Prompt 也有种类繁多的范式，不同场景不同目的使用不同的 Prompt。Prompt 设计的好坏直接影响 AI 产品的效果，这里暂且不表。
 Agent 与 Workflow 多 Agent 模式与虚拟团队 1人公司 好用的 AI 产品</p></div><footer class=entry-footer><span title='2025-08-08 18:15:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 产品思考" href=https://tomorrowthief.github.io/posts/ai-products/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://tomorrowthief.github.io/posts/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
