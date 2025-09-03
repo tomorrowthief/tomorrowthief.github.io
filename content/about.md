@@ -5,15 +5,15 @@ url: "/about"
 summary: "about"
 ---
 
-I am now a web developer, software developer, based in 杭州 / 郑州.
+Web 开发，软件开发，架构师，生活探索者。混迹于 杭州 / 郑州。
 
 
 <br />
 
-## Skills & Languages
+## 技能 & 语言
 * Front End，Nodejs, Python, Golang
 * AI Application, LLM, Agentic Application
 
-## Learning
+## 近期在学
 * Something about Web3
 * Neurons Networks & Transformer
