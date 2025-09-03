@@ -106,7 +106,7 @@ params:
     homeInfoParams:
         Title: "钟灵毓秀"
         Content: >
-            - Software Architect & Problem Solver
+            - 开发者 & 架构师 & 问题终结者
 
     # editPost:
     #     URL: "https://github.com/tomorrowthief/tomorrowthief.github.io/"
