@@ -18,10 +18,10 @@
       
       <guid>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</guid>
       <description>&lt;h2 id=&#34;使用情况&#34;&gt;使用情况&lt;/h2&gt;
-&lt;p&gt;目前编码工作几乎是 Cursor， 体验了 Claude code&lt;/p&gt;
+&lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
 &lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
-&lt;p&gt;有 80% 的 coding 是生成的，能提升效率：50% +，更重要的是让自己有信心做一些未知领域的事情&lt;/p&gt;
-&lt;h2 id=&#34;cursor-等类似的工具&#34;&gt;Cursor 等类似的工具&lt;/h2&gt;
+&lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情&lt;/p&gt;
+&lt;h2 id=&#34;cursor-等工具基于-vscode&#34;&gt;Cursor 等工具(基于 vscode)&lt;/h2&gt;
 &lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
