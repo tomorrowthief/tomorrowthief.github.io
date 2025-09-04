@@ -26,7 +26,8 @@
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
 &lt;p&gt;通过 Ask 模式探讨方案，梳理问题，通过 Agent 模式来做执行工作，是一个比较常规的模式了。&lt;/p&gt;
-&lt;h3 id=&#34;上下文工程&#34;&gt;上下文工程&lt;/h3&gt;
+&lt;h3 id=&#34;上下文工程--自定义-rules&#34;&gt;上下文工程 &amp;amp; 自定义 Rules&lt;/h3&gt;
+&lt;p&gt;Cursor 提供上下文很清晰直接选择文件即可，可以多文件，可以指定 rules 等&lt;/p&gt;
 &lt;h3 id=&#34;多模态工程&#34;&gt;多模态工程&lt;/h3&gt;
 &lt;p&gt;前端场景里可以上传图片完成 UI 上的初稿。&lt;/p&gt;
 &lt;h3 id=&#34;mcp&#34;&gt;MCP&lt;/h3&gt;
@@ -38,8 +39,7 @@
 各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。&lt;/p&gt;
 &lt;h3 id=&#34;国内用户被限制&#34;&gt;国内用户被限制？&lt;/h3&gt;
 &lt;p&gt;某些原因导致 Anthropic 家的产品在国内是被限制的，Claude 也一样。&lt;/p&gt;
-&lt;p&gt;但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 &lt;a href=&#34;https://github.com/musistudio/claude-code-router&#34;&gt;ccr&lt;/a&gt; 我是在用这个&lt;/p&gt;
-&lt;p&gt;具体是使用公司的提供的火山引擎接口 Api key。里面有很多开源模型可以选择比如 Qwen系列，Kimi K2，Deepseek3.1 等。我在用 Claude + deepseek-v3.1。&lt;/p&gt;</description>
+&lt;p&gt;但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 &lt;a href=&#34;https://github.com/musistudio/claude-code-router&#34;&gt;ccr&lt;/a&gt; 我是在用这个&lt;/p&gt;</description>
     </item>
     
     <item>
