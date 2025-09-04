@@ -39,12 +39,17 @@ Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉�
 
 但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 [ccr](https://github.com/musistudio/claude-code-router) 我是在用这个
 
-具体是使用公司的提供的百炼接口 Api key。里面有很多开源模型可以选择比如 Qwen系列，Kimi K2，Deepseek3.1 等。我在用 Claude + deepseek-v3.1。
+具体是使用公司的提供的火山引擎接口 Api key。里面有很多开源模型可以选择比如 Qwen系列，Kimi K2，Deepseek3.1 等。我在用 Claude + deepseek-v3.1。
 
 效果上据听说可以达到其 claude 4系列模型的 8 成。可以想象到 claude 4系列是多么恐怖
 
 ### 为什么一个 cli 工具被那么多用户看好
 核心我觉得还是生成效果优秀，生成的内容不需要过多的来回确认修复。
+
+### 当前遇到的问题是：
+在界面型开发任务中，比如 Web 前端，不能通过截图的形式来上传相关参考，这个可能是 CLI 的天然弱势。
+
+最终上传图片的解决办法应该也有，但是没有可视化那种点点按钮就可以的方便
 
 ### 上下文管理
 通过 clear compact 等，以及转移上下文窗口：subagent
