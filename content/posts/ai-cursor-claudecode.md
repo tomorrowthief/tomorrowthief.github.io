@@ -1,5 +1,5 @@
 ---
-title: "Vibe Coding: Cursor & Claude Code 体验总结"
+title: "Cursor & Claude Code 体验总结"
 date: 2025-08-25T18:46:41+08:00
 draft: false
 categories: 'AI'
@@ -11,7 +11,8 @@ categories: 'AI'
 主要使用场景：日常业务迭代，Bug 修复，新项目启动。
 
 有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情
-## Cursor 等工具(基于 vscode)
+## Cursor 等工具
+这里用 Cursor 其实只是 一系列基于 vscode 的 ai 编辑器代称。
 ### Tab Tab Tab
 Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。
 
