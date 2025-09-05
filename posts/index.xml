@@ -39,7 +39,7 @@
 各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。&lt;/p&gt;
 &lt;h3 id=&#34;国内用户被限制&#34;&gt;国内用户被限制？&lt;/h3&gt;
 &lt;p&gt;某些原因导致 Anthropic 家的产品在国内是被限制的，Claude 也一样。&lt;/p&gt;
-&lt;p&gt;但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 &lt;a href=&#34;https://github.com/musistudio/claude-code-router&#34;&gt;ccr&lt;/a&gt; 我是在用这个&lt;/p&gt;</description>
+&lt;p&gt;但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后代理转发，转发到国内能用的模型服务上，并做一套适配器适配不同厂家的 API 差异。&lt;/p&gt;</description>
     </item>
     
     <item>
