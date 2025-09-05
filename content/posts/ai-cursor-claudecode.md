@@ -37,12 +37,15 @@ Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉�
 ### 国内用户被限制？
 某些原因导致 Anthropic 家的产品在国内是被限制的，Claude 也一样。
 
-但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后转发到本地启动的代理服务。比较出名的是 [ccr](https://github.com/musistudio/claude-code-router) 我是在用这个
+但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后代理转发，转发到国内能用的模型服务上，并做一套适配器适配不同厂家的 API 差异。
+
+比较出名的是 [ccr](https://github.com/musistudio/claude-code-router) 我是在用这个
 
 具体是使用公司的提供的火山引擎接口 Api key。里面有很多开源模型可以选择比如 Qwen系列，Kimi K2，Deepseek3.1 等。我在用 Claude + deepseek-v3.1。
 
-效果上据听说可以达到其 claude 4系列模型的 8 成。可以想象到 claude 4系列是多么恐怖
+效果上还不错的，据听说可以达到其 claude 4系列模型的 8 成。可以想象到 claude 4 系列是多么恐怖
 
+注意点是这种工具很烧token，所以要注意下，别变成付费上班了。
 ### 为什么一个 CLI 工具被那么多用户看好
 核心我觉得还是生成效果优秀，生成的内容不需要过多的来回确认修复，所以 CLI 这种简洁性的交互更能提升效率。
 
