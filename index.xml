@@ -12,7 +12,7 @@
     <language>zh</language>
     <lastBuildDate>Mon, 25 Aug 2025 18:46:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vibe Coding: Cursor &amp; Claude Code 体验总结</title>
+      <title>Cursor &amp; Claude Code 体验总结</title>
       <link>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</link>
       <pubDate>Mon, 25 Aug 2025 18:46:41 +0800</pubDate>
       
@@ -21,7 +21,8 @@
 &lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
 &lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
 &lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情&lt;/p&gt;
-&lt;h2 id=&#34;cursor-等工具基于-vscode&#34;&gt;Cursor 等工具(基于 vscode)&lt;/h2&gt;
+&lt;h2 id=&#34;cursor-等工具&#34;&gt;Cursor 等工具&lt;/h2&gt;
+&lt;p&gt;这里用 Cursor 其实只是 一系列基于 vscode 的 ai 编辑器代称。&lt;/p&gt;
 &lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
 &lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
 &lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
@@ -36,10 +37,7 @@
 &lt;p&gt;Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务.&lt;/p&gt;
 &lt;h2 id=&#34;claude-code&#34;&gt;Claude-code&lt;/h2&gt;
 &lt;p&gt;Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉得长期对于大众用户来说 UI 可视化的界面会胜出。原因是历史数据来看的，历史上 cli 操作和可视化操作一般在很多软件里都会存在，各有利弊
-各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。&lt;/p&gt;
-&lt;h3 id=&#34;国内用户被限制&#34;&gt;国内用户被限制？&lt;/h3&gt;
-&lt;p&gt;某些原因导致 Anthropic 家的产品在国内是被限制的，Claude 也一样。&lt;/p&gt;
-&lt;p&gt;但是出现了很多开源的代理项目，大概是通过抓包把 Claude 中的请求都拿到，然后代理转发，转发到国内能用的模型服务上，并做一套适配器适配不同厂家的 API 差异。&lt;/p&gt;</description>
+各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。&lt;/p&gt;</description>
     </item>
     
     <item>
