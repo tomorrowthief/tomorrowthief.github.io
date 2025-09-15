@@ -7,3 +7,15 @@ categories: '技术'
 近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。
 
 这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。
+
+## [teamoteam](https://teamoteam.com/index)
+
+一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
+主要应用场景是：写作，调研。属于一个典型的多 Agent 架构的应用。
+
+<img width="1689" height="845" alt="image" src="https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d" />
+
+
+
+
+
