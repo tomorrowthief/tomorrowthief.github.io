@@ -28,3 +28,9 @@ categories: '技术'
 ### 工具
 ### 调优
 
+
+
+## 附录
+1. [Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus](https://manus.im/zh-cn/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
+2. [writing-tools-for-agents](https://www.anthropic.com/engineering/writing-tools-for-agents)
+3. [ReAct 框架与 AI Agent：当 AI 学会自己思考和行动](https://baoyu.io/blog/react-ai-agent-self-thinking-acting)
