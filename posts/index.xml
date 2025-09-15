@@ -29,7 +29,13 @@
 &lt;h2 id=&#34;核心技术&#34;&gt;核心技术&lt;/h2&gt;
 &lt;h3 id=&#34;多-agent-架构&#34;&gt;多 Agent 架构&lt;/h3&gt;
 &lt;h3 id=&#34;工具&#34;&gt;工具&lt;/h3&gt;
-&lt;h3 id=&#34;调优&#34;&gt;调优&lt;/h3&gt;</description>
+&lt;h3 id=&#34;调优&#34;&gt;调优&lt;/h3&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://manus.im/zh-cn/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus&#34;&gt;Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.anthropic.com/engineering/writing-tools-for-agents&#34;&gt;writing-tools-for-agents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://baoyu.io/blog/react-ai-agent-self-thinking-acting&#34;&gt;ReAct 框架与 AI Agent：当 AI 学会自己思考和行动&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
     <item>
