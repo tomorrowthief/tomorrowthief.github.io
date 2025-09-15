@@ -16,6 +16,15 @@ categories: '技术'
 <img width="1689" height="845" alt="image" src="https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d" />
 
 
+## [manus](https://manus.im/app)
+
+国内网红 Agent 公司，早期拼接炒作火了一把，并且把体验码炒到数万一个。也拿到了一些融资。
+
+核心功能：
 
 
+## 核心技术
+### 多 Agent 架构
+### 工具
+### 调优
 
