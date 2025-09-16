@@ -12,16 +12,20 @@
     <language>zh</language>
     <lastBuildDate>Fri, 12 Sep 2025 15:47:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>通用 Agent调研</title>
+      <title>通用 Agent 调研</title>
       <link>https://tomorrowthief.github.io/posts/ai-agent/</link>
       <pubDate>Fri, 12 Sep 2025 15:47:00 +0800</pubDate>
       
       <guid>https://tomorrowthief.github.io/posts/ai-agent/</guid>
       <description>&lt;p&gt;近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。&lt;/p&gt;
 &lt;p&gt;这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。&lt;/p&gt;
+&lt;h2 id=&#34;与正常问答助手区别&#34;&gt;与正常问答助手区别&lt;/h2&gt;
+&lt;p&gt;普通 chat 是为了回答问题，仅仅是问答&lt;/p&gt;
+&lt;p&gt;带上工具后，可以执行一些简单任务&lt;/p&gt;
+&lt;p&gt;带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等，就是本文要说的通用 Agent，我更习惯称它为任务 Agent。&lt;/p&gt;
 &lt;h2 id=&#34;manus&#34;&gt;&lt;a href=&#34;https://manus.im/app&#34;&gt;manus&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;国内网红 Agent 公司，早期拼接炒作火了一把，并且把体验码炒到数万一个。也拿到了一些融资。&lt;/p&gt;
-&lt;p&gt;核心功能：&lt;/p&gt;
+&lt;p&gt;国内网红 Agent 公司，早期拼接炒作火了一把，并且把体验码炒到数万一个。也拿到了一些融资。
+核心功能：&lt;/p&gt;
 &lt;h2 id=&#34;flowith&#34;&gt;&lt;a href=&#34;https://flowith.io/blank&#34;&gt;flowith&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;minimax&#34;&gt;&lt;a href=&#34;https://agent.minimaxi.com/&#34;&gt;minimax&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;skyework&#34;&gt;&lt;a href=&#34;https://skywork.ai/&#34;&gt;skyework&lt;/a&gt;&lt;/h2&gt;
@@ -33,27 +37,12 @@
 &lt;h3 id=&#34;单-agent&#34;&gt;单 Agent&lt;/h3&gt;
 &lt;p&gt;目前单 Agent 基本都是源于早期那个 ReAct 论文。规划-响应-监听-循环。&lt;/p&gt;
 &lt;h3 id=&#34;多-agent-架构&#34;&gt;多 Agent 架构&lt;/h3&gt;
-&lt;p&gt;首先很多场景可能不需要 Multi Agent 架构&lt;/p&gt;
+&lt;p&gt;首先很多场景可能不需要 Multi Agent 架构，具体怎么决策 在 Openai 总结的实践文章里有提到，可以做参考。
+市面上已经有一些多 Agent 框架，比如 openai 的 swarm，qwen_agents 等。可以在代码实现上做些参考&lt;/p&gt;
+&lt;h3 id=&#34;状态管理&#34;&gt;状态管理&lt;/h3&gt;
+&lt;p&gt;一般一个任务会对应一个总体的内容，任务的todo列表，todo的完成情况，human in the loop 等都依赖这个状态管理。&lt;/p&gt;
 &lt;h3 id=&#34;工具&#34;&gt;工具&lt;/h3&gt;
-&lt;h3 id=&#34;调优&#34;&gt;调优&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;效果调优&lt;/strong&gt;
-&lt;strong&gt;性能调优&lt;/strong&gt;：
-这里有个 manus 的文章，其中写到了 prompt cache，比较底层技术了&lt;/p&gt;
-&lt;h2 id=&#34;是否有价值&#34;&gt;是否有价值？&lt;/h2&gt;
-&lt;p&gt;他是一个伪需求么？仅仅追随热点？发展一日千里？&lt;/p&gt;
-&lt;p&gt;这个问题的答案离不开场景，编码领域已经非常成功，写作，调研，等领域逐渐有显现，办公领域逐渐在渗透&lt;/p&gt;
-&lt;h2 id=&#34;其他产品罗列&#34;&gt;其他产品罗列&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://space.coze.cn/?category=10000&#34;&gt;coze 空间&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gamma.app/&#34;&gt;gamma&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;附录&#34;&gt;附录&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://manus.im/zh-cn/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus&#34;&gt;Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.anthropic.com/engineering/writing-tools-for-agents&#34;&gt;writing-tools-for-agents&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://baoyu.io/blog/react-ai-agent-self-thinking-acting&#34;&gt;ReAct 框架与 AI Agent：当 AI 学会自己思考和行动&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf&#34;&gt;a-practical-guide-to-building-agents byopenai&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;工具基本依赖 mcp 协议，但是具体定义的时候有些注意事项：简洁，明确的描述工具，尽量给出 scope，因为不同的系列工具里可能有相同的名称比如： get_list。&lt;/p&gt;</description>
     </item>
     
     <item>
