@@ -22,9 +22,9 @@
 &lt;h2 id=&#34;与正常问答助手区别&#34;&gt;与正常问答助手区别&lt;/h2&gt;
 &lt;p&gt;普通 chat 是为了回答问题，仅仅是问答&lt;/p&gt;
 &lt;p&gt;带上工具后，可以执行一些简单任务&lt;/p&gt;
-&lt;p&gt;带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等，就是本文要说的通用 Agent，我更习惯称它为任务 Agent。&lt;/p&gt;
+&lt;p&gt;带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等就是本文要说的通用 Agent，我更习惯称它为任务 Agent。&lt;/p&gt;
 &lt;h2 id=&#34;manus&#34;&gt;&lt;a href=&#34;https://manus.im/app&#34;&gt;manus&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;国内网红 Agent 公司，早期拼接炒作火了一把，并且把体验码炒到数万一个。也拿到了一些融资。
+&lt;p&gt;国内网红 Agent 公司，早期凭借炒作火了一把，当然也有他的实力存在的，并且把体验码炒到数万一个。也拿到了一些融资。
 核心功能：&lt;/p&gt;
 &lt;h2 id=&#34;flowith&#34;&gt;&lt;a href=&#34;https://flowith.io/blank&#34;&gt;flowith&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;minimax&#34;&gt;&lt;a href=&#34;https://agent.minimaxi.com/&#34;&gt;minimax&lt;/a&gt;&lt;/h2&gt;
@@ -32,7 +32,7 @@
 &lt;h2 id=&#34;teamoteam&#34;&gt;&lt;a href=&#34;https://teamoteam.com/index&#34;&gt;teamoteam&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
 主要应用场景是：写作，调研。属于一个典型的多 Agent 架构的应用。&lt;/p&gt;
-&lt;img width=&#34;1689&#34; height=&#34;845&#34; alt=&#34;image&#34; src=&#34;https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d&#34; /&gt;
+&lt;img width=&#34;100%&#34; height=&#34;auto&#34; alt=&#34;image&#34; src=&#34;https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d&#34; /&gt;
 &lt;h2 id=&#34;核心技术&#34;&gt;核心技术&lt;/h2&gt;
 &lt;h3 id=&#34;单-agent&#34;&gt;单 Agent&lt;/h3&gt;
 &lt;p&gt;目前单 Agent 基本都是源于早期那个 ReAct 论文。规划-响应-监听-循环。&lt;/p&gt;
