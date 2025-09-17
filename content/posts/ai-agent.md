@@ -13,10 +13,10 @@ categories: '技术'
 
 带上工具后，可以执行一些简单任务
 
-带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等，就是本文要说的通用 Agent，我更习惯称它为任务 Agent。
+带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等就是本文要说的通用 Agent，我更习惯称它为任务 Agent。
 ## [manus](https://manus.im/app)
 
-国内网红 Agent 公司，早期拼接炒作火了一把，并且把体验码炒到数万一个。也拿到了一些融资。
+国内网红 Agent 公司，早期凭借炒作火了一把，当然也有他的实力存在的，并且把体验码炒到数万一个。也拿到了一些融资。
 核心功能：
 
 ## [flowith](https://flowith.io/blank)
@@ -30,7 +30,7 @@ categories: '技术'
 一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
 主要应用场景是：写作，调研。属于一个典型的多 Agent 架构的应用。
 
-<img width="1689" height="845" alt="image" src="https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d" />
+<img width="100%" height="auto" alt="image" src="https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d" />
 
 ## 核心技术
 ### 单 Agent
@@ -47,17 +47,19 @@ categories: '技术'
 这个是重中之重，
 
 **性能调优**：
-这里有个 manus 的文章，其中写到了 prompt cache，比较底层技术了。对于普通入门者我觉得可以往后再看
+这里有个 manus 的文章，其中写到了 prompt cache，比较底层技术了。对于普通入门者我觉得可以往后再看。
 
-## 是否有价值？
-他是一个伪需求么？仅仅追随热点？发展一日千里？
-
-这个问题的答案离不开场景，编码领域已经非常成功，写作，调研，等领域逐渐有显现，办公领域逐渐在渗透
 
 ## 其他产品罗列
 1. [coze 空间](https://space.coze.cn/?category=10000)
 2. [gamma](https://gamma.app/)
 
+## 结论
+目前还未存在真正通用 Agent，大概是 AGI 级别的模型还未出现。基本都是特定在某个领域内的通用，能做好的话也算是成功了
+
+技术实现上思路：意图识别，任务拆解， 工具 / agent，状态控制，呈现结果。这其中的难点反倒是在工具的设计上了，有个好工具就能做出更好结果
+
+一个 Demo 还是非常容易。但是调优性能这块却是另一个纬度的难题。
 
 ## 附录
 1. [Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus](https://manus.im/zh-cn/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
