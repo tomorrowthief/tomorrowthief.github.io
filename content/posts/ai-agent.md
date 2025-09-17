@@ -20,15 +20,14 @@ categories: '技术'
 核心功能：
 
 ## [flowith](https://flowith.io/blank)
-
-## [minimax](https://agent.minimaxi.com/)
-
-## [skyework](https://skywork.ai/)
+这个比较有意思的点是：他在交互上做了创新：整体有个画布，在这个画布上，走一步对应一个节点，感观上还算清晰。
 
 ## [teamoteam](https://teamoteam.com/index)
-
 一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
-主要应用场景是：写作，调研。属于一个典型的多 Agent 架构的应用。
+
+主要应用场景是：写作，调研。
+
+提出了角色的概念，每个角色对应一个 Agent。总体是多 Agent 架构。这也是他们公司的 slogan：致力于推动多 Agent 发展。
 
 <img width="100%" height="auto" alt="image" src="https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d" />
 
@@ -38,13 +37,19 @@ categories: '技术'
 ### 多 Agent 架构
 首先很多场景可能不需要 Multi Agent 架构，具体怎么决策 在 Openai 总结的实践文章里有提到，可以做参考。
 市面上已经有一些多 Agent 框架，比如 openai 的 swarm，qwen_agents 等。可以在代码实现上做些参考
+
+另外一个纬度思考：一个 Agent 也可以是一个工具。这么来看就是单 Agent 模式了
 ### 状态管理
 一般一个任务会对应一个总体的内容，任务的todo列表，todo的完成情况，human in the loop 等都依赖这个状态管理。
 ### 工具
 工具基本依赖 mcp 协议，但是具体定义的时候有些注意事项：简洁，明确的描述工具，尽量给出 scope，因为不同的系列工具里可能有相同的名称比如： get_list。
 ### 调优
 **效果调优**
-这个是重中之重，
+这个是重中之重。我理解需要做好几个事情：
+
+1. 数据来源控制好，比如需要互联网搜索的场景。因为公网里有很多知识，水平参差不齐。如果拿到不好的知识，想做出好结果，肯定不可能了
+2. 意图识别 / 任务拆解
+3. 多一点明确，可以让 human in the loop 更重一点
 
 **性能调优**：
 这里有个 manus 的文章，其中写到了 prompt cache，比较底层技术了。对于普通入门者我觉得可以往后再看。
@@ -53,6 +58,8 @@ categories: '技术'
 ## 其他产品罗列
 1. [coze 空间](https://space.coze.cn/?category=10000)
 2. [gamma](https://gamma.app/)
+3. [skyework](https://skywork.ai/)
+5. [minimax](https://agent.minimaxi.com/)
 
 ## 结论
 目前还未存在真正通用 Agent，大概是 AGI 级别的模型还未出现。基本都是特定在某个领域内的通用，能做好的话也算是成功了
