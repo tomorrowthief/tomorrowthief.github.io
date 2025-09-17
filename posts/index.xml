@@ -27,11 +27,11 @@
 &lt;p&gt;国内网红 Agent 公司，早期凭借炒作火了一把，当然也有他的实力存在的，并且把体验码炒到数万一个。也拿到了一些融资。
 核心功能：&lt;/p&gt;
 &lt;h2 id=&#34;flowith&#34;&gt;&lt;a href=&#34;https://flowith.io/blank&#34;&gt;flowith&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;minimax&#34;&gt;&lt;a href=&#34;https://agent.minimaxi.com/&#34;&gt;minimax&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;skyework&#34;&gt;&lt;a href=&#34;https://skywork.ai/&#34;&gt;skyework&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;这个比较有意思的点是：他在交互上做了创新：整体有个画布，在这个画布上，走一步对应一个节点，感观上还算清晰。&lt;/p&gt;
 &lt;h2 id=&#34;teamoteam&#34;&gt;&lt;a href=&#34;https://teamoteam.com/index&#34;&gt;teamoteam&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
-主要应用场景是：写作，调研。属于一个典型的多 Agent 架构的应用。&lt;/p&gt;
+&lt;p&gt;一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。&lt;/p&gt;
+&lt;p&gt;主要应用场景是：写作，调研。&lt;/p&gt;
+&lt;p&gt;提出了角色的概念，每个角色对应一个 Agent。总体是多 Agent 架构。这也是他们公司的 slogan：致力于推动多 Agent 发展。&lt;/p&gt;
 &lt;img width=&#34;100%&#34; height=&#34;auto&#34; alt=&#34;image&#34; src=&#34;https://github.com/user-attachments/assets/6bf9cec1-3341-476f-b14c-bb902d29612d&#34; /&gt;
 &lt;h2 id=&#34;核心技术&#34;&gt;核心技术&lt;/h2&gt;
 &lt;h3 id=&#34;单-agent&#34;&gt;单 Agent&lt;/h3&gt;
@@ -39,10 +39,7 @@
 &lt;h3 id=&#34;多-agent-架构&#34;&gt;多 Agent 架构&lt;/h3&gt;
 &lt;p&gt;首先很多场景可能不需要 Multi Agent 架构，具体怎么决策 在 Openai 总结的实践文章里有提到，可以做参考。
 市面上已经有一些多 Agent 框架，比如 openai 的 swarm，qwen_agents 等。可以在代码实现上做些参考&lt;/p&gt;
-&lt;h3 id=&#34;状态管理&#34;&gt;状态管理&lt;/h3&gt;
-&lt;p&gt;一般一个任务会对应一个总体的内容，任务的todo列表，todo的完成情况，human in the loop 等都依赖这个状态管理。&lt;/p&gt;
-&lt;h3 id=&#34;工具&#34;&gt;工具&lt;/h3&gt;
-&lt;p&gt;工具基本依赖 mcp 协议，但是具体定义的时候有些注意事项：简洁，明确的描述工具，尽量给出 scope，因为不同的系列工具里可能有相同的名称比如： get_list。&lt;/p&gt;</description>
+&lt;p&gt;另外一个纬度思考：一个 Agent 也可以是一个工具。这么来看就是单 Agent 模式了&lt;/p&gt;</description>
     </item>
     
     <item>
