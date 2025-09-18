@@ -2,98 +2,14 @@
 <span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)">
 <svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
 <svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Python 学习总结</h2></header><div class=entry-content><p>为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。
-根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 Nodejs python。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。
-Python 综述 Python 第一版本发布于 2000年，目前在 Tiobe 排行榜里人数排名第一，社区热度也升为第一。
-定位：高级语言，通用能力编程语言 特性：动态语言，基于解释器，gc 等 范式：函数编程，面向对象，面向过程 主要在 数据处理，计算，Web等发挥作用，AI 领域使用很多， Web 开发也有很多场景
-运行模式支持 多进程，多线程，协程
-执行流程 这一章直接问了 gpt，下面都是 ai 的回答
-在Python中，程序的执行流程通常是按照以下步骤进行的：
-解释器读取源代码：Python解释器会逐行读取源代码文件，并将其转换为字节码形式，这是一种中间表示形式，可以被Python虚拟机执行。
-词法分析和语法分析：在这个阶段，Python解释器会将源代码分解成单词（Token）并构建语法树。这个过程包括词法分析（将源代码分解为Token）和语法分析（根据语法规则构建语法树）。
-编译字节码：Python解释器将语法树转换为字节码。字节码是一种中间形式，类似于机器码，但是不是针对特定的硬件架构。
-执行字节码：Python虚拟机执行字节码指令。这些指令会被逐条执行，从而实现程序的逻辑。
-动态类型检查：Python是一种动态类型语言，因此在运行时会进行类型检查。如果类型不匹配，会引发类型错误。
-垃圾回收：Python具有自动内存管理机制，包括垃圾回收。垃圾回收器会定期检查不再使用的内存对象，并释放它们。
-异常处理：在程序执行过程中，如果发生异常，Python会查找合适的异常处理程序。如果找不到合适的处理程序，程序会中止并打印错误信息。
-程序结束：当程序执行完所有的代码或遇到显式的退出语句（如return或sys.exit()）时，程序结束执行。
-语法 跟我熟悉的 JS 差别很大，总体感受很灵活。基础的比如：变量 循环，函数的定义参数。可以直接看官方文档
-个人感觉 1-2 周左右时间，即可上手基础开发。
-这里只提下我印象比较深刻的函数部分： 通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo如下
-def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 函数参数可以用 * *key_yars 来动态接收
-...</p></div><footer class=entry-footer><span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI应用实践的思考</h2></header><div class=entry-content><p>近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
+...</p></div><footer class=entry-footer><span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI应用实践的思考</h2></header><div class=entry-content><p>近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。
 打败马车夫的不是汽车本身，而是会开车的司机
-生成式AI的爆发 AI 这个领域很早就开始了，这个理念也很早就有了，比如早期图像处理，语音识别，阿尔法go等。可以回溯之前很多年。为何最近两年开始爆火了。我认为原因有几点：
-技术突破: 大模型的底层基于神经网络的深度学习推出了 transformer 架构。改变了大模型深度学习的格局带来了质的飞跃 基础设施发展: 一个模型巨量的计算，消耗大量资源。硬件基础设施的发展能降低训练成本，试错成本，让更多想法去实现 数据的积累: 互联网发展至今产生了大量数据，可以作为训练知识来让模型学习，这些都是人类发展产生的财富。 简单说下 Transformer 最早是在论文 Attention is all you need 提出注意力的机，以解决在序列生成中，长序列情况下的精度，简单一点来说是通过空间位置编码，扩充之前神经网络里的一些信息，使得即使再有更多长度，也不会让精度下降。
-现代架构里添加了很多其他模块：比如多头自注意力机制，并行机制等。
-总之结果是：推理精读更好，训练效率更高。这是当今 AIGC 爆发的技术基础
-能改变什么 有人说任何行业都可以重新再做一遍
-人类的进步，从来离不开工具，有了轮子就有了车，马车，有了蒸汽机就有了汽车，这些都是革命性的改进，都是依赖工具的。工具改变了生产力，进一步质变为影响生产关系。促进了社会整体变化。
-总结下来当前影响最大的几个面：
-广告/自媒体行业的商业模式 剪辑，修图，这种体力活完全可以用AI帮忙做了
-教育教培，学习方式 对于家长可以用 AI 辅助教养小孩子，学生也可以方便的用AI自助学习。
-工作效率提升 有些细节直接用AI生成即可，员工负责更高一层的控制
-软件开发程序员 我本身就在程序员行当里，对这个提效深有体会
-局限性 正如人类能想象到的东西都是现有认知范围内现有知识体系内的东西一样，AI 学习能力目前还处于理解现有知识体系的状态。无法突破知识界限，只有在有限的知识范围内做一个最强大脑。 所以局限性在于，他只是一个只能基于现有知识的超强大脑，无法升维无法突破边界。 当然如果有了一个这样超强大脑，本身就是一件很厉害的事情。至于突破编辑，升维知识，这个还要考我们人类，然后再喂给AI，形成一个循环。
-一旦AI具备 公理，定律等级别的创新，是非常恐怖的，人类的一切迷惑将不再是迷惑，我是谁？来自哪里？要去哪里？上帝是谁，造物主是谁，各方神灵，神明又是谁？宇宙之外在哪里？生命是什么？为什么活着，为啥又要死去
-模型 百花齐放，百家争鸣。通用，垂类，领域模型等太多了，发展过于迅速，具体模型此处不多谈。
-要谈的是：
-深度学习模式的变革，基于 Transformer 架构的深度学习促进了当下模型厂商的发展，多层 Transformer 架构使得大模型更像人类大脑。 向量化，万事万物皆是向量，皆是数据，向量这个结构让事物之间的关系拉平了。就像分子，化学元素一样，构成了物质世界，而向量则在虚拟世界里描述这个世界 基于这两个重要的底层知识，模型的发展，飞起来了。
-菩提本无树，明镜亦非台，本来无一物，何处惹尘埃
-AI应用 大模型还毕竟只是一个最强大脑，一个超强CPU。我们知道通用计算机，不止CPU，还有一些外围设备才能通用工作，人类也是，不止大脑，还有眼睛，手，等外围设备。
-所以 AI 应用，或则 Agent 的概念，可以如此类比。
-...</p></div><footer class=entry-footer><span title='2024-03-22 09:16:11.373 +0000 UTC'>三月 22, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI应用实践的思考" href=https://tomorrowthief.github.io/posts/ai-work-thought/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>了凡四训</h2></header><div class=entry-content><p>此为一种劝诫训子的书，主要方向是如何处事，也可以是一本养心之书。从中国传统价值观及儒释道的哲学体系来讲述如何处事。总体分为四部分。
+...</p></div><footer class=entry-footer><span title='2024-03-22 09:16:11.373 +0000 UTC'>三月 22, 2024</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI应用实践的思考" href=https://tomorrowthief.github.io/posts/ai-work-thought/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>了凡四训</h2></header><div class=entry-content><p>此为一种劝诫训子的书，主要方向是如何处事，也可以是一本养心之书。从中国传统价值观及儒释道的哲学体系来讲述如何处事。总体分为四部分。
 作者是明万历期，69岁时所著。推荐此书的名人：曾国藩，据说其号 涤生 就是因为此书而来；稻盛和夫等。
-阅读建议：作为枕边书，或者心静的时候细读。
-分篇章总结 立命之学 此为开篇，作者以自己早起人生经历，讲述处事流程中第一个阶段：立命。非常重要的人生阶段，大概人与人的差距也会在此拉开。
-我命由我不由天 本篇最重要的概念了算是。具体一点就是命运是自己把握的。这一点估计现代人看到后会有很多反对点：起跑线不一样，人生结局可大大不同了。
-我的理解是：天生给到的东西已成定行，无法改变。但是之后的情形，还需通过自身不断学习，不断发展来改变。我们尽量做好能做的，其他的只能坦然接受。
-弃医从文 改变医生的方向，发展仕途的方向。中国历来都是学而优则仕，其他都是歧途。当下路子多了起来，但是遇到环境恶略的时候，发现还得是公务员稳啊。
-持续学习 文中讲到：顺利时也不要忘记努力发展，说不定啥时候不顺就来了。跟当下持续学习的概念不谋而合。随时准备拥抱变化，唯有持续学习，持续适应才能得心应手。
-不念过往 从前种种譬如昨日死，往后种种譬如今日生。
-改过之法 内心，真心，是前提。我觉得这一篇是重要紧急四象限的第二象限里的东西，很重要，也很容易忽略而没做好，应该是我们每天首要考虑的东西
-先有耻辱感 是否曲直，做一个有原则的人
-发自内心的行动 是否是真的在做，还是在模仿，还是在做一个样子。改过之行，来不得半点虚伪。
-积善之方 这一篇里讲述了要行善，行什么善，从十种角度来分析 善，区别什么是善，如何下后。此篇结构简单，但是内容较多，可以选择行阅读
-但行好事莫问前程 这一篇是很佛教里的思想了，善有善报恶有恶报。我不敢苟同这个观点，现实遇到太多事情违背这个理论了。
-但是我觉得行善还是有必要做的。并不是为了有善报，也不会因为你行了善就会有善报。最起码不要去做恶吧，能有一份心安理得不就够了么？
-不平等的地方太多了 社会上不平等的地方很多。若你可能是占便宜的一方，你会怎么想，而你是吃亏的一方，你又怎么想？
-做事情不可太功利 太过于功利，可能会变形。读一本书就想获得人生智慧，学一个技能就想发财致富，别想了。
-谦德之效 为人要低调的方式。不要轻易显山露水，少说话多干事。勿要恃才傲物，做事抱有空杯心态，虚怀若谷。
-总结 这本书，于我作为一本修心的书去阅读。对于有些人会问值不值得读，我觉得非常值得。但书和道理是死的。看你怎么理解消化了。
-从前种种, 譬如昨日死; 以后种种, 譬如今日生.</p></div><footer class=entry-footer><span title='2023-11-01 14:09:41 +0800 +0800'>十一月 1, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 了凡四训" href=https://tomorrowthief.github.io/posts/liaofansixun/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>再读六国论</h2></header><div class=entry-content><p>六国破灭非并不利战不善，弊在赂秦……
+...</p></div><footer class=entry-footer><span title='2023-11-01 14:09:41 +0800 +0800'>十一月 1, 2023</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 了凡四训" href=https://tomorrowthief.github.io/posts/liaofansixun/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>再读六国论</h2></header><div class=entry-content><p>六国破灭非并不利战不善，弊在赂秦……
 近日偶然重新看了这篇文章。再细读后，才发现其文风犀利，逻辑清晰，论点简明有力。虽作为高中时期的教材，那会儿跟不懂内容只知道背诵那些文字，再读后有种相见恨晚的感觉。
-全文读下来感觉朗朗上口，思路清晰，逻辑感也很强。是一篇非常好的议论文。
-一些文段 今日割五城，明日割十城，然后换得一夕安寝。起视四境，而秦兵又至。
-用物质消灭贪婪是不可能的，犹抱薪救火，薪不尽火不灭。讲的是人的贪婪欲望是无限的，一味的去迎合这些，那就会陷入无底洞。
-以赂秦之地封天下之谋臣，以事秦之心礼天下奇才，并力向西。则吾恐秦人食之不得下咽也
-这里想到了一个公司内耗严重的时候，将这些内耗的精力拿到做应该做的事情，才是公司团队应该的做法。
-个体利益与群体利益 上面那个道理我想很多人都会懂，但是为什么现实中还是会陷入内耗中。我觉得是一些人性本质问题: 为什么要你过的比我好，我玩不了，大家也都别想玩，所谓不患寡而患不均。另外就是在总的资源有限人又很多的时候，每个人都为了生存不得选择了个体利益优先的决定。
-这种能做到全局最佳解的方式，目前只发现了蚂蚁，蜜蜂这些动物群体做好。一方面因为这些动物单个个体是没有思想的，生来机械的负责一些事情。而人类是有思想的有感情的，在这些生存决策前往往会选择只符合单一个体利益的情况。
-六国论里这个观点在理性上是全局最合理的，但是考虑到现实中人的本性问题，每个国家都有各自的想法，思想。最终的决策往往是不合乎理性的。
-所以我觉得六国破灭的另一个深层次的因素是人性本质问题，而要解决这个问题需要合。要有个唯一负责人来调度各国，形成统一战力
-公司里的六国 公司内部各个部门众多，单个部门想推动全局做好一件事情是比较困难的，这里最好通过一个总指挥的制度去推进事情。然而事实中关系错中复杂，身处此中的你我大多选择苟活，如此跟六国中的赂秦战术并无大的区别</p></div><footer class=entry-footer><span title='2023-01-16 10:43:11 +0800 +0800'>一月 16, 2023</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 再读六国论" href=https://tomorrowthief.github.io/posts/liuguolun/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>孙子兵法-研习记</h2></header><div class=entry-content><p>前言 近日工作不忙，偶然看到孙子兵法一书，印象里面应是各种打打杀杀，由无他事就读了一些，发现并不是那么简单。 博主在上下班路上，前后半个月的时间学习了一些。为了加深自己的记忆，理解。就梳理了这篇札记
-孙子兵法 是什么 孙子兵法是一本信息熵极高的阐述战争方法论的书，原文仅 6000 余字。经过之后两千多年时间沉淀：注解引申，国内外各大名家的参与，现在已经形成了一个战争理论生态，战争方法论。这里说的战争可以是冷兵器时代的战争，也可以是强调技术装备，信息化的现在战争，也可以是商战，工作职场，学业，投资。现在已经翻译了多国语言，据说在国外也比较流行，认可度极高。
-适读人群: 最好是有一定工作生活经验的人，如果是单纯的学生不建议阅读
-架构图 注此图引自知乎
-首先-不去战争 孙子兵法首要强调的是不战而胜，因为战争成本太高代价太大。特等医生的价值不是体现在治病救人，而是在生病前防疫工作：如何不得病，如何尽早发现病并及时治理。当然这里不是贬低治病救人的技术，只是我们经常忽略准备防疫的重要性，到了生病时候才发现代价真的太大。所以孙子兵法虽然是一本兵书，却比较强调怎么不去战争，规避战争，强调的是：日积月累，有备无患
-作战原则 实际中战斗是不可避免的。如何做好呢？战斗就像做事做人。孙子兵法全文里强调三大原则：知己知彼, 先胜后站, 至人而不至于人。很多具体章节里都是为了满足遵循这几个原则的，所以理解透了这些原则思想，一切满足此的都可以称为好兵法。
-就像软件架构里的设计模式 solid 原则，很多具体的模式都是为了满足实现solid原则。这些原则是贯穿整体的
-工作中需要做参考别的技术，大多是学习了别人的思想，别人的原则，然后根据自己的情况实现一套可行的方案。
-基本面 战前准备的方法论：五事七计(具体看上面架构图)。运筹帷幄，庙堂之上充分分析各个因素，最后制定出最有利的战斗计划。
-如同我们在做编码设计，或则项目时，基本都是先尽可能做好详设计，而这些又是比较耗费精力的。最后写代码具体工作却是很快的。倘若设计阶段没做好，后面很可能比较被动，代码自量也难以保证，返工之类的。
-操作面 有了五十七计，胜负因素方向已定。而战场却又千变万化，影响因素也不计其数。就要因地制宜的去发挥。孙子兵法里提出有行军，九地九变等，都是讲一些具体情况下的做法。
-这里我理解我们工作尤其是互联网这种变化较多工作，必须要做好抬头看路的工作。把握政策情况，市场情况，个人成长情况然后做好自己的规划。
-个人收获 收获还是挺多：明确了做事的 原则，系统分析法所谓方法论，底层逻辑。以及该做哪些事情，不该做哪些事情的取舍
-不要忽略基本面 善战者,无智名,无勇功。
-人们往往比较喜欢波澜壮阔的故事，而忽略基本面的作用。比如我们喜欢韩信背水一战的故事，但是从理论来上看是违背 五事七计 的分析。诸葛亮出师北伐的例子也是在基本面上就输了，汉武大帝的传奇一生，却耗费了文景之治的积累，所谓一将功成万骨枯。
-古今中外精彩故事也不少，但那是2000多年的历史积累，更多的是默默无闻却又贡献很多的平淡故事
-我们每个人也一样，绝大多数都是平凡平淡的。但是能把基础面做好，有一份好的学业，经营一份自己的工作事业，有个好的身体健康素质，已经能达到生活的意义
-准备的重要性 这里说的准备更多是: 五事七计。
-做管理: 考虑编制是如何的，组织架构怎样设计 带团队: 考虑梯队模型时分析成员画像，如五事里的将的能力模型定义：智信仁严勇 做项目: 考虑项目以来的技术，团队，项目本身的ROI等 知己知彼 难在知己 自己能决定失败，对手才能决定能否胜利。
-在势均力敌的时候，对手不犯错一般自己很难胜利。所以说胜利是看对手有没有犯错。对应的，自己的一些准备日常是决定自己能不能失败的。而真的知道自己的实力么，掌握好自己的优缺，了解自己所想要的不？是很关键的也容易被环境带偏
-做决策，客观了么？ 心里学上 人们选择一个事情，不是这个事情真实客观，而是人们期望他是对的，想要他是对的。
-最后生活并没有银弹，养兵千日用兵一时。基本面做的好了，操作面做的再差胜算也大；基本面做的普通，也不要放弃，操作面上还有很多空间。
-尽信书不如无书，理论很多，观点很多，说法很多，怎么去选择，怎么去用呢？</p></div><footer class=entry-footer><span title='2022-06-17 10:08:36 +0800 +0800'>六月 17, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 孙子兵法-研习记" href=https://tomorrowthief.github.io/posts/art-of-war/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/posts/page/2/>«&nbsp;上一页&nbsp;
+...</p></div><footer class=entry-footer><span title='2023-01-16 10:43:11 +0800 +0800'>一月 16, 2023</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 再读六国论" href=https://tomorrowthief.github.io/posts/liuguolun/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>孙子兵法-研习记</h2></header><div class=entry-content><p>前言 近日工作不忙，偶然看到孙子兵法一书，印象里面应是各种打打杀杀，由无他事就读了一些，发现并不是那么简单。 博主在上下班路上，前后半个月的时间学习了一些。为了加深自己的记忆，理解。就梳理了这篇札记
+...</p></div><footer class=entry-footer><span title='2022-06-17 10:08:36 +0800 +0800'>六月 17, 2022</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 孙子兵法-研习记" href=https://tomorrowthief.github.io/posts/art-of-war/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/posts/page/2/>«&nbsp;上一页&nbsp;
 </a><a class=next href=https://tomorrowthief.github.io/posts/page/4/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

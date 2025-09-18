@@ -2,72 +2,16 @@
 <span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)">
 <svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
 <svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
-AI 产品核心之核心 毋庸置疑核心是模型：LLM，Difusion Model，CV 模型等。与模型唯一通信载体是 Prompt，请记住这个唯一，非常重要，基本上功能都是围绕这个来做的。所以早期的AI产品都是称为 Prompt 产品，开发者是 prompt 工程师。
-而 Prompt 也有种类繁多的范式，不同场景不同目的使用不同的 Prompt。Prompt 设计的好坏直接影响 AI 产品的效果，这里暂且不表。
-Agent 与 Workflow 多 Agent 模式与虚拟团队 1人公司 好用的 AI 产品</p></div><footer class=entry-footer><span title='2025-08-08 18:15:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 产品思考" href=https://tomorrowthief.github.io/posts/ai-products/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Devops概念梳理</h2></header><div class=entry-content><p>前言 Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。
-从 Docker 开始 Docker，是一种容器化的概念，属于虚拟化技术的一种形式。以颗粒度更小的方式，隔离性也更好的方式完成宿主机的资源榨取。他与虚拟机的核心区别是
-Docker与虚拟机的核心区别主要在于以下几个方面：
-架构层级：
-虚拟机（Virtual Machine, VM）：虚拟机在宿主操作系统之上运行一个完整的客户操作系统。它使用Hypervisor（如VMware、KVM、Hyper-V等）来虚拟化硬件资源，每个虚拟机都有自己的内核、操作系统和应用程序。 Docker容器：Docker容器在宿主操作系统之上运行，但它们与宿主共享相同的操作系统内核。容器是通过容器引擎（如Docker）来管理和隔离的。每个容器包含应用程序及其所有依赖项，但不包含完整的操作系统。 资源利用效率：
-虚拟机：由于每个虚拟机都需要一个完整的操作系统，因此启动和运行时会消耗更多的内存和CPU资源。 Docker容器：由于所有容器共享宿主操作系统的内核，启动时间更快，资源开销也更小。这使得容器更加轻量级，可以在同样的硬件上运行更多实例。 启动时间：
-虚拟机：由于需要启动一个完整的操作系统，虚拟机通常需要数分钟时间才能完全启动并准备好使用。 Docker容器：因为没有完整的OS启动过程，Docker容器通常可以在几秒钟内完成启动。 隔离性与安全性：
-虚拟机：提供了强隔离，因为每个VM运行在完全独立的环境中，包括独立的内核。因此，安全性较高。 Docker容器：虽然提供了进程级别的隔离，但仍共享宿主OS内核，因此理论上存在一些安全风险。不过，通过适当配置和使用工具（如SELinux、AppArmor等），可以增强安全性。 存储与持久化数据管理方式：
-虚拟机：通常使用虚拟磁盘文件来存储数据，这些文件可以独立于其他VM进行管理。 Docker容器：使用卷（volumes）和绑定挂载（bind mounts）来持久化数据，这些可以被多个容器共享或独立管理。 总而言之，Docker作为一种轻量级、便捷、高效且快速部署的方法，在云原生应用开发中得到了广泛应用。而虚拟机则仍然适用于需要强隔离、安全要求高以及需要运行不同类型操作系统等场景。
-Docker的核心原理是:
-Docker的核心原理是利用操作系统级的虚拟化技术（即容器化技术）来创建、部署和运行应用程序。具体来说，Docker 的核心原理包括以下几个方面：
-Namespace（命名空间）隔离：
-Docker 使用 Linux 内核的命名空间（Namespace）功能来实现进程隔离。这些命名空间包括 UTS（主机和域名）、IPC（进程间通信）、PID（进程 ID）、Network（网络）、Mount（文件系统挂载点）等。 每个容器都有独立的命名空间，因此它们之间不会互相干扰，提供了类似虚拟机的隔离效果。 Cgroups（控制组）资源控制：
-Cgroups 是 Linux 内核提供的一种机制，用于限制、记录和隔离单个进程组的资源使用情况。Docker 使用 Cgroups 来限制容器可以使用的 CPU、内存、磁盘 I/O 等资源。 通过这种方式，Docker 能够确保每个容器在资源分配上互不干扰，并且可以避免某个容器滥用系统资源。 Union File System（联合文件系统）：
-Docker 使用联合文件系统，如 AUFS、OverlayFS 等，来实现镜像和容器的分层存储。每个 Docker 镜像由多层组成，每一层都是只读的，当需要对镜像进行修改时，会在顶层添加一个可写层。 这种分层设计不仅提高了存储效率，还使得镜像可以快速构建和共享。 Container Image（容器镜像）：
-容器镜像是一个包含应用程序及其所有依赖项的只读模板。Docker 容器是从这些镜像创建出来的一种运行实例。 镜像可以通过 Dockerfile 定义，并且支持版本管理，这使得应用程序环境变得可移植且易于复制。 Container Runtime：
-...</p></div><footer class=entry-footer><span title='2024-12-30 13:50:01 +0800 +0800'>十二月 30, 2024</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Devops概念梳理" href=https://tomorrowthief.github.io/posts/devops/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>LLM 长记忆工具总结</h2></header><div class=entry-content><p>背景 近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理
+...</p></div><footer class=entry-footer><span title='2025-08-08 18:15:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 产品思考" href=https://tomorrowthief.github.io/posts/ai-products/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>Devops概念梳理</h2></header><div class=entry-content><p>前言 Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。
+...</p></div><footer class=entry-footer><span title='2024-12-30 13:50:01 +0800 +0800'>十二月 30, 2024</span>&nbsp;·&nbsp;10 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Devops概念梳理" href=https://tomorrowthief.github.io/posts/devops/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>LLM 长记忆工具总结</h2></header><div class=entry-content><p>背景 近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理
 什么是长记忆 简单来说就是让大模型具备记忆功能，记住某个人。产品形态上可以是个人助手。不同于某次会话上下文记忆，长记忆具备的特点：
-跟随个人的：我们目前常见的短期记忆只是跟随某次会话 时间长：1年，5年，10年，……，终生 个人信息相关的：比如个人爱好，心情变化，健康，工作，生活等这些属于个人记忆。客观信息事实信息比如：美国在北美洲，地球是圆的等这些不需要作为记忆信息。 多种类型的：如上条有不同类型的记忆，不同类型的记忆里处理方式有很大差异，比如：日程相关的需要处理时间，绝对时间的转换，个人爱好相关的，比较简单，直接用类似图谱的三元组信息即可，办公工作内容型的记忆类似。 功能点及非功能点梳理 总体其实为了实现个人助手的产品功能。这个助手在产品形态上是一个普通对话机器人，系统的具备的功能及非功能点需求大致如下：
-功能点 登录，因为是私人助手嘛，得知道用户是谁。 对话：这个不用说了，是助手的主题功能 配置功能，因为记忆有很多种类型，在助手里最好有配置，比如我想主要是工作，那日程安排比较重要，生活。如果多有记忆都要配置，那就是一个超级个人助手 记忆生产：根据配置信息，做不同类型的记忆提取存储 记忆消费：是指根据记忆：做下健康管理，饮食管理，工作学习计划，日程计划，等等。 非功能点 短期能同时处理 1w+ 人数的并发，长期的话人数可能扩充到 10W+，甚至更多。每天可能有 50W 的请求 响应时间：在记忆消费时能做到 3s - 5s 内有响应，3s-30s 内响应完成。 数据规模，根据每个人的配置，记忆长短不同，数据规模有不同要求 方案 工作流程图
-如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。
-记忆引擎 记忆引擎里完成的功能：
-记忆生产 根据配置信息生产一些垂类记忆 记忆存储 把记忆抽出来后 记忆消费 根据用户的问题，召回相关的记忆，并做简单推理规划 记忆生产 这里输入是会话信息，需要做的是从会话信息里提取记忆实体。主要涉及到自然语言处理的部分。 知识图谱，我们使用知识图谱来完成记忆的载体。
-知识图谱的实体抽取，以及图数据库语法都是用额外的大模型来推理完成
-提示词设计 // 信息抽取 ` 你是一个信息提取专家 用户的输入如下：{query} 实体信息： ` // 记忆更新 ` 你是一个图数据专家，请生成neo4j的sql语句 历史记忆如下：{memories} 新的记忆如下：{memory} sql: ` 这里只给出部分，因为其他一些垂类的内容。其他还有很多，也算是核心。
-...</p></div><footer class=entry-footer><span title='2024-10-19 11:48:00 +0800 +0800'>十月 19, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to LLM 长记忆工具总结" href=https://tomorrowthief.github.io/posts/ai-longterm-memory/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>后端开发经验-阶段性总结思考</h2></header><div class=entry-content><p>背景 做了大半年左右的后端开发后，总结下相关感受。
+...</p></div><footer class=entry-footer><span title='2024-10-19 11:48:00 +0800 +0800'>十月 19, 2024</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to LLM 长记忆工具总结" href=https://tomorrowthief.github.io/posts/ai-longterm-memory/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>后端开发经验-阶段性总结思考</h2></header><div class=entry-content><p>背景 做了大半年左右的后端开发后，总结下相关感受。
 技术栈：Python/Nodejs + React
 行业背景：LLM 应用， RAG， Agent
 后端开发思路 后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。
-其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。
-功能设计上主要关注：数据结构，类包，业务模块，工作流等 非功能性关注：性能，并发，安全，稳定等 玩的是数据 数据算是核心中的核心了。所有的业务基础都是按照这个来的
-关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂
-这里主要考虑：表结构设计，索引设计。
-如果到一定规模考虑 分区，分表，分库
-实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。
-如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。
-非关系 Redis，Es，Mongodb，图数据库
-日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。
-Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
-图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多
-小结 这块也是一个非常大的技术体系，往深走的话需要专题讨论。
-我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）
-由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。
-一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志，错误处理等 微服务体系 很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理
-得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里
-我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大
-计算机基础 计算机组成：cpu，gpu，硬盘，内存 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成 分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。
-...</p></div><footer class=entry-footer><span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 后端开发经验-阶段性总结思考" href=https://tomorrowthief.github.io/posts/ai-backend-dev/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>苏东坡</h2></header><div class=entry-content><p>林语堂苏东坡读后感
+...</p></div><footer class=entry-footer><span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 后端开发经验-阶段性总结思考" href=https://tomorrowthief.github.io/posts/ai-backend-dev/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>苏东坡</h2></header><div class=entry-content><p>林语堂苏东坡读后感
 进入偶然原因看了些苏词，同时也看了林语堂的苏轼传，这里记录下所感，所想。重点不是描述豪放的苏词，而是苏轼这种人才的优点，缺点。苏轼若是在当代社会又是咋样的？
-大概过下「苏轼传」 苏轼传记有很多，各种角度去描写的，我选择了林语堂的这本。林语堂是民国时期著名文科生，特点中外双休，说来奇怪，他写的苏轼传是用英语写的，或许是为了向世界科普这个中国巨星。而我读的却是一个国人的译本。既然是面向世界的，选择的角度肯定不太一样了，也会拿西方的文豪大家与苏轼对比。
-这本书里不像一些其他书，用很多首苏词来作为切入点，描写。他直接以苏轼的视角，按照时间线，穿插一些中间人物大事记（弟弟苏澈，伯乐欧阳修，政敌王安石，他的三任夫人，等等），来完成的，也加了不少北宋的政治经济背景，各个皇帝的特点等。所以读下来就是一个北宋中后期的国家命脉缩略。
-不止于诗词 苏轼写词，写诗，是他的立命之本。他的年代是文学的时代，家族里也有好的基因，氛围。他叔已经是当官的，他爸虽然无官，但是唐宋八大家之一，他爸的六国论，他妈的思想已经不是普通妇人的思想了。
-如此的家境放到现在，如果不是特别不着调，抬也能给抬到一个合适的位置。况且他和弟弟在立命之学的年纪里一起下了重功夫，使得他基础太扎实了，所有文字创作信手拈来。任何行业都需要一个扎实的基本功，才能有上层轻松的创作，作家，歌手，程序员，运动员，哪个不是呢?
-他呢，让人津津乐道的不止于诗词。乐天派，豪放派的作风。到哪里都有朋友。喜爱喝酒。也会接触名妓。说到这里，我是觉得不能单纯看他的这些特点，结合他背景：少年成才，国家顶级人才，得到皇帝的大力认可，可谓前途无量。体验过生而为人的巅峰，这个自信自然养成了，也早已脱离了为生计奔波的烦恼。所以即便有在政治斗争里的一贬再贬再再贬，那都不是事。
-林语堂描写他的政论也是一流的，这个是位难得，宋朝不缺文学，但是文学和政论都很好的就少了，范仲淹，欧阳修，司马光，王安石都算是，苏轼当然也算，他的特点似乎是更接地气，更是站在底层大众这一侧。实事求是，真正做事的人。
-他对生活很热爱，对细节观察也很到位，体现在诗词里，也体现在他的书法与国画里，他是南方国画鼻祖。国画里对动物的传神，对山水天人合一的追求，要求作者必须对细节观察做到细致入微。
-能跟任何人玩到一起 书里一个章节：和尚，酒与名妓，来形容他的爱好，形容的真好。他结交了很多僧人，与他们聊思想，交换灵魂。或许这点也是构成他性格的重要瓦片。他朋友圈里很多都是追随他的，比如苏门四学士等。
-皇帝点过他的名，嫉妒者们对他一再打压，太后出于女人第六感，认为他是一个可靠之才，恢复他的官位。他有很多酒友每到一个地方，都不缺朋友，分布到各阶层里。
-他与头号政敌王安石，最后也能畅谈下想法。
-他也是一个普通人 本质上他也是追求名利，没有得到的时候也会迷茫，有了机会的时候也会努力抓住的。在遇到乌台诗案的时候，他也是慌不知所措，内心是恐惧的，害怕死亡，更害怕家人受到牵连。
-作为一个动物，他也是爱好吃喝的。人生中后期也追求长生不老之术，每次被贬也都带了很多家人一起，这点来看条件已经不错了，比起当时草民生活上强了太多。
-也正是一个普通人的特点，才愿意被更多人追随吧，才能被千年后的我们依然喜欢。
-再无苏轼 一个现代社会里很难再出现苏轼这样的人了。首先培养出这样的人才需要巨大的精力，其次在阶层固化，大众追求的理想已经很难到达苏轼这种高度了。于我们苏轼的故事当作聊天语料，当作精神参考，其作品当作我们引经据典的素材，足以。</p></div><footer class=entry-footer><span title='2024-06-30 09:13:27 +0800 +0800'>六月 30, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 苏东坡" href=https://tomorrowthief.github.io/posts/sudongpo/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/posts/>«&nbsp;上一页&nbsp;
+...</p></div><footer class=entry-footer><span title='2024-06-30 09:13:27 +0800 +0800'>六月 30, 2024</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 苏东坡" href=https://tomorrowthief.github.io/posts/sudongpo/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/posts/>«&nbsp;上一页&nbsp;
 </a><a class=next href=https://tomorrowthief.github.io/posts/page/3/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

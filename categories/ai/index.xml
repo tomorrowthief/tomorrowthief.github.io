@@ -20,25 +20,7 @@
       <description>&lt;h2 id=&#34;使用情况&#34;&gt;使用情况&lt;/h2&gt;
 &lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
 &lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
-&lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情。&lt;/p&gt;
-&lt;h2 id=&#34;cursor-等工具&#34;&gt;Cursor 等工具&lt;/h2&gt;
-&lt;p&gt;这里用 Cursor 其实只是 一系列基于 vscode 的 ai 编辑器代称。&lt;/p&gt;
-&lt;h3 id=&#34;tab-tab-tab&#34;&gt;Tab Tab Tab&lt;/h3&gt;
-&lt;p&gt;Cursor 最基础的使用就是 Tab 接受了，然后也能自动计算焦点，这个也是早期他们宣传的一个点：Tab Tab Tab。&lt;/p&gt;
-&lt;h3 id=&#34;agent--ask&#34;&gt;Agent / Ask&lt;/h3&gt;
-&lt;p&gt;通过 Ask 模式探讨方案，梳理问题，通过 Agent 模式来做执行工作，是一个比较常规的模式了。&lt;/p&gt;
-&lt;h3 id=&#34;上下文工程--自定义-rules&#34;&gt;上下文工程 &amp;amp; 自定义 Rules&lt;/h3&gt;
-&lt;p&gt;Cursor 提供上下文很清晰直接选择文件即可，可以多文件，可以指定 rules 等&lt;/p&gt;
-&lt;h3 id=&#34;多模态工程&#34;&gt;多模态工程&lt;/h3&gt;
-&lt;p&gt;前端场景里可以上传图片完成 UI 上的初稿。&lt;/p&gt;
-&lt;h3 id=&#34;mcp&#34;&gt;MCP&lt;/h3&gt;
-&lt;p&gt;一些好用的 MCP: 查看最新文档&lt;/p&gt;
-&lt;h3 id=&#34;交互文档化&#34;&gt;交互文档化&lt;/h3&gt;
-&lt;p&gt;最早 Kiro 里有个特别好的体验就是能提前设计方案，任务列表，执行计划等，并且能保存到文档里，支持手动编辑。这种交互比较适合初创型项目，或者复杂任务，不熟悉的领域里的任务.&lt;/p&gt;
-&lt;p&gt;这种模式也被其他 IDE 采纳。&lt;/p&gt;
-&lt;h2 id=&#34;claude-code&#34;&gt;Claude-code&lt;/h2&gt;
-&lt;p&gt;Claude 的交互本质是 cli 模式和 ui 可视化模式的对比，个人觉得长期对于大众用户来说 UI 可视化的界面会胜出。原因是历史数据来看的，历史上 cli 操作和可视化操作一般在很多软件里都会存在，各有利弊
-各有千秋，功能上也几乎一致，最终UI可视化的交互会在更易被大众接受，在编码领域也是如此，这符合了人性中懒惰的一点，都是趋向于舒服的方向。&lt;/p&gt;</description>
+&lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,22 +30,7 @@
       
       <guid>https://tomorrowthief.github.io/posts/ai-vibe-coding/</guid>
       <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起&lt;/h2&gt;
-&lt;p&gt;我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。&lt;/p&gt;
-&lt;p&gt;AI 编程的称呼也很多，有的叫 AI Coding，有的叫 AI Pair Programming，还有的叫 AI Copilot，甚至有的叫 AI Vibe Coding。我更喜欢 Pair Programming 这个说法，因为它强调了 AI 和人类的协作关系。&lt;/p&gt;
-&lt;p&gt;作为一个喜欢白嫖的用户，这一波也会为顶部产品付费，最多的是 Cursor。真的被其惊艳效果吸引了，没有他就降低了很多效率。先列举下我用过的 AI 编程工具：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;插件：Github Copilot / 通义灵码 / Cline / Bito / Codeium（Windsurf 早期形态）/ Augment&lt;/li&gt;
-&lt;li&gt;Vscode 系列：Cursor / WindSurf / Kiro / Trae&lt;/li&gt;
-&lt;li&gt;CLI 系列：Claude Code / Cursor CLI / Gemini CLI&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;目前使用最多的是 Cursor 和 Claude Code。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用数据&lt;/strong&gt;：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;代码量上：几乎 90% 的代码是 AI 生成的。&lt;/li&gt;
-&lt;li&gt;时间上：大概 50% 的时间是 AI 辅助的。&lt;/li&gt;
-&lt;li&gt;效率上：平均提升了 1-2 倍。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;下面总结下我对 AI 编程的体验和感受，Lets go&lt;/p&gt;</description>
+&lt;p&gt;我接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。&lt;/p&gt;</description>
     </item>
     
   </channel>

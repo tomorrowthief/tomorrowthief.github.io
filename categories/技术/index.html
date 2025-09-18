@@ -3,60 +3,15 @@
 <svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
 <svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://tomorrowthief.github.io/archives title=归档><span>归档</span></a></li><li><a href=https://tomorrowthief.github.io/categories/ title=分类><span>分类</span></a></li><li><a href=https://tomorrowthief.github.io/tags/ title=标签><span>标签</span></a></li><li><a href=https://tomorrowthief.github.io/search/ title=查找><span>查找</span></a></li><li><a href=https://tomorrowthief.github.io/about/ title=关于><span>关于</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>技术</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>通用 Agent 调研</h2></header><div class=entry-content><p>近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。
 这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。
-与正常问答助手区别 普通 chat 是为了回答问题，仅仅是问答
-带上工具后，可以执行一些简单任务
-带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等就是本文要说的通用 Agent，我更习惯称它为任务 Agent。
-manus 国内网红 Agent 公司，早期凭借炒作火了一把，当然也有他的实力存在的，并且把体验码炒到数万一个。也拿到了一些融资。 核心功能：
-flowith 这个比较有意思的点是：他在交互上做了创新：整体有个画布，在这个画布上，走一步对应一个节点，感观上还算清晰。
-teamoteam 一家国内的 Agent，创始人早期在百度的某AI算法团队，后离职专做这个 Agent。
-主要应用场景是：写作，调研。
-提出了角色的概念，每个角色对应一个 Agent。总体是多 Agent 架构。这也是他们公司的 slogan：致力于推动多 Agent 发展。
-核心技术 单 Agent 目前单 Agent 基本都是源于早期那个 ReAct 论文。规划-响应-监听-循环。
-多 Agent 架构 首先很多场景可能不需要 Multi Agent 架构，具体怎么决策 在 Openai 总结的实践文章里有提到，可以做参考。 市面上已经有一些多 Agent 框架，比如 openai 的 swarm，qwen_agents 等。可以在代码实现上做些参考
-另外一个纬度思考：一个 Agent 也可以是一个工具。这么来看就是单 Agent 模式了
-...</p></div><footer class=entry-footer><span title='2025-09-12 15:47:00 +0800 +0800'>九月 12, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 通用 Agent 调研" href=https://tomorrowthief.github.io/posts/ai-agent/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI 应用技术</h2></header><div class=entry-content><p>前言 梳理下自己在 AI 产品开发中用到的一些工程技术，只会做工程了属于是，算法方面的东西基本上不懂。
+...</p></div><footer class=entry-footer><span title='2025-09-12 15:47:00 +0800 +0800'>九月 12, 2025</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 通用 Agent 调研" href=https://tomorrowthief.github.io/posts/ai-agent/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI 应用技术</h2></header><div class=entry-content><p>前言 梳理下自己在 AI 产品开发中用到的一些工程技术，只会做工程了属于是，算法方面的东西基本上不懂。
 列下我做过的东西：
 Code Review Agent Long term memory Dify 二开 Rag 流程 语言技术：
 Python Nodejs Go Agent 框架：
-Langchain React Agent Function calling 总结下来基本上都是常规的 web 技术栈，只是多了一个 与 LLM 交互的环节。本文从工程与算法两层来总结梳理自己了解到的东西
-关系 工程与模型的关系，有点像是算法里的复杂度控制：空间换时间，时间换空间，性能换效率，效率换性能
-工程是重点不是难点，模型是难点不是重点毕竟能搞模型的就那么几家公司
-工程 起步：与 LLM 交互 唯有提示词，就像圣经里能唯一与上帝交流传话的那个家伙。
-形式上有 stream blocking。
-通信载体几乎是基于：Http，无非是协议上多了一些 sse streamable 返回等。
-Agent 范式 React 一直是比较经典的范式，很多其他模式也是基于这个演化的
-早期 React 范式的实现，全部依赖提示词，比如 Function 描述，工具返回内容的格式，Stop 策略等一股脑的都会拼接到提示词上，然后返回内容的解析也会根据一些约定标记等做信息提取
-中期这些内容被 大模型公司给 Native 了，做到模型内部了： function call api 规范
-当前是被 MCP 协议规范了，当然底层还是基于 funciton call 的能力包装的标准协议
-...</p></div><footer class=entry-footer><span title='2025-08-08 18:17:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 应用技术" href=https://tomorrowthief.github.io/posts/ai-tec/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
-AI 产品核心之核心 毋庸置疑核心是模型：LLM，Difusion Model，CV 模型等。与模型唯一通信载体是 Prompt，请记住这个唯一，非常重要，基本上功能都是围绕这个来做的。所以早期的AI产品都是称为 Prompt 产品，开发者是 prompt 工程师。
-而 Prompt 也有种类繁多的范式，不同场景不同目的使用不同的 Prompt。Prompt 设计的好坏直接影响 AI 产品的效果，这里暂且不表。
-Agent 与 Workflow 多 Agent 模式与虚拟团队 1人公司 好用的 AI 产品</p></div><footer class=entry-footer><span title='2025-08-08 18:15:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 产品思考" href=https://tomorrowthief.github.io/posts/ai-products/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Devops概念梳理</h2></header><div class=entry-content><p>前言 Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。
-从 Docker 开始 Docker，是一种容器化的概念，属于虚拟化技术的一种形式。以颗粒度更小的方式，隔离性也更好的方式完成宿主机的资源榨取。他与虚拟机的核心区别是
-Docker与虚拟机的核心区别主要在于以下几个方面：
-架构层级：
-虚拟机（Virtual Machine, VM）：虚拟机在宿主操作系统之上运行一个完整的客户操作系统。它使用Hypervisor（如VMware、KVM、Hyper-V等）来虚拟化硬件资源，每个虚拟机都有自己的内核、操作系统和应用程序。 Docker容器：Docker容器在宿主操作系统之上运行，但它们与宿主共享相同的操作系统内核。容器是通过容器引擎（如Docker）来管理和隔离的。每个容器包含应用程序及其所有依赖项，但不包含完整的操作系统。 资源利用效率：
-虚拟机：由于每个虚拟机都需要一个完整的操作系统，因此启动和运行时会消耗更多的内存和CPU资源。 Docker容器：由于所有容器共享宿主操作系统的内核，启动时间更快，资源开销也更小。这使得容器更加轻量级，可以在同样的硬件上运行更多实例。 启动时间：
-虚拟机：由于需要启动一个完整的操作系统，虚拟机通常需要数分钟时间才能完全启动并准备好使用。 Docker容器：因为没有完整的OS启动过程，Docker容器通常可以在几秒钟内完成启动。 隔离性与安全性：
-虚拟机：提供了强隔离，因为每个VM运行在完全独立的环境中，包括独立的内核。因此，安全性较高。 Docker容器：虽然提供了进程级别的隔离，但仍共享宿主OS内核，因此理论上存在一些安全风险。不过，通过适当配置和使用工具（如SELinux、AppArmor等），可以增强安全性。 存储与持久化数据管理方式：
-虚拟机：通常使用虚拟磁盘文件来存储数据，这些文件可以独立于其他VM进行管理。 Docker容器：使用卷（volumes）和绑定挂载（bind mounts）来持久化数据，这些可以被多个容器共享或独立管理。 总而言之，Docker作为一种轻量级、便捷、高效且快速部署的方法，在云原生应用开发中得到了广泛应用。而虚拟机则仍然适用于需要强隔离、安全要求高以及需要运行不同类型操作系统等场景。
-Docker的核心原理是:
-Docker的核心原理是利用操作系统级的虚拟化技术（即容器化技术）来创建、部署和运行应用程序。具体来说，Docker 的核心原理包括以下几个方面：
-Namespace（命名空间）隔离：
-Docker 使用 Linux 内核的命名空间（Namespace）功能来实现进程隔离。这些命名空间包括 UTS（主机和域名）、IPC（进程间通信）、PID（进程 ID）、Network（网络）、Mount（文件系统挂载点）等。 每个容器都有独立的命名空间，因此它们之间不会互相干扰，提供了类似虚拟机的隔离效果。 Cgroups（控制组）资源控制：
-Cgroups 是 Linux 内核提供的一种机制，用于限制、记录和隔离单个进程组的资源使用情况。Docker 使用 Cgroups 来限制容器可以使用的 CPU、内存、磁盘 I/O 等资源。 通过这种方式，Docker 能够确保每个容器在资源分配上互不干扰，并且可以避免某个容器滥用系统资源。 Union File System（联合文件系统）：
-Docker 使用联合文件系统，如 AUFS、OverlayFS 等，来实现镜像和容器的分层存储。每个 Docker 镜像由多层组成，每一层都是只读的，当需要对镜像进行修改时，会在顶层添加一个可写层。 这种分层设计不仅提高了存储效率，还使得镜像可以快速构建和共享。 Container Image（容器镜像）：
-容器镜像是一个包含应用程序及其所有依赖项的只读模板。Docker 容器是从这些镜像创建出来的一种运行实例。 镜像可以通过 Dockerfile 定义，并且支持版本管理，这使得应用程序环境变得可移植且易于复制。 Container Runtime：
-...</p></div><footer class=entry-footer><span title='2024-12-30 13:50:01 +0800 +0800'>十二月 30, 2024</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Devops概念梳理" href=https://tomorrowthief.github.io/posts/devops/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>LLM 长记忆工具总结</h2></header><div class=entry-content><p>背景 近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理
+...</p></div><footer class=entry-footer><span title='2025-08-08 18:17:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 应用技术" href=https://tomorrowthief.github.io/posts/ai-tec/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>AI 产品思考</h2></header><div class=entry-content><p>前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。
+...</p></div><footer class=entry-footer><span title='2025-08-08 18:15:41 +0800 +0800'>八月 8, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to AI 产品思考" href=https://tomorrowthief.github.io/posts/ai-products/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Devops概念梳理</h2></header><div class=entry-content><p>前言 Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。
+...</p></div><footer class=entry-footer><span title='2024-12-30 13:50:01 +0800 +0800'>十二月 30, 2024</span>&nbsp;·&nbsp;10 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Devops概念梳理" href=https://tomorrowthief.github.io/posts/devops/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>LLM 长记忆工具总结</h2></header><div class=entry-content><p>背景 近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理
 什么是长记忆 简单来说就是让大模型具备记忆功能，记住某个人。产品形态上可以是个人助手。不同于某次会话上下文记忆，长记忆具备的特点：
-跟随个人的：我们目前常见的短期记忆只是跟随某次会话 时间长：1年，5年，10年，……，终生 个人信息相关的：比如个人爱好，心情变化，健康，工作，生活等这些属于个人记忆。客观信息事实信息比如：美国在北美洲，地球是圆的等这些不需要作为记忆信息。 多种类型的：如上条有不同类型的记忆，不同类型的记忆里处理方式有很大差异，比如：日程相关的需要处理时间，绝对时间的转换，个人爱好相关的，比较简单，直接用类似图谱的三元组信息即可，办公工作内容型的记忆类似。 功能点及非功能点梳理 总体其实为了实现个人助手的产品功能。这个助手在产品形态上是一个普通对话机器人，系统的具备的功能及非功能点需求大致如下：
-功能点 登录，因为是私人助手嘛，得知道用户是谁。 对话：这个不用说了，是助手的主题功能 配置功能，因为记忆有很多种类型，在助手里最好有配置，比如我想主要是工作，那日程安排比较重要，生活。如果多有记忆都要配置，那就是一个超级个人助手 记忆生产：根据配置信息，做不同类型的记忆提取存储 记忆消费：是指根据记忆：做下健康管理，饮食管理，工作学习计划，日程计划，等等。 非功能点 短期能同时处理 1w+ 人数的并发，长期的话人数可能扩充到 10W+，甚至更多。每天可能有 50W 的请求 响应时间：在记忆消费时能做到 3s - 5s 内有响应，3s-30s 内响应完成。 数据规模，根据每个人的配置，记忆长短不同，数据规模有不同要求 方案 工作流程图
-如图所示。总体为一个 RAG 流程，其中核心是记忆引擎的部分。由于rag流程基础的东西，在社区里做的比较多，也比较简单，不做过多强调。核心强调记忆引擎的东西。
-记忆引擎 记忆引擎里完成的功能：
-记忆生产 根据配置信息生产一些垂类记忆 记忆存储 把记忆抽出来后 记忆消费 根据用户的问题，召回相关的记忆，并做简单推理规划 记忆生产 这里输入是会话信息，需要做的是从会话信息里提取记忆实体。主要涉及到自然语言处理的部分。 知识图谱，我们使用知识图谱来完成记忆的载体。
-知识图谱的实体抽取，以及图数据库语法都是用额外的大模型来推理完成
-提示词设计 // 信息抽取 ` 你是一个信息提取专家 用户的输入如下：{query} 实体信息： ` // 记忆更新 ` 你是一个图数据专家，请生成neo4j的sql语句 历史记忆如下：{memories} 新的记忆如下：{memory} sql: ` 这里只给出部分，因为其他一些垂类的内容。其他还有很多，也算是核心。
-...</p></div><footer class=entry-footer><span title='2024-10-19 11:48:00 +0800 +0800'>十月 19, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to LLM 长记忆工具总结" href=https://tomorrowthief.github.io/posts/ai-longterm-memory/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
+...</p></div><footer class=entry-footer><span title='2024-10-19 11:48:00 +0800 +0800'>十月 19, 2024</span>&nbsp;·&nbsp;4 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to LLM 长记忆工具总结" href=https://tomorrowthief.github.io/posts/ai-longterm-memory/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/tomorrowthief/hugo-blog rel=noopener target=_blank>Hugo-blog</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>

@@ -5,45 +5,8 @@
 技术栈：Python/Nodejs + React
 行业背景：LLM 应用， RAG， Agent
 后端开发思路 后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。
-其中核心工作流在于：充分理解需求，转换业务需求到系统的功能性设计及非功能指标设计。
-功能设计上主要关注：数据结构，类包，业务模块，工作流等 非功能性关注：性能，并发，安全，稳定等 玩的是数据 数据算是核心中的核心了。所有的业务基础都是按照这个来的
-关系型业务 mysql 或者 pg，选一个吧，这里我还没遇到两者特别大的差异的地方，因为我的业务场景里没那么复杂
-这里主要考虑：表结构设计，索引设计。
-如果到一定规模考虑 分区，分表，分库
-实际业务中大多需要找一个 ORM 库来完成在应用里方便的操作。
-如果有 Redis 或者其他异步复杂的事务处理，需要进一步考虑数据一致性。
-非关系 Redis，Es，Mongodb，图数据库
-日志相关的一般存放到 mongodb 或者es，由于他们在倒排索引的效果做的比较好，方便快速全文索引，海量存储。
-Redis：内存数据库，来缓解在 mysql里不经常变动，又频繁查询的操作压力。当然他也可以做一些简单的消息中间件等
-图数据库
-在一些场景里需要做知识图谱，做关系，图数据库特别适合。这里核心是实体关系等三元组信息抽取，已有知识更新。得益于大模型这个第二大脑的配合，可以通过提示词让LLM帮我们去做实体抽取，三元组信息变得简单很多
-小结 这块也是一个非常大的技术体系，往深走的话需要专题讨论。
-我这边是入门不久，着重看了 Mysql 执行引擎的内容，B+ 索引的来由。练习了常用 SQL 语法（leetcode 50高频sql）
-由于之前了解过大数据基础知识，所以对于我前端出身学习这块，难度不大。
-一些中间件 消息中间件 几乎是必须的，做异步，服务结构等 任务队列 做性能，并发等 日志，错误处理等 微服务体系 很多公司其他基础模块都是基于微服务的方式提供的。系统扩充到一定程度肯定少不了微服务架构的梳理
-得益于 Service Mesh 这种微服务2.0架构。做上层应用变得异常简单了。日志，监控，服务注册调用 等都在 SideCar里
-我之前有过 Nodejs 接入微服务体系的经验，所以这块难度也不是特比大
-计算机基础 计算机组成：cpu，gpu，硬盘，内存 操作系统：进程线程协程等，资源管理，IO管理：网络/文件 编译：前端：分词，语法分析，语法树，后端：机器平台生成 分布式-时间空间互换 这里我觉得是计算机性能上一个很重要的思路，在优先的单机资源下实现高复杂度计算的模式。大数据的基石 Hadoop也是这个核心思想。
-...</p></div><footer class=entry-footer><span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 后端开发经验-阶段性总结思考" href=https://tomorrowthief.github.io/posts/ai-backend-dev/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Python 学习总结</h2></header><div class=entry-content><p>为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。
-根据此特点选择脚本类型语言作为应用层开发语言。待选语言有 Nodejs python。 个人虽熟悉 Nodejs，但鉴于 Python 生态较好 性能较好等，最后决定 Python。
-Python 综述 Python 第一版本发布于 2000年，目前在 Tiobe 排行榜里人数排名第一，社区热度也升为第一。
-定位：高级语言，通用能力编程语言 特性：动态语言，基于解释器，gc 等 范式：函数编程，面向对象，面向过程 主要在 数据处理，计算，Web等发挥作用，AI 领域使用很多， Web 开发也有很多场景
-运行模式支持 多进程，多线程，协程
-执行流程 这一章直接问了 gpt，下面都是 ai 的回答
-在Python中，程序的执行流程通常是按照以下步骤进行的：
-解释器读取源代码：Python解释器会逐行读取源代码文件，并将其转换为字节码形式，这是一种中间表示形式，可以被Python虚拟机执行。
-词法分析和语法分析：在这个阶段，Python解释器会将源代码分解成单词（Token）并构建语法树。这个过程包括词法分析（将源代码分解为Token）和语法分析（根据语法规则构建语法树）。
-编译字节码：Python解释器将语法树转换为字节码。字节码是一种中间形式，类似于机器码，但是不是针对特定的硬件架构。
-执行字节码：Python虚拟机执行字节码指令。这些指令会被逐条执行，从而实现程序的逻辑。
-动态类型检查：Python是一种动态类型语言，因此在运行时会进行类型检查。如果类型不匹配，会引发类型错误。
-垃圾回收：Python具有自动内存管理机制，包括垃圾回收。垃圾回收器会定期检查不再使用的内存对象，并释放它们。
-异常处理：在程序执行过程中，如果发生异常，Python会查找合适的异常处理程序。如果找不到合适的处理程序，程序会中止并打印错误信息。
-程序结束：当程序执行完所有的代码或遇到显式的退出语句（如return或sys.exit()）时，程序结束执行。
-语法 跟我熟悉的 JS 差别很大，总体感受很灵活。基础的比如：变量 循环，函数的定义参数。可以直接看官方文档
-个人感觉 1-2 周左右时间，即可上手基础开发。
-这里只提下我印象比较深刻的函数部分： 通过 def 定义，通过缩进写函数体，当然也可以添加类型系统，比如入参数类型，返回类型。基础demo如下
-def add(num1, num2) return num1 + num2 sum = add(1, 2) print(sum) 函数参数可以用 * *key_yars 来动态接收
-...</p></div><footer class=entry-footer><span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/>«&nbsp;上一页&nbsp;</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
+...</p></div><footer class=entry-footer><span title='2024-09-22 10:48:00 +0800 +0800'>九月 22, 2024</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to 后端开发经验-阶段性总结思考" href=https://tomorrowthief.github.io/posts/ai-backend-dev/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Python 学习总结</h2></header><div class=entry-content><p>为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。
+...</p></div><footer class=entry-footer><span title='2024-06-22 10:47:41 +0800 +0800'>六月 22, 2024</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;zhongling</footer><a class=entry-link aria-label="post link to Python 学习总结" href=https://tomorrowthief.github.io/posts/ai-python/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/>«&nbsp;上一页&nbsp;</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://tomorrowthief.github.io/>钟灵毓秀</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/tomorrowthief/hugo-blog rel=noopener target=_blank>Hugo-blog</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
