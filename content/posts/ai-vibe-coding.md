@@ -82,6 +82,10 @@ IDE：主要要求用户添加的一些上下文，指定到仓库某个路径�
 [详细看这里](/posts/ai-cursor-claudecode)
 
 ## 一站式 AI Coding
+这种也算是一种交互形式，一般是一个在线的 Web 产品，包含 Web IDE，在线构建，一件部署等功能。
+
+缺点是目前做静态页面还好，对于带有动态数据的有些吃力。
+
 1. [v0](https://v0.dev/)
 2. [bolt.new](https://bolt.new/)
 3. [lovable](https://lovable.dev/)
