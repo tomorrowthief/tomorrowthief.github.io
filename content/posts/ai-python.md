@@ -167,6 +167,11 @@ Python 的 `asyncio` 模块提供了强大的工具来编写高效的异步 I/O 
 * 数据开发相关: Panda Numpy
 * 深度学习： PyTorch Tenserflow
 * 图数据库： Neo4j
+
+## 工具
+包管理：不得不说python的这块挺混乱的，有 pip，pipx，poetry 等。我现在使用 uv + venv。感觉很爽
+
+代码格式类型检测：ruff
 ## 社区关注
 会关注社区里的 Python core dev 成员。其中有一个是中国人：高天，在 B站 上看过他不少视频，讲的都是比较基础的，比较内核的。
 
