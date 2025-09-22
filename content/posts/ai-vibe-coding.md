@@ -81,6 +81,13 @@ IDE：主要要求用户添加的一些上下文，指定到仓库某个路径�
 
 [详细看这里](/posts/ai-cursor-claudecode)
 
+## 一站式 AI Coding
+1. [v0](https://v0.dev/)
+2. [bolt.new](https://bolt.new/)
+3. [lovable](https://lovable.dev/)
+4. [google ai studio build](https://aistudio.google.com/apps)
+
+
 ## 作为一个 AI 应用开发者 如何看这些产品
 作为一个 AI 应用开发者，我觉得这些产品给了我很多启发和思考。目前所有 AI 应用基本都是围绕上下文工程做来做功能的。这在之前被称为 Prompt Engineering。现在更广义的叫做 Context Engineering。
 
