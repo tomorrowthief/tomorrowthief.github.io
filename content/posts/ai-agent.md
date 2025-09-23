@@ -14,6 +14,12 @@ categories: '技术'
 带上工具后，可以执行一些简单任务
 
 带上 多Agent 架构，复杂的工具（compute-use，codesandbox， browser-use），状态管理，Human in the loop，回放等就是本文要说的通用 Agent，我更习惯称它为任务 Agent。
+## [Google Ai Studio](https://aistudio.google.com/)
+这个挺好用，里面最新的模型还能免费白嫖。
+
+包含功能：Chat，语音聊天，生图 / 视频，Build(制作各种 静态 web 应用)
+
+值得一提，Build 里的功能包含 Web Ide，发布部署等。属于一站式开发。我个人会使用他生成一个初始化的项目，然后下载到本地，使用本地 coding 工具完成复杂需求
 ## [manus](https://manus.im/app)
 
 国内网红 Agent 公司，早期凭借炒作火了一把，当然也有他的实力存在的，并且把体验码炒到数万一个。也拿到了一些融资。
