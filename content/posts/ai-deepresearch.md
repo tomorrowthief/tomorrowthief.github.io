@@ -57,7 +57,8 @@ categories: '技术'
 
 核心流程
 
-![alt text](image.png)
+<img width="1122" height="879" alt="image" src="https://github.com/user-attachments/assets/841d122b-4bbf-4874-b903-45b231e4e97a" />
+
 
 ## 关键因素
 ### 知识源
