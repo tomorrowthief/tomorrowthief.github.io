@@ -1,5 +1,5 @@
 ---
-title: "Agent DeepResearch"
+title: "DeepResearch"
 date: 2025-09-24T17:27:00+08:00
 draft: false
 categories: '技术'
