@@ -11,9 +11,9 @@ categories: '技术'
 ## 首先 让一些出名的 DeepResearch 应用给出 DeepResearch 的调研报告
 让我研究我自己？多少有点搞笑。
 
-这个是让 manus 给的报告[manus deepresearch result](https://manus.im/share/H0Ky9vIrYboj6KKstrufrM?replay=1) 
+这个是让 manus 给的报告 [manus deepresearch result](https://manus.im/share/H0Ky9vIrYboj6KKstrufrM?replay=1) 
 
-提供的输入： 我要做一个deepresearch 的 agent 告诉我相关的概念，市面情况，实现方案，注意点，优化点
+提供的输入: `我要做一个deepresearch 的 agent 告诉我相关的概念，市面情况，实现方案，注意点，优化点`
 
 生成的 todo 如下
 ```markdown
