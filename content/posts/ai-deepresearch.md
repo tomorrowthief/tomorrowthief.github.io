@@ -15,7 +15,7 @@ categories: '技术'
 
 提供的输入: `我要做一个deepresearch 的 agent 告诉我相关的概念，市面情况，实现方案，注意点，优化点`
 
-生成的 todo 如下
+生成的 todo 如下:
 ```markdown
 ## Deep Research Agent 研究任务
 
@@ -41,14 +41,12 @@ categories: '技术'
 ### Phase 6: 向用户交付研究成果
 - [ ] 将研究报告发送给用户
 
-
-
 ### Phase 7: 深入分析Deep Research Agent的商业应用场景
 - [x] 深入分析Deep Research Agent的商业应用场景
 ```
 
 ## 主要组件
-同普通 Agent 模式一样，但是针对学术总结等专业工具
+主体工作模式上同普通 Agent 模式一样，外部工具上多了一些针对学术总结，网页抓取总结相关的
 
 核心工具如下
 1. Web Search, Web Crawl
@@ -77,6 +75,7 @@ categories: '技术'
 ## 技术实现
 基本属于一个多 Agent 架构 + Web Search + 专业知识检索工具
 
-可以考虑使用 Camel，然后基于角色定义子Agent 完成整个技术架构方案
+可以考虑使用 [Camel](https://github.com/camel-ai/camel)，然后基于角色定义子Agent 完成整个技术架构方案
+
 
 > 一切都是偶然 -- by 三体
