@@ -75,7 +75,7 @@ categories: '技术'
 ## 技术实现
 基本属于一个多 Agent 架构 + Web Search + 专业知识检索工具
 
-可以考虑使用 [Camel](https://github.com/camel-ai/camel)，然后基于角色定义子Agent 完成整个技术架构方案
+可以考虑使用 [Camel](https://github.com/camel-ai/camel)，然后基于角色定义子 Agent 完成整个技术架构方案
 
 
 > 一切都是偶然 -- by 三体
