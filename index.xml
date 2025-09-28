@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 24 Sep 2025 17:27:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Sep 2025 16:25:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 应用中的一些前端技术</title>
+      <link>https://tomorrowthief.github.io/posts/ai-tec-web/</link>
+      <pubDate>Sun, 28 Sep 2025 16:25:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-tec-web/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;以下内容 95% 由 AI 生成&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;SSE 协议与 Markdown 渲染：构建现代 AI 对话系统的基石&lt;/p&gt;
+&lt;p&gt;在 ChatGPT、Claude 等 AI 对话系统中，那种逐字逐句的&amp;quot;打字机&amp;quot;效果背后，是两项看似普通却至关重要的技术：Server-Sent Events (SSE) 协议和 Markdown 渲染引擎。本文将深入剖析这两项技术的原理、实现细节，以及在 AI 时代的创新应用。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>DeepResearch</title>
       <link>https://tomorrowthief.github.io/posts/ai-deepresearch/</link>
