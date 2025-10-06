@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 28 Sep 2025 16:25:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Oct 2025 17:22:11 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>札记</title>
+      <link>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</link>
+      <pubDate>Mon, 06 Oct 2025 17:22:11 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>技术</title>
       <link>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
@@ -35,15 +44,6 @@
       <pubDate>Fri, 08 Aug 2025 18:24:41 +0800</pubDate>
       
       <guid>https://tomorrowthief.github.io/categories/%E5%93%B2%E6%80%9D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>札记</title>
-      <link>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</link>
-      <pubDate>Sun, 30 Jun 2024 09:13:27 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</guid>
       <description></description>
     </item>
     

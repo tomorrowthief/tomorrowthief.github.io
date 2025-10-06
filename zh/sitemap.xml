@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tomorrowthief.github.io/posts/ai-tec-web/</loc>
-    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
-  </url><url>
     <loc>https://tomorrowthief.github.io/categories/</loc>
-    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,13 +16,38 @@
                 />
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/</loc>
-    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
   </url><url>
-    <loc>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
+    <loc>https://tomorrowthief.github.io/tags/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomorrowthief.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://tomorrowthief.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/tags/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/tags/%E5%88%98%E6%85%88%E6%AC%A3/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/santi/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/tags/%E4%B8%89%E4%BD%93/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/</loc>
-    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
+    <lastmod>2025-10-06T17:22:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,6 +58,12 @@
                 hreflang="zh"
                 href="https://tomorrowthief.github.io/"
                 />
+  </url><url>
+    <loc>https://tomorrowthief.github.io/posts/ai-tec-web/</loc>
+    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
+  </url><url>
+    <loc>https://tomorrowthief.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2025-09-28T16:25:41+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/ai-deepresearch/</loc>
     <lastmod>2025-09-24T17:27:00+08:00</lastmod>
@@ -74,9 +102,6 @@
     <lastmod>2024-09-22T10:48:00+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/sudongpo/</loc>
-    <lastmod>2024-06-30T09:13:27+08:00</lastmod>
-  </url><url>
-    <loc>https://tomorrowthief.github.io/categories/%E6%9C%AD%E8%AE%B0/</loc>
     <lastmod>2024-06-30T09:13:27+08:00</lastmod>
   </url><url>
     <loc>https://tomorrowthief.github.io/posts/ai-python/</loc>
@@ -126,18 +151,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://tomorrowthief.github.io/series/"
-                />
-  </url><url>
-    <loc>https://tomorrowthief.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomorrowthief.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://tomorrowthief.github.io/tags/"
                 />
   </url><url>
     <loc>https://tomorrowthief.github.io/archives/</loc>
