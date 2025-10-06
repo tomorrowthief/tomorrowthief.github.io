@@ -105,9 +105,9 @@ params:
               url: tags/
 
     homeInfoParams:
-        Title: "钟灵毓秀"
+        Title: "钟灵毓秀的文字空间"
         Content: >
-            - 开发者 & 架构师 & 问题终结者
+            - 软件开发者 & 问题终结者
 
     # editPost:
     #     URL: "https://github.com/tomorrowthief/tomorrowthief.github.io/"
