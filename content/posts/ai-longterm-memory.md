@@ -3,6 +3,7 @@ title: "LLM 长记忆工具总结"
 date: 2024-10-19T11:48:00+08:00
 draft: false
 categories: '技术'
+tags: ['AI', 'Agent]
 ---
 
 # 背景

@@ -3,6 +3,7 @@ title: "AI 应用技术"
 date: 2025-08-08T18:17:41+08:00
 draft: false
 categories: '技术'
+tags: ['AI']
 ---
 
 ## 前言

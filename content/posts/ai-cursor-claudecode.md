@@ -3,6 +3,7 @@ title: "Cursor & Claude Code 体验总结"
 date: 2025-08-25T18:46:41+08:00
 draft: false
 categories: 'AI'
+tags: ['AI', 'Coding']
 ---
 
 ## 使用情况

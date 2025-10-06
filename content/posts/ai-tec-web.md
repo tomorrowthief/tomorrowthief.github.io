@@ -3,6 +3,7 @@ title: "AI 应用中的一些前端技术"
 date: 2025-09-28T16:25:41+08:00
 draft: false
 categories: '技术'
+tags: ['AI']
 ---
 
 > 以下内容 95% 由 AI 生成
