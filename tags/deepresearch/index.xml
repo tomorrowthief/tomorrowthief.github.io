@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DeepResearch on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/tags/deepresearch/</link>
+    <description>Recent content in DeepResearch on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:27:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/deepresearch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepResearch</title>
+      <link>https://tomorrowthief.github.io/posts/ai-deepresearch/</link>
+      <pubDate>Wed, 24 Sep 2025 17:27:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-deepresearch/</guid>
+      <description>&lt;p&gt;做通用智能体，首先从 DeepResearch 功能入手。几乎所有 AI应用 公司都会带这个功能。&lt;/p&gt;
+&lt;p&gt;在做过一些调研后，梳理下自己都这个功能的总结，理解。&lt;/p&gt;
+&lt;h2 id=&#34;首先-让一些出名的-deepresearch-应用给出-deepresearch-的调研报告&#34;&gt;首先 让一些出名的 DeepResearch 应用给出 DeepResearch 的调研报告&lt;/h2&gt;
+&lt;p&gt;让我研究我自己？多少有点搞笑。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Agent on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/tags/agent/</link>
+    <description>Recent content in Agent on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:27:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepResearch</title>
+      <link>https://tomorrowthief.github.io/posts/ai-deepresearch/</link>
+      <pubDate>Wed, 24 Sep 2025 17:27:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-deepresearch/</guid>
+      <description>&lt;p&gt;做通用智能体，首先从 DeepResearch 功能入手。几乎所有 AI应用 公司都会带这个功能。&lt;/p&gt;
+&lt;p&gt;在做过一些调研后，梳理下自己都这个功能的总结，理解。&lt;/p&gt;
+&lt;h2 id=&#34;首先-让一些出名的-deepresearch-应用给出-deepresearch-的调研报告&#34;&gt;首先 让一些出名的 DeepResearch 应用给出 DeepResearch 的调研报告&lt;/h2&gt;
+&lt;p&gt;让我研究我自己？多少有点搞笑。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通用 Agent 调研</title>
+      <link>https://tomorrowthief.github.io/posts/ai-agent/</link>
+      <pubDate>Fri, 12 Sep 2025 15:47:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-agent/</guid>
+      <description>&lt;p&gt;近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。&lt;/p&gt;
+&lt;p&gt;这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LLM 长记忆工具总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
+      <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
+&lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
+&lt;p&gt;简单来说就是让大模型具备记忆功能，记住某个人。产品形态上可以是个人助手。不同于某次会话上下文记忆，长记忆具备的特点：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

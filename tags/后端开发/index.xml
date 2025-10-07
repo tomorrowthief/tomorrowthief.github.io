@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>后端开发 on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 后端开发 on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 22 Sep 2024 10:48:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>后端开发经验-阶段性总结思考</title>
+      <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
+      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-backend-dev/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;做了大半年左右的后端开发后，总结下相关感受。&lt;/p&gt;
+&lt;p&gt;技术栈：Python/Nodejs + React&lt;/p&gt;
+&lt;p&gt;行业背景：LLM 应用， RAG， Agent&lt;/p&gt;
+&lt;h2 id=&#34;后端开发思路&#34;&gt;后端开发思路&lt;/h2&gt;
+&lt;p&gt;后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

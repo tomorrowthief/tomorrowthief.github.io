@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Coding on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/tags/coding/</link>
+    <description>Recent content in Coding on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 25 Aug 2025 18:46:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cursor &amp; Claude Code 体验总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</link>
+      <pubDate>Mon, 25 Aug 2025 18:46:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</guid>
+      <description>&lt;h2 id=&#34;使用情况&#34;&gt;使用情况&lt;/h2&gt;
+&lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
+&lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
+&lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

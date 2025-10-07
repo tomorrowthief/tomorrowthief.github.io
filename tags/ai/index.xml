@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on 钟灵毓秀</title>
+    <link>https://tomorrowthief.github.io/tags/ai/</link>
+    <description>Recent content in AI on 钟灵毓秀</description>
+    <image>
+      <url>https://tomorrowthief.github.io/cover.png</url>
+      <link>https://tomorrowthief.github.io/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 28 Sep 2025 16:25:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 应用中的一些前端技术</title>
+      <link>https://tomorrowthief.github.io/posts/ai-tec-web/</link>
+      <pubDate>Sun, 28 Sep 2025 16:25:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-tec-web/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;以下内容 95% 由 AI 生成&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;SSE 协议与 Markdown 渲染：构建现代 AI 对话系统的基石&lt;/p&gt;
+&lt;p&gt;在 ChatGPT、Claude 等 AI 对话系统中，那种逐字逐句的&amp;quot;打字机&amp;quot;效果背后，是两项看似普通却至关重要的技术：Server-Sent Events (SSE) 协议和 Markdown 渲染引擎。本文将深入剖析这两项技术的原理、实现细节，以及在 AI 时代的创新应用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DeepResearch</title>
+      <link>https://tomorrowthief.github.io/posts/ai-deepresearch/</link>
+      <pubDate>Wed, 24 Sep 2025 17:27:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-deepresearch/</guid>
+      <description>&lt;p&gt;做通用智能体，首先从 DeepResearch 功能入手。几乎所有 AI应用 公司都会带这个功能。&lt;/p&gt;
+&lt;p&gt;在做过一些调研后，梳理下自己都这个功能的总结，理解。&lt;/p&gt;
+&lt;h2 id=&#34;首先-让一些出名的-deepresearch-应用给出-deepresearch-的调研报告&#34;&gt;首先 让一些出名的 DeepResearch 应用给出 DeepResearch 的调研报告&lt;/h2&gt;
+&lt;p&gt;让我研究我自己？多少有点搞笑。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通用 Agent 调研</title>
+      <link>https://tomorrowthief.github.io/posts/ai-agent/</link>
+      <pubDate>Fri, 12 Sep 2025 15:47:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-agent/</guid>
+      <description>&lt;p&gt;近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。&lt;/p&gt;
+&lt;p&gt;这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cursor &amp; Claude Code 体验总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</link>
+      <pubDate>Mon, 25 Aug 2025 18:46:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</guid>
+      <description>&lt;h2 id=&#34;使用情况&#34;&gt;使用情况&lt;/h2&gt;
+&lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
+&lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
+&lt;p&gt;有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AI 时代下的你我</title>
+      <link>https://tomorrowthief.github.io/posts/ai-person/</link>
+      <pubDate>Fri, 08 Aug 2025 18:24:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-person/</guid>
+      <description>&lt;p&gt;首先我认同 AI 时代会改变很多生活，生产，工作的形态，甚至更多……，当然这个主题很大，谁都难以精确的的预测各行各业的发展，&lt;/p&gt;
+&lt;p&gt;很荣幸为一个 &lt;strong&gt;软件工作者&lt;/strong&gt; 及 &lt;strong&gt;普通居民&lt;/strong&gt; 的角色能站在这场变革的一线，几乎从23年开始一直持续关注相关的动态，参与到一些 AI 产品的使用中，并且参与到一些 AI 产品的开发中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AI 应用技术</title>
+      <link>https://tomorrowthief.github.io/posts/ai-tec/</link>
+      <pubDate>Fri, 08 Aug 2025 18:17:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-tec/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;梳理下自己在 AI 产品开发中用到的一些工程技术，只会做工程了属于是，算法方面的东西基本上不懂。&lt;/p&gt;
+&lt;p&gt;列下我做过的东西：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code Review Agent&lt;/li&gt;
+&lt;li&gt;Long term memory&lt;/li&gt;
+&lt;li&gt;Dify 二开&lt;/li&gt;
+&lt;li&gt;Rag 流程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;语言技术：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Nodejs&lt;/li&gt;
+&lt;li&gt;Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agent 框架：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AI 产品思考</title>
+      <link>https://tomorrowthief.github.io/posts/ai-products/</link>
+      <pubDate>Fri, 08 Aug 2025 18:15:41 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-products/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LLM 长记忆工具总结</title>
+      <link>https://tomorrowthief.github.io/posts/ai-longterm-memory/</link>
+      <pubDate>Sat, 19 Oct 2024 11:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-longterm-memory/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;近期工作中做了 LLM 长记忆功能，对此中的思路，技术做下总结。顺便为了练习自己的系统设计能力，这里按照系统设计的方式来整理&lt;/p&gt;
+&lt;h2 id=&#34;什么是长记忆&#34;&gt;什么是长记忆&lt;/h2&gt;
+&lt;p&gt;简单来说就是让大模型具备记忆功能，记住某个人。产品形态上可以是个人助手。不同于某次会话上下文记忆，长记忆具备的特点：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>后端开发经验-阶段性总结思考</title>
+      <link>https://tomorrowthief.github.io/posts/ai-backend-dev/</link>
+      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-backend-dev/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;做了大半年左右的后端开发后，总结下相关感受。&lt;/p&gt;
+&lt;p&gt;技术栈：Python/Nodejs + React&lt;/p&gt;
+&lt;p&gt;行业背景：LLM 应用， RAG， Agent&lt;/p&gt;
+&lt;h2 id=&#34;后端开发思路&#34;&gt;后端开发思路&lt;/h2&gt;
+&lt;p&gt;后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
