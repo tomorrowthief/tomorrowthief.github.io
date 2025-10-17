@@ -10,7 +10,26 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 06 Oct 2025 17:22:11 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Oct 2025 16:59:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apps by AI Coding tool</title>
+      <link>https://tomorrowthief.github.io/posts/ai-apps/</link>
+      <pubDate>Fri, 17 Oct 2025 16:59:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-apps/</guid>
+      <description>&lt;p&gt;记录下自己做的一些 Apps，基本是网页形态，后面会考虑浏览器插件等形态。&lt;/p&gt;
+&lt;p&gt;会着重记录，功能，实现思路 体验地址&lt;/p&gt;
+&lt;h2 id=&#34;webgl-学习网站&#34;&gt;Webgl 学习网站&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://webgl-hub.pages.dev/&#34;&gt;https://webgl-hub.pages.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;功能&#34;&gt;功能&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;提供 Webgl 及 threejs 概念学习，案例学习&lt;/li&gt;
+&lt;li&gt;提供在线代码编辑和运行环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;大概过程&#34;&gt;大概过程&lt;/h3&gt;
+&lt;p&gt;Google AI studio build 生成基础版本：&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>《三体》读后感</title>
       <link>https://tomorrowthief.github.io/posts/santi/</link>
@@ -28,7 +47,8 @@
       
       <guid>https://tomorrowthief.github.io/posts/ai-tec-web/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;以下内容 95% 由 AI 生成&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;以下内容 95% 由 AI 生成&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;SSE 协议与 Markdown 渲染：构建现代 AI 对话系统的基石&lt;/p&gt;
 &lt;p&gt;在 ChatGPT、Claude 等 AI 对话系统中，那种逐字逐句的&amp;quot;打字机&amp;quot;效果背后，是两项看似普通却至关重要的技术：Server-Sent Events (SSE) 协议和 Markdown 渲染引擎。本文将深入剖析这两项技术的原理、实现细节，以及在 AI 时代的创新应用。&lt;/p&gt;</description>
     </item>
@@ -164,7 +184,8 @@
       
       <guid>https://tomorrowthief.github.io/posts/sudongpo/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;林语堂苏东坡读后感&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;进入偶然原因看了些苏词，同时也看了林语堂的苏轼传，这里记录下所感，所想。重点不是描述豪放的苏词，而是苏轼这种人才的优点，缺点。苏轼若是在当代社会又是咋样的？&lt;/p&gt;</description>
     </item>
     
@@ -206,7 +227,8 @@
       
       <guid>https://tomorrowthief.github.io/posts/liuguolun/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;六国破灭非并不利战不善，弊在赂秦……&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;六国破灭非并不利战不善，弊在赂秦……&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;近日偶然重新看了这篇文章。再细读后，才发现其文风犀利，逻辑清晰，论点简明有力。虽作为高中时期的教材，那会儿跟不懂内容只知道背诵那些文字，再读后有种相见恨晚的感觉。&lt;/p&gt;</description>
     </item>
     
@@ -240,7 +262,8 @@
       <guid>https://tomorrowthief.github.io/posts/deep-thinking/</guid>
       <description>&lt;p&gt;深度思考的重要性就不多强调了，该如何做好呢？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如何做好深度思考？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如何做好深度思考？&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;多维度&#34;&gt;多维度&lt;/h2&gt;
 &lt;p&gt;我这里说的多维度可以理解为&lt;code&gt;多视角&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;做一个技术分享，在听众的视角下如何的，主办方的视角如何，分享者的视角又如何，领导视角，同事视角如何……&lt;/p&gt;</description>
