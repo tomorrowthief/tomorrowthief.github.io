@@ -18,16 +18,8 @@
       
       <guid>https://tomorrowthief.github.io/posts/ai-apps/</guid>
       <description>&lt;p&gt;记录下自己做的一些 Apps，基本是网页形态，后面会考虑浏览器插件等形态。&lt;/p&gt;
-&lt;p&gt;会着重记录，功能，实现思路 体验地址&lt;/p&gt;
-&lt;h2 id=&#34;webgl-学习网站&#34;&gt;Webgl 学习网站&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://webgl-hub.pages.dev/&#34;&gt;https://webgl-hub.pages.dev/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;功能&#34;&gt;功能&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;提供 Webgl 及 threejs 概念学习，案例学习&lt;/li&gt;
-&lt;li&gt;提供在线代码编辑和运行环境&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;大概过程&#34;&gt;大概过程&lt;/h3&gt;
-&lt;p&gt;Google AI studio build 生成基础版本：&lt;/p&gt;</description>
+&lt;p&gt;会着重记录，功能，实现思路 体验地址。&lt;/p&gt;
+&lt;p&gt;主打一个纯自然语言，AI 做牛马。期望能把这个过程用熟练，万一真有场景可以直接用上呢。&lt;/p&gt;</description>
     </item>
     
   </channel>
