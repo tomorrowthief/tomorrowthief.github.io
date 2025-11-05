@@ -10,7 +10,9 @@ tags: ['AI', 'Agent']
 
 langgraph 呢是 langchain 团队做的一个底层 Agent 开发框架，其上 langchain 就是基于 langgraph 做的。我对 langchain 的认知还停留在 2023 年，彼时他只是一个简单的链式反应工具，做Agent 很重不够灵活，我呢一直是鄙视的态度看待。用他的产品也是仅用了他的文档处理相关的，比如confluence解析等。
 
-最近他们突然融资到 1.25 亿刀，然后工作需要，就去仔细研究了下他的底层 langgraph，这一看扫去了我之前对他的认知。下面细说下
+最近他们突然融资到 1.25 亿刀
+<img  alt="26037358678547549" src="https://github.com/user-attachments/assets/d22b1f2e-5c8b-4d69-9657-b4264be241e2" />，
+然后工作需要，就去仔细研究了下他的底层 langgraph，这一看扫去了我之前对他的认知。下面细说下
 
 
 ## Langgraph 的能力
