@@ -1,6 +1,6 @@
 ---
 title: "Langgraph深度学习"
-date: 2025-11-5T09:30:00+08:00
+date: 2025-11-05T09:30:00+08:00
 draft: false
 categories: '技术'
 tags: ['AI', 'Agent']
