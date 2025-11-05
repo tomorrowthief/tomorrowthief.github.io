@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 28 Sep 2025 16:25:41 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Nov 2025 09:30:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Langgraph深度学习</title>
+      <link>https://tomorrowthief.github.io/posts/ai-agent-langgraph/</link>
+      <pubDate>Wed, 05 Nov 2025 09:30:00 +0800</pubDate>
+      
+      <guid>https://tomorrowthief.github.io/posts/ai-agent-langgraph/</guid>
+      <description>&lt;p&gt;最近做通用 Agent 技术选型上有两个方向： 1. vanilla agent 2. 框架（langgraph agent， crew AI）等。最终考虑到细节上选择了框架方向，具体框架选择了 langgraph。&lt;/p&gt;
+&lt;p&gt;langgraph 呢是 langchain 团队做的一个底层 Agent 开发框架，其上 langchain 就是基于 langgraph 做的。我对 langchain 的认知还停留在 2023 年，彼时他只是一个简单的链式反应工具，做Agent 很重不够灵活，我呢一直是鄙视的态度看待。用他的产品也是仅用了他的文档处理相关的，比如confluence解析等。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>AI 应用中的一些前端技术</title>
       <link>https://tomorrowthief.github.io/posts/ai-tec-web/</link>
