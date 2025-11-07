@@ -23,10 +23,9 @@ langgraph 呢是 langchain 团队做的一个底层 Agent 开发框架，其上 
 ## 设计理念
 文档的 Thinking in Langgraph 部分讲了如何将一个任务传统任务落地带 Langgraph里，要先考虑怎么把任务拆成离散的 `单点任务`, 单点任务之间的`流转关系`是如何的。
 
-其中单点任务就是 Node 流转关系，对应 Edge。跟 AI 核心的关系是依赖 LLM 来做一些 Node 之间的动态跳转。自主规划跳转逻辑。
+其中单点任务就是 Node 流转关系，对应 Edge。 其中可以使用LLM节点来做些动态判断下一跳，就可以完成 Agent 里的规划了。
 
-
-有个中央 Store 来存储 State。每个 Node 是一个 Function，输入 State 输出 State，或者输出 Command。Command 是内部的一个模式，Command里包含了State更新内容，及下一跳的目的
+使用中央 Store 来存储整个 graph 运行过程中的 State。每个 Node 是一个 Function，输入 State 输出 State，或者输出 Command。Command 是内部的一个模式，Command里包含了State更新内容，及下一跳的目的
 
 ## 似曾相识
 State 的设计：函数式编程的思想。跟当初学习前端开发里 的 React 里的状态库 Rudux 库很相似。也获取所有复杂状态管理都是大概的吧
