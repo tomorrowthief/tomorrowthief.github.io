@@ -74,14 +74,6 @@ function reducer(state = initialState, action) {
 1. pregel 核心
 ```plantext
 
- ▐▛███▜▌   Claude Code v2.0.42
-▝▜█████▛▘  Sonnet 4.5 · API Usage Billing
-  ▘▘ ▝▝    /Users/zhongling/mypro/langgraph
-
-  Debug mode enabled
-  Logging to: 
-  /Users/zhongling/.claude/debug/2ea293bc-155d-41f2-b883-150e69fe4003.txt
-
 > 分析下 @libs/langgraph/langgraph/pregel/ 里的功能 
   ⎿  Listed directory libs/langgraph/langgraph/pregel/
 
@@ -614,17 +606,6 @@ function reducer(state = initialState, action) {
 2. channel 分析过程
 ```plantext
 
- ▐▛███▜▌   Claude Code v2.0.42
-▝▜█████▛▘  Sonnet 4.5 · API Usage Billing
-  ▘▘ ▝▝    /Users/zhongling/mypro/langgraph
-
-  Debug mode enabled
-  Logging to: 
-  /Users/zhongling/.claude/debug/9e106325-dd76-4871-83c6-0c51e88dcef3.txt
-
-> /clear 
-  ⎿  (no content)
-
 > 分析下 @libs/langgraph/langgraph/channels/ 里的核心功能 
   ⎿  Listed directory libs/langgraph/langgraph/channels/
 
@@ -768,8 +749,4 @@ function reducer(state = initialState, action) {
 
   这个通道系统为 LangGraph
   提供了灵活而强大的状态管理和数据流控制能力，支持复杂的图计算场景。
-
-
-
-
 ```
