@@ -14,11 +14,15 @@ langgraph 呢是 langchain 团队做的一个底层 Agent 开发框架，其上 
 <img  alt="26037358678547549" src="https://github.com/user-attachments/assets/d22b1f2e-5c8b-4d69-9657-b4264be241e2" />，
 然后工作需要，就去仔细研究了下他的底层 langgraph，这一看扫去了我之前对他的认知。下面细说下
 
-
 ## Langgraph 的能力
-核心是任务执行编排
+核心是任务执行编排的能力，周边有比较完善的工具链支撑，其次是与模型相关的基础组件接入，生态上有很多社区应用，其特性也比较好的支撑多agent架构。
 
-其次是与模型相关的基础组件介入，可以方便的介入到任务编排流程里
+具体功能特性：
+1. Human in the loop
+2. 节点，边，条件边
+3. 过程流式输出
+4. 持久化存储中间数据
+
 
 ## 设计理念
 文档的 Thinking in Langgraph 部分讲了如何将一个任务传统任务落地带 Langgraph里，要先考虑怎么把任务拆成离散的 `单点任务`, 单点任务之间的`流转关系`是如何的。
@@ -27,15 +31,18 @@ langgraph 呢是 langchain 团队做的一个底层 Agent 开发框架，其上 
 
 使用中央 Store 来存储整个 graph 运行过程中的 State。每个 Node 是一个 Function，输入 State 输出 State，或者输出 Command。Command 是内部的一个模式，Command里包含了State更新内容，及下一跳的目的
 
-## 底层核心
-作为一个比较灵活的任务编排及状态管理工具，其核心是 channel + pregel 完成的。是 langgraph 的灵魂所在。
+## 优略点
+目前来看 langgraph 还是比较适合 workflow 类型的 agent 开发, workflow 的场景比较单任务处理的场景。
 
-首先是 pregel 完成图执行 runtime，完成各个节点运行过程，其次集合 channel 完成，数据通信，总体状态管理等。是 human in the loop的关键。
+不适合对于多会话类型的 Agent，这种一般是需要大量来回交互才把需求明确的场景。或者是需要做不少额外的配置才能支持。这块社区有文章细说[传送](https://blog.dailydoseofds.com/p/every-langgraph-user-we-know-is-making)。
+## 底层核心
+作为一个比较灵活的任务编排工具，其核心是 channel + pregel 完成的。是支撑所有 feature 的基石。这块在官方文档里也有提到，是参考了 google 的 pregel 图计算算法。
+
+首先是 pregel 完成图执行 runtime，完成各个节点运行过程，其次集合 channel 完成数据通信，总体状态管理等。
 
 这两块的具体实现是挺复杂的，具体源码及功能分析过程，见附录。是用的 claude-code 工具完成的分析过程
-
 ## 似曾相识
-State 的设计：函数式编程的思想。跟当初学习前端开发里 的 React 里的状态库 Rudux 库很相似。也获取所有复杂状态管理都是大概的吧
+State 的设计：函数式编程的思想。跟当初学习前端开发里 的 React 里的状态库 Rudux 库很相似。也获取所有复杂状态管理都是大概的吧。这块细看的时候总感觉很熟悉，下面看下一些具体的内容
 
 更改State的方式：
 
@@ -61,7 +68,6 @@ function reducer(state = initialState, action) {
 总体都是 state in -> process - > state out 的设计思想
 
 应了那句话：技术思想都大概的，只是在不同的应用场景下有不同的实现罢了
-
 ## 一个孜孜不倦的成功者
 最早2年前了，我是很不看好langchain的工具的，原因是他很重，也很繁琐，在 ai 应用发展日新月异的背景下，不适合作为技术选型的。
 
@@ -71,6 +77,9 @@ function reducer(state = initialState, action) {
 
 ## 附录
 
+1. 一些基于 langgraph 的 agent
+    1. [deerflow](https://github.com/bytedance/deer-flow)
+    2. [salesforce](https://github.com/SalesforceAIResearch/enterprise-deep-research)
 1. pregel 核心
 ```plantext
 
