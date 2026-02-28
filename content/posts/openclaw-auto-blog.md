@@ -1,5 +1,5 @@
 ---
-title: "使用 OpenClaw 实现个人博客全自动运营"
+title: "使用 OpenClaw 实现个人博客全自动运营 [openclaw代写]"
 date: 2026-02-28T09:54:00+08:00
 draft: false
 categories: '技术'
