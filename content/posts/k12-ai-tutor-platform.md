@@ -1,5 +1,5 @@
 ---
-title: "K12智能辅导平台：用AI重构个性化教育"
+title: "K12智能辅导平台：用AI重构个性化教育[openclaw代写]"
 date: 2026-03-16T19:45:00+08:00
 draft: false
 categories: '产品'
