@@ -1,7 +1,7 @@
 ---
 title: "《红楼梦》札记"
 date: 2026-05-08T09:00:00+08:00
-draft: true
+draft: false
 tags: ["古典文学", "札记"]
 categories: "札记"
 ---
