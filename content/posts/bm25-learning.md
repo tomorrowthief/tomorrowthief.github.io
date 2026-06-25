@@ -1,6 +1,6 @@
 ---
 title: "BM25 学习总结：从打分公式到 Milvus 稀疏/稠密混合检索"
-date: 2026-06-25T20:00:00+08:00
+date: 2026-06-25T19:00:00+08:00
 draft: false
 categories: '技术'
 tags: ['BM25', 'Milvus', 'Elasticsearch', '检索', 'RAG']
