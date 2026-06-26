@@ -1,6 +1,6 @@
 ---
 title: "【AI代写】Milvus 混合检索实战：BM25 + 语义向量从 0 到 1"
-date: 2026-06-26T20:00:00+08:00
+date: 2026-06-26T12:00:00+08:00
 draft: false
 categories: '技术'
 tags: ['Milvus', '混合检索', 'Hybrid Search', 'RAG', 'BM25']
