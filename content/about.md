@@ -10,9 +10,8 @@ Web 开发，软件开发，架构师，生活探索者。混迹于 杭州 / 郑
 
 <br />
 
-**技能 & 语言**
-* Front End，Nodejs, Python, Golang
-* AI Application, LLM, Agentic Application
+**技能**
+* 前端工程、Node.js、Python、Golang、LLM Application、RAG、Agent、Office.js、Cloudflare、Milvus
 
 
 **近期在学**
