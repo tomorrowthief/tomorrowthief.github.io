@@ -1,6 +1,6 @@
 ---
 title: "让 AI 一边生成一边搭界面：LLM 渐进式渲染的一个专利思路"
-date: 2026-07-21T11:30:00+08:00
+date: 2026-07-21T10:00:00+08:00
 draft: false
 categories: '技术'
 tags: ['AI', 'LLM', 'React', '流式渲染', '专利思路']
@@ -166,4 +166,3 @@ src/
 - GitHub 仓库：<https://github.com/tomorrowthief/llm-progressive-ui>
 
 这套方案希望表达的并不是“让 JSON 提前通过解析”这么简单，而是让系统在 LLM 尚未完成输出时，就能理解已经确定的界面含义，并以可控、可恢复、可协调的方式逐步构建界面。
-
