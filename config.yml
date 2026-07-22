@@ -80,7 +80,7 @@ params:
     # disableThemeToggle: true
     # ShowShareButtons: true
     ShowReadingTime: true
-    # disableSpecial1stPost: true
+    disableSpecial1stPost: true
     # displayFullLangName: true
     ShowPostNavLinks: true
     # ShowBreadCrumbs: true
@@ -103,11 +103,6 @@ params:
               url: categories/
             - name: 标签
               url: tags/
-
-    homeInfoParams:
-        Title: "钟灵毓秀的文字空间"
-        Content: >
-            - 软件开发者 & 问题终结者
 
     # editPost:
     #     URL: "https://github.com/tomorrowthief/tomorrowthief.github.io/"
