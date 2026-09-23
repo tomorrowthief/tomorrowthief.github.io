@@ -2,122 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/tags/</link>
+    <link>https://zhixia.pages.dev/tags/</link>
     <description>Recent content in Tags on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 05 Nov 2025 09:30:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Agent</title>
-      <link>https://tomorrowthief.github.io/tags/agent/</link>
-      <pubDate>Wed, 05 Nov 2025 09:30:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/agent/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://tomorrowthief.github.io/tags/ai/</link>
-      <pubDate>Wed, 05 Nov 2025 09:30:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AI Coding</title>
-      <link>https://tomorrowthief.github.io/tags/ai-coding/</link>
-      <pubDate>Fri, 17 Oct 2025 16:59:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/ai-coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vibe-Coding Apps</title>
-      <link>https://tomorrowthief.github.io/tags/vibe-coding-apps/</link>
-      <pubDate>Fri, 17 Oct 2025 16:59:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/vibe-coding-apps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>科幻小说</title>
-      <link>https://tomorrowthief.github.io/tags/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4/</link>
-      <pubDate>Mon, 06 Oct 2025 17:22:11 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>刘慈欣</title>
-      <link>https://tomorrowthief.github.io/tags/%E5%88%98%E6%85%88%E6%AC%A3/</link>
-      <pubDate>Mon, 06 Oct 2025 17:22:11 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E5%88%98%E6%85%88%E6%AC%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>三体</title>
-      <link>https://tomorrowthief.github.io/tags/%E4%B8%89%E4%BD%93/</link>
-      <pubDate>Mon, 06 Oct 2025 17:22:11 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E4%B8%89%E4%BD%93/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DeepResearch</title>
-      <link>https://tomorrowthief.github.io/tags/deepresearch/</link>
-      <pubDate>Wed, 24 Sep 2025 17:27:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/deepresearch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coding</title>
-      <link>https://tomorrowthief.github.io/tags/coding/</link>
-      <pubDate>Mon, 25 Aug 2025 18:46:41 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>产品</title>
-      <link>https://tomorrowthief.github.io/tags/%E4%BA%A7%E5%93%81/</link>
-      <pubDate>Fri, 08 Aug 2025 18:15:41 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E4%BA%A7%E5%93%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>后端开发</title>
-      <link>https://tomorrowthief.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
-      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>经验总结</title>
-      <link>https://tomorrowthief.github.io/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sun, 22 Sep 2024 10:48:00 +0800</pubDate>
-      
-      <guid>https://tomorrowthief.github.io/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 22 Sep 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

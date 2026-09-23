@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>检索 on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/%E6%A3%80%E7%B4%A2/</link>
+    <description>Recent content in 检索 on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 25 Jun 2026 20:00:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/%E6%A3%80%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【AI代写】BM25 学习总结：从打分公式到 Milvus 稀疏/稠密混合检索</title>
+      <link>https://zhixia.pages.dev/posts/bm25-learning/</link>
+      <pubDate>Thu, 25 Jun 2026 20:00:00 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/bm25-learning/</guid>
+      <description>梳理 BM25 打分公式、分词器与倒排索引的分工，解释稀疏向量、稠密向量及其在 Milvus 混合检索中的协作方式。</description>
+    </item>
+    
+  </channel>
+</rss>

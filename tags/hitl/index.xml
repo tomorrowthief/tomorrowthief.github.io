@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HITL on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/hitl/</link>
+    <description>Recent content in HITL on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 22 Sep 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/hitl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent 的 HITL 设计：从人工介入到可靠恢复</title>
+      <link>https://zhixia.pages.dev/posts/ai-agent-hitl/</link>
+      <pubDate>Tue, 22 Sep 2026 09:00:00 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/ai-agent-hitl/</guid>
+      <description>从补充信息、执行审批、结果审核和人工接管出发，设计 Agent 的人工介入流程，讨论审批交互、状态持久化、权限校验与可靠恢复。</description>
+    </item>
+    
+  </channel>
+</rss>

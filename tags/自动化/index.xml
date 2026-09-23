@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>自动化 on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <description>Recent content in 自动化 on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 28 Feb 2026 09:54:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 OpenClaw 实现个人博客全自动运营 [openclaw代写]</title>
+      <link>https://zhixia.pages.dev/posts/openclaw-auto-blog/</link>
+      <pubDate>Sat, 28 Feb 2026 09:54:00 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/openclaw-auto-blog/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;在 AI 助手日益普及的今天，个人博客的运营方式正在发生革命性变化。传统的人工写作、发布、推广流程不仅耗时耗力，而且难以保持持续的内容输出。本文将介绍如何利用 &lt;strong&gt;OpenClaw&lt;/strong&gt; 这一强大的 AI 助手平台，实现个人博客的&lt;strong&gt;全自动运营&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

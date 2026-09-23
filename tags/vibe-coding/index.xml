@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vibe Coding on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/vibe-coding/</link>
+    <description>Recent content in Vibe Coding on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 27 May 2026 10:25:41 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/vibe-coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Webgl-learn] Vibe Coding 实践</title>
+      <link>https://zhixia.pages.dev/posts/ai-context-engineering/</link>
+      <pubDate>Wed, 27 May 2026 10:25:41 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/ai-context-engineering/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;这是另一篇 vibe coding 实践，之前已经有一个实践：基于当时的工具做的，现在呢基于最新的 claude code 加上 deepseek/glm-5.1 做的，然后过程是基于 superpower 来做流程控制。基于此详细说下怎么做的&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

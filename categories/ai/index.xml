@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI on 钟灵毓秀</title>
-    <link>https://tomorrowthief.github.io/categories/ai/</link>
+    <link>https://zhixia.pages.dev/categories/ai/</link>
     <description>Recent content in AI on 钟灵毓秀</description>
     <image>
-      <url>https://tomorrowthief.github.io/cover.png</url>
-      <link>https://tomorrowthief.github.io/cover.png</link>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 17 Oct 2025 16:59:00 +0800</lastBuildDate><atom:link href="https://tomorrowthief.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 May 2026 10:25:41 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Webgl-learn] Vibe Coding 实践</title>
+      <link>https://zhixia.pages.dev/posts/ai-context-engineering/</link>
+      <pubDate>Wed, 27 May 2026 10:25:41 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/ai-context-engineering/</guid>
+      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
+&lt;p&gt;这是另一篇 vibe coding 实践，之前已经有一个实践：基于当时的工具做的，现在呢基于最新的 claude code 加上 deepseek/glm-5.1 做的，然后过程是基于 superpower 来做流程控制。基于此详细说下怎么做的&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>WebGl-Hub-[Apps by AI Coding tool]</title>
-      <link>https://tomorrowthief.github.io/posts/ai-apps-webgl/</link>
+      <link>https://zhixia.pages.dev/posts/ai-apps-webgl/</link>
       <pubDate>Fri, 17 Oct 2025 16:59:00 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-apps-webgl/</guid>
+      <guid>https://zhixia.pages.dev/posts/ai-apps-webgl/</guid>
       <description>&lt;p&gt;记录下自己做的一些 Apps，基本是网页形态，后面会考虑浏览器插件等形态。&lt;/p&gt;
 &lt;p&gt;会着重记录，功能，实现思路 体验地址。&lt;/p&gt;
 &lt;p&gt;主打一个纯自然语言，AI 做牛马。期望能把这个过程用熟练，万一真有场景可以直接用上呢。&lt;/p&gt;</description>
@@ -24,10 +34,10 @@
     
     <item>
       <title>Cursor &amp; Claude Code 体验总结</title>
-      <link>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</link>
+      <link>https://zhixia.pages.dev/posts/ai-cursor-claudecode/</link>
       <pubDate>Mon, 25 Aug 2025 18:46:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-cursor-claudecode/</guid>
+      <guid>https://zhixia.pages.dev/posts/ai-cursor-claudecode/</guid>
       <description>&lt;h2 id=&#34;使用情况&#34;&gt;使用情况&lt;/h2&gt;
 &lt;p&gt;目前编码工作几乎是 Cursor， 也深度体验了 Claude code&lt;/p&gt;
 &lt;p&gt;主要使用场景：日常业务迭代，Bug 修复，新项目启动。&lt;/p&gt;
@@ -36,12 +46,11 @@
     
     <item>
       <title>Vibe Coding: AI编程总结</title>
-      <link>https://tomorrowthief.github.io/posts/ai-vibe-coding/</link>
+      <link>https://zhixia.pages.dev/posts/ai-vibe-coding/</link>
       <pubDate>Tue, 19 Aug 2025 16:24:41 +0800</pubDate>
       
-      <guid>https://tomorrowthief.github.io/posts/ai-vibe-coding/</guid>
-      <description>&lt;h2 id=&#34;缘起&#34;&gt;缘起&lt;/h2&gt;
-&lt;p&gt;接触 AI 编程挺早了，体验过从早期蛮荒交互形式：在聊天框里问答然后复制结果到编辑器，到最近植入到 IDE 内的， 以及 更加流行的 CLI 形式的交互演进。多少算是见证了 AI 编程的演进。&lt;/p&gt;</description>
+      <guid>https://zhixia.pages.dev/posts/ai-vibe-coding/</guid>
+      <description>总结 Cursor、Claude Code 等 AI 编程工具的使用体验，比较插件、IDE、CLI 与云端交互，分析上下文、模型和工作模式对效果的影响。</description>
     </item>
     
   </channel>

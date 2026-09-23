@@ -1,3 +1,7 @@
 User-agent: *
-Disallow:
-Sitemap: https://tomorrowthief.github.io/sitemap.xml
+Allow: /
+
+Sitemap: https://zhixia.pages.dev/sitemap.xml
+
+# Human- and agent-readable content directory:
+# https://zhixia.pages.dev/llms.txt

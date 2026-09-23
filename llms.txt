@@ -1,0 +1,84 @@
+# 钟灵毓秀
+
+> 钟灵毓秀是 zhongling 的个人博客，记录 AI Agent、RAG 检索、AI 编程、软件架构与开发实践，也分享读书札记和生活思考。
+
+这是 zhongling 的中文个人博客。内容包含技术实践、学习笔记、观点及读书札记；标注 AI 生成或代写的文章保留原始标注。引用时请链接文章的 HTML 原文，区分作者观点与可验证事实，并结合发布日期判断时效。
+
+## 站点入口
+
+- [关于作者](https://zhixia.pages.dev/about/): 作者背景与关注方向。
+- [全部文章](https://zhixia.pages.dev/posts/): 按时间浏览文章。
+- [分类](https://zhixia.pages.dev/categories/): 按主题浏览。
+- [站点地图](https://zhixia.pages.dev/sitemap.xml): 可收录页面的规范 URL。
+- [RSS](https://zhixia.pages.dev/index.xml): 近期更新。
+
+## 文章
+
+- [Agent 的 HITL 设计：从人工介入到可靠恢复](https://zhixia.pages.dev/posts/ai-agent-hitl/): 从补充信息、执行审批、结果审核和人工接管出发，设计 Agent 的人工介入流程，讨论审批交互、状态持久化、权限校验与可靠恢复。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-agent-hitl/index.md)
+
+- [让 AI 一边生成一边搭界面：LLM 渐进式渲染的一个专利思路](https://zhixia.pages.dev/posts/llm-progressive-ui-patent-concept/): 探讨 LLM 流式生成 JSON、Markdown 或 DSL 时，如何恢复部分结构、提前渲染界面，并在生成结束后协调最终结果的专利思路。 [Markdown 正文](https://zhixia.pages.dev/posts/llm-progressive-ui-patent-concept/index.md)
+
+- [【AI代写】Milvus 混合检索实战：BM25 + 语义向量从 0 到 1](https://zhixia.pages.dev/posts/milvus-hybrid-search-practice/): 记录 Milvus 中 BM25 与语义向量混合检索的实现流程，涵盖建库、写入、检索对比、重排、标量过滤与调参。 [Markdown 正文](https://zhixia.pages.dev/posts/milvus-hybrid-search-practice/index.md)
+
+- [【AI代写】BM25 学习总结：从打分公式到 Milvus 稀疏/稠密混合检索](https://zhixia.pages.dev/posts/bm25-learning/): 梳理 BM25 打分公式、分词器与倒排索引的分工，解释稀疏向量、稠密向量及其在 Milvus 混合检索中的协作方式。 [Markdown 正文](https://zhixia.pages.dev/posts/bm25-learning/index.md)
+
+- [[Webgl-learn] Vibe Coding 实践](https://zhixia.pages.dev/posts/ai-context-engineering/): 背景 这是另一篇 vibe coding 实践，之前已经有一个实践：基于当时的工具做的，现在呢基于最新的 claude code 加上 deepseek/glm-5.1 做的，然后过程是基于 superpower 来做流程控制。基于此详细说下怎么做的 [Markdown 正文](https://zhixia.pages.dev/posts/ai-context-engineering/index.md)
+
+- [《红楼梦》小记](https://zhixia.pages.dev/posts/hongloumeng/): 假作真时真亦假，无为有处有还无 分散的时间小半年的跨度，读完第一遍。虽感触挺多，但由于其涉及内容较宽，又读的很粗，就不多言其内容了，市面上有太多解读。我呢就简单输出下喜好点，着重讨论下跟当前大热的 AI 关系，反正随便来一点吧 [Markdown 正文](https://zhixia.pages.dev/posts/hongloumeng/index.md)
+
+- [K12智能辅导平台：用AI重构个性化教育[openclaw代写]](https://zhixia.pages.dev/posts/k12-ai-tutor-platform/): 引言 教育公平一直是社会关注的焦点。在传统的班级授课制下，一个老师要面对50个学生，很难做到真正的&#34;因材施教&#34;。课外辅导市场虽然庞大，但优质师资稀缺、价格高昂，让大多数家庭望而却步。 [Markdown 正文](https://zhixia.pages.dev/posts/k12-ai-tutor-platform/index.md)
+
+- [使用 OpenClaw 实现个人博客全自动运营 [openclaw代写]](https://zhixia.pages.dev/posts/openclaw-auto-blog/): 引言 在 AI 助手日益普及的今天，个人博客的运营方式正在发生革命性变化。传统的人工写作、发布、推广流程不仅耗时耗力，而且难以保持持续的内容输出。本文将介绍如何利用 OpenClaw 这一强大的 AI 助手平台，实现个人博客的全自动运营。 [Markdown 正文](https://zhixia.pages.dev/posts/openclaw-auto-blog/index.md)
+
+- [港美股投资：AI时代的全球资产配置策略-[AI生成]](https://zhixia.pages.dev/posts/hk-us-stock-investment/): 在全球化的投资时代，港美股投资已成为中国投资者实现资产多元化的重要途径。本文将从市场特点、投资策略、风险管理到AI辅助分析，全面解析港美股投资的实战方法论。 [Markdown 正文](https://zhixia.pages.dev/posts/hk-us-stock-investment/index.md)
+
+- [投资学入门：股票投资的核心原理与实践策略-[AI代写]](https://zhixia.pages.dev/posts/investment-stock/): 股票投资既是科学也是艺术，它需要严谨的分析框架，也需要对人性的深刻理解。本文将从投资学的基本原理出发，系统梳理股票投资的核心概念、分析方法和实战策略。 [Markdown 正文](https://zhixia.pages.dev/posts/investment-stock/index.md)
+
+- [Langgraph深度学习](https://zhixia.pages.dev/posts/ai-agent-langgraph/): 从 Agent 技术选型出发，梳理 LangGraph 的节点与边、状态管理、人工介入、持久化，以及 Pregel 与 Channel 的底层执行机制。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-agent-langgraph/index.md)
+
+- [WebGl-Hub-[Apps by AI Coding tool]](https://zhixia.pages.dev/posts/ai-apps-webgl/): 记录下自己做的一些 Apps，基本是网页形态，后面会考虑浏览器插件等形态。 会着重记录，功能，实现思路 体验地址。 主打一个纯自然语言，AI 做牛马。期望能把这个过程用熟练，万一真有场景可以直接用上呢。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-apps-webgl/index.md)
+
+- [《三体》读后感](https://zhixia.pages.dev/posts/santi/): 重新读了三体小说，利用的碎片时间，还有国庆几天假期。内容包括地球往事、黑暗森林、死神永生三部曲。也有一些博主的解读和评论。 这部小说包含的内容涉及太深太广，这里仅复盘下自己的收获： [Markdown 正文](https://zhixia.pages.dev/posts/santi/index.md)
+
+- [AI 应用中的一些前端技术](https://zhixia.pages.dev/posts/ai-tec-web/): 以下内容 95% 由 AI 生成 SSE 协议与 Markdown 渲染：构建现代 AI 对话系统的基石 在 ChatGPT、Claude 等 AI 对话系统中，那种逐字逐句的&#34;打字机&#34;效果背后，是两项看似普通却至关重要的技术：Server-Sent Events (SSE) 协议和 Markdown 渲染引擎。本文将 … [Markdown 正文](https://zhixia.pages.dev/posts/ai-tec-web/index.md)
+
+- [DeepResearch](https://zhixia.pages.dev/posts/ai-deepresearch/): 做通用智能体，首先从 DeepResearch 功能入手。几乎所有 AI应用 公司都会带这个功能。 在做过一些调研后，梳理下自己都这个功能的总结，理解。 首先 让一些出名的 DeepResearch 应用给出 DeepResearch 的调研报告 让我研究我自己？多少有点搞笑。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-deepresearch/index.md)
+
+- [通用 Agent 调研](https://zhixia.pages.dev/posts/ai-agent/): 近日接到通用智能体开发任务。类似 Manus，服务于公司内部一些场景，预计包含 PPT 制作，DeepResearch，小型开发任务等。 这里梳理下当前业界里的 通用 Agent。包含其产品特点，大致实现思路等。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-agent/index.md)
+
+- [Cursor & Claude Code 体验总结](https://zhixia.pages.dev/posts/ai-cursor-claudecode/): 使用情况 目前编码工作几乎是 Cursor， 也深度体验了 Claude code 主要使用场景：日常业务迭代，Bug 修复，新项目启动。 有 80% 的 code 是生成的，毛估提升效率：50% +，值得一提的是让自己有信心做一些未知领域的事情。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-cursor-claudecode/index.md)
+
+- [Vibe Coding: AI编程总结](https://zhixia.pages.dev/posts/ai-vibe-coding/): 总结 Cursor、Claude Code 等 AI 编程工具的使用体验，比较插件、IDE、CLI 与云端交互，分析上下文、模型和工作模式对效果的影响。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-vibe-coding/index.md)
+
+- [AI 时代下的你我](https://zhixia.pages.dev/posts/ai-person/): 首先我认同 AI 时代会改变很多生活，生产，工作的形态，甚至更多……，当然这个主题很大，谁都难以精确的的预测各行各业的发展， 很荣幸为一个 软件工作者 及 普通居民 的角色能站在这场变革的一线，几乎从23年开始一直持续关注相关的动态，参与到一些 AI 产品的使用中，并且参与到一些 AI 产品的开发中。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-person/index.md)
+
+- [AI 应用技术](https://zhixia.pages.dev/posts/ai-tec/): 前言 梳理下自己在 AI 产品开发中用到的一些工程技术，只会做工程了属于是，算法方面的东西基本上不懂。 列下我做过的东西： Code Review Agent Long term memory Dify 二开 Rag 流程 语言技术： Python Nodejs Go Agent 框架： [Markdown 正文](https://zhixia.pages.dev/posts/ai-tec/index.md)
+
+- [AI 产品思考](https://zhixia.pages.dev/posts/ai-products/): 前言 我是 AI应用开发者，开发过 AI Agent，Agent 搭建平台，也是 AI 产品的使用者。本文将分享我对 AI 产品的思考。主要是AI产品思路，列举一些好用的 AI 产品，和一些 AI 产品的使用技巧。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-products/index.md)
+
+- [Devops概念梳理](https://zhixia.pages.dev/posts/devops/): 前言 Devops 从18年左右发展至今已经非常的成熟。可以作为一个独立职业，因为里面有很多细节。作为互联网软件开发者，我从开发的视角梳理下一些应知应会的框架，主要达到一个能使用，能了解架构，出了问题大概知道在哪个环节。具体细节暂时不追求。 [Markdown 正文](https://zhixia.pages.dev/posts/devops/index.md)
+
+- [LLM 长记忆工具总结](https://zhixia.pages.dev/posts/ai-longterm-memory/): 以个人助手为场景，梳理 LLM 长期记忆的系统设计：记忆提取、知识图谱存储、RAG 召回与记忆消费。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-longterm-memory/index.md)
+
+- [后端开发经验-阶段性总结思考](https://zhixia.pages.dev/posts/ai-backend-dev/): 背景 做了大半年左右的后端开发后，总结下相关感受。 技术栈：Python/Nodejs + React 行业背景：LLM 应用， RAG， Agent 后端开发思路 后端关注面更广范，几乎要关注整个应用软件运行所需所有的环节： 运维，应用，业务，服务，UI 等。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-backend-dev/index.md)
+
+- [苏东坡](https://zhixia.pages.dev/posts/sudongpo/): 林语堂苏东坡读后感 进入偶然原因看了些苏词，同时也看了林语堂的苏轼传，这里记录下所感，所想。重点不是描述豪放的苏词，而是苏轼这种人才的优点，缺点。苏轼若是在当代社会又是咋样的？ [Markdown 正文](https://zhixia.pages.dev/posts/sudongpo/index.md)
+
+- [Python 学习总结](https://zhixia.pages.dev/posts/ai-python/): 为什么要学 Python 最近开始接触 Ai 相关的东西。主要是应用层的内容，比如 RAG Agent 等。此类应用特点：无需太多安全性能，偏向于工具，这块技术发展变化比较迅速，大模型日新月异，应用层技术也跟随变化较多。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-python/index.md)
+
+- [AI应用实践的思考](https://zhixia.pages.dev/posts/ai-work-thought/): 近两年AI太火了，认真体验及分析后, 决定尽量跟上, 最少要把相关工具使用好。恰好工作中也在做相关工具，遂梳理之, 以加深对这块的理解。 打败马车夫的不是汽车本身，而是会开车的司机 [Markdown 正文](https://zhixia.pages.dev/posts/ai-work-thought/index.md)
+
+- [了凡四训](https://zhixia.pages.dev/posts/liaofansixun/): 此为一种劝诫训子的书，主要方向是如何处事，也可以是一本养心之书。从中国传统价值观及儒释道的哲学体系来讲述如何处事。总体分为四部分。 作者是明万历期，69岁时所著。推荐此书的名人：曾国藩，据说其号 涤生 就是因为此书而来；稻盛和夫等。 [Markdown 正文](https://zhixia.pages.dev/posts/liaofansixun/index.md)
+
+- [再读六国论](https://zhixia.pages.dev/posts/liuguolun/): 六国破灭非并不利战不善，弊在赂秦…… 近日偶然重新看了这篇文章。再细读后，才发现其文风犀利，逻辑清晰，论点简明有力。虽作为高中时期的教材，那会儿跟不懂内容只知道背诵那些文字，再读后有种相见恨晚的感觉。 [Markdown 正文](https://zhixia.pages.dev/posts/liuguolun/index.md)
+
+- [孙子兵法-研习记](https://zhixia.pages.dev/posts/art-of-war/): 前言 近日工作不忙，偶然看到孙子兵法一书，印象里面应是各种打打杀杀，由无他事就读了一些，发现并不是那么简单。 博主在上下班路上，前后半个月的时间学习了一些。为了加深自己的记忆，理解。就梳理了这篇札记 [Markdown 正文](https://zhixia.pages.dev/posts/art-of-war/index.md)
+
+- [扩展性设计](https://zhixia.pages.dev/posts/extend-design/): 前言 之前在公司内部做过「扩展性设计」的分享。后面重新整理形成博客形式记录自己的学习。 由于作者长期从事Web前端领域的工作的原因，本文也是基于这些技术领域发出的一些关于应用软件方向上的扩展性总结 [Markdown 正文](https://zhixia.pages.dev/posts/extend-design/index.md)
+
+- [深度思考](https://zhixia.pages.dev/posts/deep-thinking/): 深度思考的重要性就不多强调了，该如何做好呢？ 如何做好深度思考？ 多维度 我这里说的多维度可以理解为多视角。 做一个技术分享，在听众的视角下如何的，主办方的视角如何，分享者的视角又如何，领导视角，同事视角如何…… [Markdown 正文](https://zhixia.pages.dev/posts/deep-thinking/index.md)
+
+- [蛙泳学思](https://zhixia.pages.dev/posts/swim/): 最近开始学习蛙泳，其实很早之前下水练习过几次，但是没有系统的整理。最近开始了系统性的练习：看了些视频讲解，纠正了些错误，总算有些小进步。 过程中发现了自己之前很多动作，模式，思考是不对的。但是纠正这些不对的点花费了很久时间。学习效率比较低。而纠正错误的技巧以及思路是一个通用的学习理论，对于工作，生活应该都适用。所以做了 … [Markdown 正文](https://zhixia.pages.dev/posts/swim/index.md)
+
+- [文章搬运开始啦](https://zhixia.pages.dev/posts/kaishila/): 背景 最近比较空闲，在写作东西的时候发现一个不错的主题。刚好自己除了一些公共账号外，还没自己的博客，遂搭建之。 主题：基于Hugo，详细可以见网站底部。托管于 GitHub Pages。 [Markdown 正文](https://zhixia.pages.dev/posts/kaishila/index.md)
+
