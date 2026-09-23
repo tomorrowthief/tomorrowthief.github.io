@@ -1,0 +1,39 @@
+{{- $title := .Title -}}
+{{- if .IsHome }}{{ $title = printf "%s · AI Agent、软件开发与读书思考" site.Title }}{{ end -}}
+{{- $canonical := .Params.canonicalURL | default .Permalink -}}
+{{- $description := .Description -}}
+{{- if not $description -}}
+  {{- if .IsHome -}}
+    {{- $description = site.Params.description -}}
+  {{- else if .IsPage -}}
+    {{- $description = .Summary -}}
+  {{- else -}}
+    {{- $description = printf "%s：浏览%s的相关文章与学习笔记。%s" .Title site.Title site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+{{- $description = $description | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 160 -}}
+{{- if in (slice "home" "section" "term") .Kind -}}
+  {{- $pages := union .RegularPages .Sections -}}
+  {{- if .IsHome -}}
+    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}
+    {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" -}}
+  {{- end -}}
+  {{- $pager := .Paginate $pages -}}
+  {{- if gt $pager.PageNumber 1 -}}
+    {{- $title = printf "%s · 第 %d 页" $title $pager.PageNumber -}}
+    {{- $description = printf "第 %d 页。%s" $pager.PageNumber $description -}}
+    {{- $canonical = $pager.URL | absURL -}}
+  {{- end -}}
+{{- end -}}
+{{- $noindex := or .Params.noindex (eq .Kind "404") (eq .Layout "search") .Draft -}}
+{{- $image := index site.Params.images 0 | absURL -}}
+{{- with .Params.cover.image -}}
+  {{- if $.Params.cover.relative -}}
+    {{- $image = path.Join $.RelPermalink . | absURL -}}
+  {{- else -}}
+    {{- $image = . | absURL -}}
+  {{- end -}}
+{{- else -}}
+  {{- with .Params.images }}{{ $image = index . 0 | absURL }}{{ end -}}
+{{- end -}}
+{{- return (dict "title" $title "description" $description "canonical" $canonical "noindex" $noindex "image" $image) -}}

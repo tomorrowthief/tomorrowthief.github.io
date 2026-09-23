@@ -1,0 +1,31 @@
+{{- $seo := partial "seo/data.html" . -}}
+{{- if not $seo.noindex -}}
+{{- $authorURL := "about/" | absURL -}}
+{{- $authorID := printf "%s#author" $authorURL -}}
+{{- $siteID := printf "%s#website" site.BaseURL -}}
+{{- $author := dict "@type" "Person" "@id" $authorID "name" site.Params.author "url" $authorURL -}}
+{{- $website := dict "@type" "WebSite" "@id" $siteID "url" site.BaseURL "name" site.Title "description" site.Params.description "inLanguage" .Language.Lang "publisher" (dict "@id" $authorID) -}}
+{{- $type := "WebPage" -}}
+{{- if .IsHome }}{{ $type = "CollectionPage" }}{{ end -}}
+{{- if in (slice "section" "term" "taxonomy") .Kind }}{{ $type = "CollectionPage" }}{{ end -}}
+{{- if eq .Layout "about" }}{{ $type = "AboutPage" }}{{ end -}}
+{{- $page := dict "@type" $type "@id" $seo.canonical "url" $seo.canonical "name" $seo.title "description" $seo.description "inLanguage" .Language.Lang "isPartOf" (dict "@id" $siteID) -}}
+{{- if eq .Layout "about" }}{{ $page = merge $page (dict "mainEntity" (dict "@id" $authorID)) }}{{ end -}}
+{{- $graph := slice $author $website $page -}}
+{{- if not .IsHome -}}
+  {{- $items := slice -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" .Title "item" .Permalink) -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" $seo.title "item" $seo.canonical) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $items) -}}
+{{- end -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+  {{- $article := dict "@type" "BlogPosting" "@id" (printf "%s#article" $seo.canonical) "url" $seo.canonical "headline" .Title "description" $seo.description "inLanguage" .Language.Lang "mainEntityOfPage" (dict "@id" $seo.canonical) "author" (dict "@type" "Person" "name" (partial "author.html" .) "url" $authorURL) "publisher" (dict "@id" $authorID) "wordCount" .WordCount "image" (slice $seo.image) -}}
+  {{- with .PublishDate }}{{ $article = merge $article (dict "datePublished" (.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+  {{- with .Lastmod }}{{ $article = merge $article (dict "dateModified" (.Format "2006-01-02T15:04:05Z07:00")) }}{{ end -}}
+  {{- with .Params.tags }}{{ $article = merge $article (dict "keywords" .) }}{{ end -}}
+  {{- $graph = $graph | append $article -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{- end -}}

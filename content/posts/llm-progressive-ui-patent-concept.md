@@ -1,5 +1,6 @@
 ---
 title: "让 AI 一边生成一边搭界面：LLM 渐进式渲染的一个专利思路"
+description: "探讨 LLM 流式生成 JSON、Markdown 或 DSL 时，如何恢复部分结构、提前渲染界面，并在生成结束后协调最终结果的专利思路。"
 date: 2026-07-21T10:00:00+08:00
 draft: false
 categories: '技术'

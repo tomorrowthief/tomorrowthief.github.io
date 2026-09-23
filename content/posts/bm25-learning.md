@@ -1,5 +1,6 @@
 ---
 title: "【AI代写】BM25 学习总结：从打分公式到 Milvus 稀疏/稠密混合检索"
+description: "梳理 BM25 打分公式、分词器与倒排索引的分工，解释稀疏向量、稠密向量及其在 Milvus 混合检索中的协作方式。"
 date: 2026-06-25T20:00:00+08:00
 draft: false
 categories: '技术'

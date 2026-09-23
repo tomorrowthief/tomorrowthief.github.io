@@ -1,0 +1,18 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+这是 {{ site.Params.author }} 的中文个人博客。内容包含技术实践、学习笔记、观点及读书札记；标注 AI 生成或代写的文章保留原始标注。引用时请链接文章的 HTML 原文，区分作者观点与可验证事实，并结合发布日期判断时效。
+
+## 站点入口
+
+- [关于作者]({{ "about/" | absURL }}): 作者背景与关注方向。
+- [全部文章]({{ "posts/" | absURL }}): 按时间浏览文章。
+- [分类]({{ "categories/" | absURL }}): 按主题浏览。
+- [站点地图]({{ "sitemap.xml" | absURL }}): 可收录页面的规范 URL。
+- [RSS]({{ "index.xml" | absURL }}): 近期更新。
+
+## 文章
+{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}{{ if not .Params.noindex }}
+- [{{ .Title }}]({{ .Permalink }}): {{ partial "seo/description.html" . }}{{ with .OutputFormats.Get "Markdown" }} [Markdown 正文]({{ .Permalink }}){{ end }}
+{{ end }}{{ end }}

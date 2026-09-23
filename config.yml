@@ -1,4 +1,4 @@
-baseURL: "https://tomorrowthief.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://zhixia.pages.dev/" # Canonical origin for all deployments and discovery feeds.
 title: 钟灵毓秀
 pagination: 
     disableAliases: false
@@ -9,6 +9,8 @@ publishDir: docs
 
 languageCode: zh
 DefaultContentLanguage: zh
+# Enable English only when translated content is available.
+disableLanguages: [en]
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -67,11 +69,35 @@ outputs:
         - HTML
         - RSS
         - JSON
+        - LLMS
+
+mediaTypes:
+    text/markdown:
+        suffixes: [md]
+
+outputFormats:
+    LLMS:
+        mediaType: text/plain
+        baseName: llms
+        isPlainText: true
+        notAlternative: true
+    Markdown:
+        mediaType: text/markdown
+        baseName: index
+        isPlainText: true
+        rel: alternate
+
+frontmatter:
+    lastmod: [lastmod, date]
 
 params:
     social: true
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "zhongling blog"
+    description: "钟灵毓秀是 zhongling 的个人博客，记录 AI Agent、RAG 检索、AI 编程、软件架构与开发实践，也分享读书札记和生活思考。"
+    mainSections: [posts]
+    homeInfoParams:
+        Title: "钟灵毓秀 · 技术与思考"
+        Content: "记录 AI Agent、RAG 检索、AI 编程与软件架构的实践，也分享读书与生活中的思考。[浏览全部文章](/posts/) · [关于作者](/about/) · [RSS 订阅](/index.xml)"
     author: zhongling
     # author: ["Me", "You"] # multiple authors
 
@@ -83,7 +109,7 @@ params:
     disableSpecial1stPost: true
     # displayFullLangName: true
     ShowPostNavLinks: true
-    # ShowBreadCrumbs: true
+    ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
     comments: true
@@ -161,7 +187,7 @@ privacy:
         disabled: false
         simple: true
 
-    twitter:
+    x:
         disabled: false
         enableDNT: true
         simple: true
@@ -177,5 +203,5 @@ privacy:
 services:
     instagram:
         disableInlineCSS: true
-    twitter:
+    x:
         disableInlineCSS: true

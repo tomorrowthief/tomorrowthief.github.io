@@ -1,11 +1,14 @@
 ---
-title: "About"
+title: "关于作者"
 layout: "about"
 url: "/about"
-summary: "about"
+description: "zhongling，软件开发者、架构师与生活探索者，关注 AI Agent、Agent Memory、前后端开发，记录技术实践与读书思考。"
+hideMeta: true
 ---
 
-软件开发，架构师，生活探索者。混迹于 杭州 / 郑州
+我是 zhongling，软件开发者、架构师、生活探索者。混迹于 杭州 / 郑州。
+
+在「钟灵毓秀」记录 AI Agent、软件开发与架构实践，也分享读书札记和生活思考。
 
 
 <br />

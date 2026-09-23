@@ -16,11 +16,14 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.148.2'
           extended: true
 
       - name: Build Hugo site
         run: hugo --minify --destination docs # Adjust destination if using docs/
+
+      - name: Validate SEO and content discovery
+        run: python3 scripts/check_seo.py docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

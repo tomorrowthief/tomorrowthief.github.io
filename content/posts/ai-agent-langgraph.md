@@ -1,5 +1,6 @@
 ---
 title: "Langgraph深度学习"
+description: "从 Agent 技术选型出发，梳理 LangGraph 的节点与边、状态管理、人工介入、持久化，以及 Pregel 与 Channel 的底层执行机制。"
 date: 2025-11-05T09:30:00+08:00
 draft: false
 categories: '技术'

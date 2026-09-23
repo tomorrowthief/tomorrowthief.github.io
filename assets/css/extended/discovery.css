@@ -1,0 +1,11 @@
+/* Keep the author and Markdown links above the theme's full-card link. */
+.entry-footer a {
+    position: relative;
+    z-index: 2;
+}
+
+.entry-footer a:hover,
+.post-meta a:hover,
+.home-info .entry-content a:hover {
+    text-decoration: underline;
+}

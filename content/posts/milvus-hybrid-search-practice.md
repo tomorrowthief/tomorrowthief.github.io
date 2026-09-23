@@ -1,5 +1,6 @@
 ---
 title: "【AI代写】Milvus 混合检索实战：BM25 + 语义向量从 0 到 1"
+description: "记录 Milvus 中 BM25 与语义向量混合检索的实现流程，涵盖建库、写入、检索对比、重排、标量过滤与调参。"
 date: 2026-06-26T12:00:00+08:00
 draft: false
 categories: '技术'

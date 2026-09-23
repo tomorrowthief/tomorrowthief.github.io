@@ -1,0 +1,20 @@
+{{- if not .Date.IsZero -}}
+<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02" }}</time>
+{{- end -}}
+{{- if and .IsPage (gt .Lastmod .Date) -}}
+&nbsp;·&nbsp;更新于 <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format "2006-01-02" }}</time>
+{{- end -}}
+{{- if (.Param "ShowReadingTime") -}}
+&nbsp;·&nbsp;{{ i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime) }}
+{{- end -}}
+{{- if (.Param "ShowWordCount") -}}
+&nbsp;·&nbsp;{{ i18n "words" .WordCount | default (printf "%d words" .WordCount) }}
+{{- end -}}
+{{- if not (.Param "hideAuthor") -}}
+&nbsp;·&nbsp;<a href="{{ "about/" | relURL }}" rel="author">{{ partial "author.html" . }}</a>
+{{- end -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+{{- with .OutputFormats.Get "Markdown" -}}
+&nbsp;·&nbsp;<a href="{{ .RelPermalink }}" type="text/markdown">Markdown 原文</a>
+{{- end -}}
+{{- end -}}

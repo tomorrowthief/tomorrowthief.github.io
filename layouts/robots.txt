@@ -1,0 +1,10 @@
+User-agent: *
+{{ if hugo.IsProduction -}}
+Allow: /
+{{ else -}}
+Disallow: /
+{{ end }}
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# Human- and agent-readable content directory:
+# {{ "llms.txt" | absURL }}

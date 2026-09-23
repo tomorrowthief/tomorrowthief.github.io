@@ -1,5 +1,6 @@
 ---
 title: "LLM 长记忆工具总结"
+description: "以个人助手为场景，梳理 LLM 长期记忆的系统设计：记忆提取、知识图谱存储、RAG 召回与记忆消费。"
 date: 2024-10-19T11:48:00+08:00
 draft: false
 categories: '技术'

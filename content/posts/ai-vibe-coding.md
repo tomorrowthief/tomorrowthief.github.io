@@ -1,5 +1,6 @@
 ---
 title: "Vibe Coding: AI编程总结"
+description: "总结 Cursor、Claude Code 等 AI 编程工具的使用体验，比较插件、IDE、CLI 与云端交互，分析上下文、模型和工作模式对效果的影响。"
 date: 2025-08-19T16:24:41+08:00
 draft: false
 categories: 'AI'

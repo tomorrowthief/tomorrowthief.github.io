@@ -1,0 +1,12 @@
+{{- $seo := partial "seo/data.html" . -}}
+<title>{{ $seo.title }}{{ if not .IsHome }} | {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ $seo.description }}">
+<meta name="author" content="{{ partial "author.html" . }}">
+{{ if or $seo.noindex (not hugo.IsProduction) -}}
+<meta name="robots" content="noindex, follow">
+{{ else -}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{ end -}}
+<link rel="canonical" href="{{ $seo.canonical }}">
+<link rel="author" href="{{ "about/" | absURL }}">
+<link rel="help" type="text/plain" href="{{ "llms.txt" | absURL }}" title="站点内容索引">
