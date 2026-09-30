@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工作流 on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+    <description>Recent content in 工作流 on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 30 Sep 2026 12:24:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【AI代写】从 Dify Graphon 到 LangGraph：工作流引擎的调度、状态与性能</title>
+      <link>https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/</link>
+      <pubDate>Wed, 30 Sep 2026 12:24:00 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/</guid>
+      <description>从 Dify Graphon 的就绪队列、Worker 和 Dispatcher 出发，解释工作流的并行、分支、流式事件与暂停恢复，再与 LangGraph 的 Pregel 超步、状态合并和检查点机制比较，讨论性能瓶颈与适用场景。</description>
+    </item>
+    
+  </channel>
+</rss>
