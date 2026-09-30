@@ -14,7 +14,7 @@
 
 ## 文章
 
-- [【AI代写】从 Dify Graphon 到 LangGraph：工作流引擎的调度、状态与性能](https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/): 从 Dify Graphon 的就绪队列、Worker 和 Dispatcher 出发，解释工作流的并行、分支、流式事件与暂停恢复，再与 LangGraph 的 Pregel 超步、状态合并和检查点机制比较，讨论性能瓶颈与适用场景。 [Markdown 正文](https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/index.md)
+- [【AI代写】从 Dify Graphon 到 LangGraph：工作流引擎的调度、状态与性能](https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/): 工作流画布上的节点和连线，很容易让人以为引擎只是“按顺序调用几个函数”。 真正运行起来以后，问题会复杂得多：哪些节点可以并行？条件分支没选中的路径怎么处理？两个分支什么时候汇合？节点失败后重试什么？等待人工确认时保存什么？后台执行和浏览器看到的进度是什么关系？ [Markdown 正文](https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/index.md)
 
 - [《俞军产品方法论》读后感](https://zhixia.pages.dev/posts/yujun-product-methodology/): 最近读了《俞军产品方法论》，坦白说，读后的感觉是：收获不多。 没有那种突然想通很多事情的兴奋，也没有得到一套马上能用起来的方法。留下印象的，主要是几个概念：边际成本、边际效用、复利、用户模型，以及用户与需求的关系。另外，就是对产品经理这个职业的一点感悟——一个产品能不能成功，一个产品经理能不能成功，可能远没有想象中那么 … [Markdown 正文](https://zhixia.pages.dev/posts/yujun-product-methodology/index.md)
 

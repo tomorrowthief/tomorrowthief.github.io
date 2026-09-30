@@ -17,7 +17,8 @@
       <pubDate>Wed, 30 Sep 2026 12:24:00 +0800</pubDate>
       
       <guid>https://zhixia.pages.dev/posts/workflow-engine-graphon-langgraph/</guid>
-      <description>从 Dify Graphon 的就绪队列、Worker 和 Dispatcher 出发，解释工作流的并行、分支、流式事件与暂停恢复，再与 LangGraph 的 Pregel 超步、状态合并和检查点机制比较，讨论性能瓶颈与适用场景。</description>
+      <description>&lt;p&gt;工作流画布上的节点和连线，很容易让人以为引擎只是“按顺序调用几个函数”。&lt;/p&gt;
+&lt;p&gt;真正运行起来以后，问题会复杂得多：哪些节点可以并行？条件分支没选中的路径怎么处理？两个分支什么时候汇合？节点失败后重试什么？等待人工确认时保存什么？后台执行和浏览器看到的进度是什么关系？&lt;/p&gt;</description>
     </item>
     
   </channel>
