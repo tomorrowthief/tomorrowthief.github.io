@@ -14,7 +14,7 @@
 
 ## 文章
 
-- [《俞军产品方法论》读后感：概念、能力与运气](https://zhixia.pages.dev/posts/yujun-product-methodology/): 读完《俞军产品方法论》，收获主要是边际、效用、复利和用户模型等概念，以及对产品经理能力与成功之间关系的重新思考：如何看待运气，又有哪些能力值得持续练习。 [Markdown 正文](https://zhixia.pages.dev/posts/yujun-product-methodology/index.md)
+- [《俞军产品方法论》读后感](https://zhixia.pages.dev/posts/yujun-product-methodology/): 读完《俞军产品方法论》，收获主要是边际成本、边际效用、复利和用户模型等概念，以及对产品经理能力与成功之间关系的重新思考：如何看待运气，又有哪些能力值得持续练习。 [Markdown 正文](https://zhixia.pages.dev/posts/yujun-product-methodology/index.md)
 
 - [Agent 的 HITL 设计：从人工介入到可靠恢复](https://zhixia.pages.dev/posts/ai-agent-hitl/): 从补充信息、执行审批、结果审核和人工接管出发，设计 Agent 的人工介入流程，讨论审批交互、状态持久化、权限校验与可靠恢复。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-agent-hitl/index.md)
 
