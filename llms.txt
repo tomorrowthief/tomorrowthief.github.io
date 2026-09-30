@@ -14,6 +14,8 @@
 
 ## 文章
 
+- [《俞军产品方法论》读后感：概念、能力与运气](https://zhixia.pages.dev/posts/yujun-product-methodology/): 读完《俞军产品方法论》，收获主要是边际、效用、复利和用户模型等概念，以及对产品经理能力与成功之间关系的重新思考：如何看待运气，又有哪些能力值得持续练习。 [Markdown 正文](https://zhixia.pages.dev/posts/yujun-product-methodology/index.md)
+
 - [Agent 的 HITL 设计：从人工介入到可靠恢复](https://zhixia.pages.dev/posts/ai-agent-hitl/): 从补充信息、执行审批、结果审核和人工接管出发，设计 Agent 的人工介入流程，讨论审批交互、状态持久化、权限校验与可靠恢复。 [Markdown 正文](https://zhixia.pages.dev/posts/ai-agent-hitl/index.md)
 
 - [让 AI 一边生成一边搭界面：LLM 渐进式渲染的一个专利思路](https://zhixia.pages.dev/posts/llm-progressive-ui-patent-concept/): 探讨 LLM 流式生成 JSON、Markdown 或 DSL 时，如何恢复部分结构、提前渲染界面，并在生成结束后协调最终结果的专利思路。 [Markdown 正文](https://zhixia.pages.dev/posts/llm-progressive-ui-patent-concept/index.md)

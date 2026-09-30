@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>读书 on 钟灵毓秀</title>
+    <link>https://zhixia.pages.dev/tags/%E8%AF%BB%E4%B9%A6/</link>
+    <description>Recent content in 读书 on 钟灵毓秀</description>
+    <image>
+      <url>https://zhixia.pages.dev/cover.png</url>
+      <link>https://zhixia.pages.dev/cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0800</lastBuildDate><atom:link href="https://zhixia.pages.dev/tags/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《俞军产品方法论》读后感：概念、能力与运气</title>
+      <link>https://zhixia.pages.dev/posts/yujun-product-methodology/</link>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 +0800</pubDate>
+      
+      <guid>https://zhixia.pages.dev/posts/yujun-product-methodology/</guid>
+      <description>读完《俞军产品方法论》，收获主要是边际、效用、复利和用户模型等概念，以及对产品经理能力与成功之间关系的重新思考：如何看待运气，又有哪些能力值得持续练习。</description>
+    </item>
+    
+  </channel>
+</rss>
