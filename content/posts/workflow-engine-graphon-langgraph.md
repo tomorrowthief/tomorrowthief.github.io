@@ -1,7 +1,6 @@
 ---
 title: "【AI代写】从 Dify Graphon 到 LangGraph：工作流引擎的调度、状态与性能"
 date: 2026-09-30T12:24:00+08:00
-description: "从 Dify Graphon 的就绪队列、Worker 和 Dispatcher 出发，解释工作流的并行、分支、流式事件与暂停恢复，再与 LangGraph 的 Pregel 超步、状态合并和检查点机制比较，讨论性能瓶颈与适用场景。"
 draft: false
 categories: '技术'
 tags: ['AI', 'Agent', 'Dify', 'Graphon', 'LangGraph', '工作流', '架构']
