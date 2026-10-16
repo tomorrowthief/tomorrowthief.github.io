@@ -1,3 +1,10 @@
 .claude/
 .cowork-temp/
-docs/
+/docs/
+
+# Superpowers brainstorm sessions
+.superpowers/
+
+# Remotion video project
+video/node_modules/
+video/out/

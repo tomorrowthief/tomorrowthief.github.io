@@ -1,0 +1,61 @@
+.personal-intro {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 24px 0;
+    border: 1px solid #d5d2c7;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f4f0e8;
+    color: #292b27;
+}
+
+.personal-intro-cover {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: clamp(18px, 5vw, 42px);
+}
+
+.personal-intro-eyebrow {
+    color: #737568;
+    font-size: clamp(11px, 2vw, 14px);
+    letter-spacing: 2px;
+}
+
+.personal-intro-title {
+    margin-top: 18px;
+    font-family: "Songti SC", Georgia, serif;
+    font-size: clamp(23px, 4.5vw, 40px);
+    line-height: 1.3;
+}
+
+.personal-intro-title span { color: #a54f38; }
+.personal-intro-cover p { margin: 12px 0 18px; font-size: clamp(12px, 2.3vw, 18px); color: #737568; }
+.personal-intro-play {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 10px 17px;
+    border-radius: 30px;
+    background: #292b27;
+    color: #f4f0e8;
+    font-size: 14px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+.personal-intro-play[hidden] { display: none; }
+.personal-intro-play:focus-visible { outline: 3px solid #a54f38; outline-offset: 4px; }
+.personal-intro-play:disabled { cursor: wait; opacity: .65; }
+.personal-intro-duration { opacity: .65; }
+#personal-intro-status { margin-top: 8px; font-size: 12px; color: #737568; }
+
+@media (max-width: 420px) {
+    .personal-intro-eyebrow { letter-spacing: 1px; }
+    .personal-intro-title { margin-top: 10px; }
+    .personal-intro-cover p { margin: 8px 0 10px; }
+    .personal-intro-play { min-height: 44px; padding: 8px 14px; }
+    #personal-intro-status:empty { display: none; }
+}

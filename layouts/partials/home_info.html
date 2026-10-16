@@ -1,0 +1,44 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <section class="entry-content">
+        <p>{{ .Content | markdownify }}</p>
+    </section>
+    <div class="personal-intro" id="personal-intro" role="region" aria-label="zhongling 的个人介绍视频">
+        <div class="personal-intro-cover">
+            <span class="personal-intro-eyebrow">钟灵毓秀 / 关于我</span>
+            <div class="personal-intro-title">你好，我是 <span>zhongling.</span></div>
+            <p>软件开发者 · 架构师 · 生活探索者</p>
+            <button id="personal-intro-play" class="personal-intro-play" type="button" hidden>
+                <span aria-hidden="true">▶</span> 认识一下 <span class="personal-intro-duration">18 秒</span>
+            </button>
+            <noscript><a href="{{ "about/" | relURL }}">阅读关于作者 →</a></noscript>
+            <span id="personal-intro-status" role="status"></span>
+        </div>
+    </div>
+    {{- $player := resources.Get "js/personal-intro.js" | fingerprint }}
+    <script type="module">
+        const button = document.getElementById('personal-intro-play');
+        const container = document.getElementById('personal-intro');
+        const status = document.getElementById('personal-intro-status');
+        button.hidden = false;
+        button.addEventListener('click', async () => {
+            button.disabled = true;
+            status.textContent = '正在载入…';
+            try {
+                const {mount} = await import('{{ $player.RelPermalink }}');
+                container.replaceChildren();
+                mount(container);
+            } catch {
+                button.disabled = false;
+                status.textContent = '载入失败，请重试。';
+            }
+        });
+    </script>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+    </footer>
+</article>
+{{- end -}}
