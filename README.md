@@ -2,12 +2,12 @@
 
 Hugo 个人博客，记录 AI Agent、软件开发、读书与生活思考。
 
-主站：[zhixia.pages.dev](https://zhixia.pages.dev/)。备用部署：[GitHub Pages](https://tomorrowthief.github.io/)。
-**搜索引擎使用的主域名由 `config.yml` 的 `baseURL` 统一决定**，已设置为 `https://zhixia.pages.dev/`。两个站点部署同一份内容时应使用同一个 `baseURL`，让 canonical、RSS、站点地图及 AI 检索入口统一指向主站。重新部署备用站后，其 canonical 也会指向主站；GitHub Pages 的默认域名无法直接用 `_redirects` 设置 301 跳转。
+主站：[zhixia.pages.dev](https://zhixia.pages.dev/)，由 Cloudflare Pages 部署。更新 `main` 后自动触发 Cloudflare 构建；不再通过 GitHub Actions 部署 GitHub Pages。
+**搜索引擎使用的主域名由 `config.yml` 的 `baseURL` 统一决定**，已设置为 `https://zhixia.pages.dev/`，让 canonical、RSS、站点地图及 AI 检索入口统一指向主站。
 
 ## 本地构建与检查
 
-使用 Hugo Extended 0.148.2（与 GitHub Actions 一致）：
+使用 Hugo Extended 0.148.2：
 
 ```sh
 hugo server
@@ -18,7 +18,9 @@ python3 scripts/check_seo.py docs
 
 不要发布 `hugo server` 的开发输出：开发模式的 robots 和页面 meta 会禁止收录。`docs/` 是生成目录，不提交。Cloudflare 构建环境建议配置 `HUGO_VERSION=0.148.2`，构建命令为 `hugo --minify`，输出目录为 `docs`。`static/_headers` 仅由 Cloudflare Pages 读取。
 
-检查脚本覆盖页面描述、canonical 与 Open Graph 一致性、分页地址、JSON-LD、站点地图、AI 爬虫可访问性、文章 Markdown 和 RSS。GitHub Actions 在部署前执行该检查。
+检查脚本覆盖页面描述、canonical 与 Open Graph 一致性、分页地址、JSON-LD、站点地图、AI 爬虫可访问性、文章 Markdown 和 RSS。发布前在本地执行该检查，发布后确认 Cloudflare Pages 的部署结果。
+
+首页个人介绍使用 Remotion Player，直接播放动画源码，无需 MP4 或运行 Studio 服务器。修改后按 [视频工程说明](video/README.md) 重新构建播放器资源。
 
 ## 已提供的检索入口
 
